@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://djjple6j2b5j4"]
+[gd_scene load_steps=3 format=3 uid="uid://djjple6j2b5j4"]
 
 [ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="1_4eric"]
+[ext_resource type="Script" uid="uid://bllh3t55axjfm" path="res://scenes/messages.gd" id="2_2ompo"]
 
 [node name="comment_screen" type="Node2D"]
 
@@ -15,3 +16,11 @@ offset_top = 174.0
 offset_right = 707.0
 offset_bottom = 404.0
 text = "comment screen"
+
+[node name="messages" type="Button" parent="."]
+offset_left = 428.0
+offset_top = 343.0
+offset_right = 692.0
+offset_bottom = 464.0
+text = "messages"
+script = ExtResource("2_2ompo")
