@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://djjple6j2b5j4"]
+
+[ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="1_4eric"]
+
+[node name="comment_screen" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(572.25, 321.25)
+scale = Vector2(9.35547, 5.51172)
+texture = ExtResource("1_4eric")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 419.0
+offset_top = 174.0
+offset_right = 707.0
+offset_bottom = 404.0
+text = "comment screen"
