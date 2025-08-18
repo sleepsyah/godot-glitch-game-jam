@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://utt2ffs06a5a"]
+
+[ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="1_o7i0r"]
+[ext_resource type="Script" uid="uid://bemfns5rp73xe" path="res://scenes/button.gd" id="2_he1sj"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(587, 333)
+scale = Vector2(9.29688, 5.32813)
+texture = ExtResource("1_o7i0r")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+offset_left = -24.8471
+offset_top = 11.0733
+offset_right = 25.1529
+offset_bottom = 42.0733
+text = "Login"
+script = ExtResource("2_he1sj")

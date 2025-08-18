@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cr3c8oa6yw4l6"]
+
+[ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="1_whr8w"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(583.5, 333)
+scale = Vector2(9.22656, 5.375)
+texture = ExtResource("1_whr8w")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Sprite2D"]
+offset_left = -45.4666
+offset_top = -44.093
+offset_right = 7.53345
+offset_bottom = 23.907
+text = "this is the second scene"
