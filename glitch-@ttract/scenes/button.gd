@@ -8,5 +8,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	#changes from start screen to profile screen on button click
 	if button_pressed:
 		get_tree().change_scene_to_file("res://scenes/profile_screen.tscn")
