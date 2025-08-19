@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://5wdvifwdiyig"]
+[gd_scene load_steps=4 format=3 uid="uid://5wdvifwdiyig"]
 
 [ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="1_186wf"]
 [ext_resource type="Script" uid="uid://dakvilus8i5ep" path="res://scenes/to3d.gd" id="2_jb1ob"]
+[ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_koy8v"]
 
 [node name="messages_screen" type="Node2D"]
 
@@ -15,5 +16,6 @@ offset_left = 414.0
 offset_top = 250.0
 offset_right = 712.0
 offset_bottom = 427.0
+theme = ExtResource("2_koy8v")
 text = "go to 3d"
 script = ExtResource("2_jb1ob")
