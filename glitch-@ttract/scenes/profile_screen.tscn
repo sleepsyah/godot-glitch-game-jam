@@ -1,122 +1,249 @@
-[gd_scene load_steps=17 format=3 uid="uid://cr3c8oa6yw4l6"]
+[gd_scene load_steps=4 format=3 uid="uid://cr3c8oa6yw4l6"]
 
 [ext_resource type="Script" uid="uid://be14vm6daw8sj" path="res://scenes/posts.gd" id="2_7q4r5"]
-[ext_resource type="Texture2D" uid="uid://cikbpnjednnys" path="res://images/background.jpg" id="2_mhd6v"]
+[ext_resource type="FontFile" uid="uid://cvdde6m5n27nh" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf" id="2_vboge"]
+[ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="4_mhd6v"]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2(-4, 2)
+position = Vector2(8, 24)
 metadata/_edit_horizontal_guides_ = [0.0]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(580, 322)
-scale = Vector2(0.9, 0.81)
-texture = ExtResource("2_mhd6v")
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(632, 328)
+scale = Vector2(1.47806, 1.34317)
+texture = ExtResource("4_mhd6v")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-position = Vector2(-140, 70)
-scale = Vector2(3.37534, 11.4277)
+position = Vector2(-140, 70.1295)
+scale = Vector2(3.37534, 11.3574)
 color = Color(0.570385, 0.0169126, 0.427584, 1)
-polygon = PackedVector2Array(200, 50, 200, 2, 48.0381, 1.84264, 48.0381, 49.2703)
+polygon = PackedVector2Array(202.646, 52.9936, 202.646, 1.57347, 46.2176, 1.57347, 46.2176, 52.9936, 124.432, 52.9936)
 
 [node name="Polygon2D2" type="Polygon2D" parent="."]
-position = Vector2(-340, 14)
+position = Vector2(-360, 8)
 scale = Vector2(7.34811, 1.34918)
 color = Color(0.570385, 0.0169126, 0.427584, 1)
-polygon = PackedVector2Array(200, 50, 199.923, -3.78772, 125.24, -3.5369, 49.5913, -3.78772, 49.5913, 49.5783)
+polygon = PackedVector2Array(217.743, 47.4362, 217.743, -5.92953, 50.0809, -5.92953, 50.0809, 47.4362)
 uv = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
 
 [node name="Polygon2D4" type="Polygon2D" parent="."]
-position = Vector2(364, 286)
+position = Vector2(368, 288)
 scale = Vector2(3.88105, 2.95986)
 color = Color(0.570385, 0.0169126, 0.427584, 1)
-polygon = PackedVector2Array(200, 50, 199.946, 1.34, 47.6525, 1.34022, 47.6525, 49.5881)
+polygon = PackedVector2Array(226.743, 48.6509, 226.743, 0, 49.4711, 0, 49.4711, 48.6509)
 
 [node name="Polygon2D5" type="Polygon2D" parent="."]
-position = Vector2(372, 435)
+position = Vector2(376, 440)
 scale = Vector2(3.6474, 3.69603)
 color = Color(0.570385, 0.0169126, 0.427584, 1)
-polygon = PackedVector2Array(201.341, 52.7594, 200, 2, 50, 2, 50, 52.7594)
+polygon = PackedVector2Array(239.074, 64.9345, 239.074, 2.16448, 50.4469, 2.16448, 50.4469, 64.9345, 129.407, 64.9345)
 
 [node name="Polygon2D7" type="Polygon2D" parent="."]
-position = Vector2(364, 198)
+position = Vector2(368, 192)
 scale = Vector2(3.74525, 1.51959)
 color = Color(0.570385, 0.0169126, 0.427584, 1)
-polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
+polygon = PackedVector2Array(234.964, 52.6458, 234.964, -5.26457, 51.2649, -5.26458, 51.2649, 52.6458)
 
 [node name="Polygon2D6" type="Polygon2D" parent="."]
-position = Vector2(-100, 366)
+position = Vector2(-104, 408)
 scale = Vector2(3.06954, 4.78016)
 color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 24.409, 50, 50)
+polygon = PackedVector2Array(203.288, 50.2075, 203.288, 0, 46.9126, 0, 46.9126, 50.2075)
 
 [node name="Polygon2D9" type="Polygon2D" parent="."]
-position = Vector2(62, 112)
+position = Vector2(56, 112)
 scale = Vector2(1.76499, 4.9169)
 color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 24.409, 50, 50)
+polygon = PackedVector2Array(217.565, 55.3194, 217.565, 0, 36.2608, 0, 36.2608, 24.4056, 36.2608, 55.3194)
 
 [node name="Polygon2D10" type="Polygon2D" parent="."]
-position = Vector2(258, 17)
+position = Vector2(256, 8)
 scale = Vector2(0.38442, 1.04377)
-color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
-
-[node name="Posts" type="Button" parent="."]
-offset_left = 52.0
-offset_top = 14.0
-offset_right = 140.0
-offset_bottom = 45.0
-scale = Vector2(1.6111, 1.9434)
-text = "post
-"
-script = ExtResource("2_7q4r5")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 379.0
-offset_top = 35.0
-offset_right = 483.0
-offset_bottom = 62.0
-text = "MoonSpace"
-
-[node name="Polygon2D11" type="Polygon2D" parent="."]
-position = Vector2(352, 17)
-scale = Vector2(3.08044, 1.04377)
-color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
-
-[node name="Polygon2D12" type="Polygon2D" parent="."]
-position = Vector2(944, 18)
-scale = Vector2(0.794929, 1.09115)
 color = Color(0.981803, 0.447707, 0.793194, 1)
 polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
 
 [node name="Polygon2D13" type="Polygon2D" parent="."]
-position = Vector2(556, 462)
+position = Vector2(32, 8)
 scale = Vector2(0.38442, 1.04377)
-color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(561.885, 53.6517, 561.885, 0, 41.6212, 0, 41.6212, 53.6517)
 
-[node name="Polygon2D14" type="Polygon2D" parent="."]
-position = Vector2(548, 542)
-scale = Vector2(0.38442, 1.04377)
-color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
+[node name="Posts" type="Button" parent="."]
+offset_left = 56.0
+offset_top = 8.0
+offset_right = 170.0
+offset_bottom = 39.0
+scale = Vector2(1.62768, 1.60573)
+theme_override_fonts/font = ExtResource("2_vboge")
+text = "posts
+"
+script = ExtResource("2_7q4r5")
+metadata/_edit_use_anchors_ = true
 
-[node name="Polygon2D15" type="Polygon2D" parent="."]
-position = Vector2(500, 544)
-scale = Vector2(2.98677, 1.02773)
-color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
+[node name="Polygon2D11" type="Polygon2D" parent="."]
+position = Vector2(408, 8)
+scale = Vector2(3.08044, 1.04377)
+color = Color(0.99501, 0.885993, 0.946676, 1)
+polygon = PackedVector2Array(202.568, 38.3226, 202.568, 7.66452, 36.3584, 7.66452, 36.3584, 38.3226)
 
-[node name="Polygon2D16" type="Polygon2D" parent="."]
-position = Vector2(506, 463)
-scale = Vector2(2.97148, 0.998533)
-color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
+[node name="Polygon2D12" type="Polygon2D" parent="."]
+position = Vector2(1048, 8)
+scale = Vector2(0.794929, 1.09115)
+color = Color(0.996078, 0.886275, 0.945098, 1)
+polygon = PackedVector2Array(211.34, 36.6586, 211.34, 7.33171, -10.0637, 7.33171, -10.0637, 36.6586)
 
 [node name="Polygon2D3" type="Polygon2D" parent="."]
-position = Vector2(-340, 102)
+position = Vector2(-340, 94)
 scale = Vector2(7.34811, 1.34918)
 color = Color(0.570385, 0.0169126, 0.427584, 1)
-polygon = PackedVector2Array(200, 50, 200, -3.788, 122, -3.788, 122, 50)
+polygon = PackedVector2Array(167.118, 54.8481, 167.118, -4.44714, 122.48, -4.44714, 122.48, 54.8481)
 uv = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
+
+[node name="Polygon2D17" type="Polygon2D" parent="."]
+position = Vector2(504, 544)
+scale = Vector2(2.97148, 0.998533)
+color = Color(0.981803, 0.447707, 0.793194, 1)
+polygon = PackedVector2Array(242.303, 56.0823, 242.303, 16.0235, 48.4607, 16.0235, 48.4607, 56.0823)
+
+[node name="Polygon2D14" type="Polygon2D" parent="."]
+position = Vector2(568, 544)
+scale = Vector2(0.38442, 1.04377)
+color = Color(0.981803, 0.447707, 0.793194, 1)
+polygon = PackedVector2Array(166.484, 53.6517, 166.484, 15.3291, 41.621, 15.3291, 41.6211, 53.6517)
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 1071.0
+offset_top = 11.0
+offset_right = 1199.0
+offset_bottom = 48.0
+scale = Vector2(1.79173, 1.76276)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_vboge")
+text = "Search"
+
+[node name="Polygon2D15" type="Polygon2D" parent="."]
+position = Vector2(568, 488)
+scale = Vector2(0.38442, 1.04377)
+color = Color(0.981803, 0.447707, 0.793194, 1)
+polygon = PackedVector2Array(166.484, 53.6517, 166.484, 15.3291, 41.621, 15.3291, 41.6211, 53.6517)
+
+[node name="Polygon2D18" type="Polygon2D" parent="."]
+position = Vector2(504, 488)
+scale = Vector2(2.97148, 0.998533)
+color = Color(0.981803, 0.447707, 0.793194, 1)
+polygon = PackedVector2Array(242.303, 56.0823, 242.303, 16.0235, 48.4607, 16.0235, 48.4607, 56.0823)
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+offset_left = 576.0
+offset_top = 456.0
+offset_right = 696.0
+offset_bottom = 504.0
+scale = Vector2(1.7301, 1.86056)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_vboge")
+text = "Connections"
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+offset_left = 352.0
+offset_top = 16.0
+offset_right = 472.0
+offset_bottom = 64.0
+scale = Vector2(1.7301, 1.86056)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_vboge")
+text = "MoonSpace"
+metadata/_edit_use_anchors_ = true
+
+[node name="Polygon2D19" type="Polygon2D" parent="."]
+position = Vector2(504, 600)
+scale = Vector2(2.97148, 0.998533)
+color = Color(0.981803, 0.447707, 0.793194, 1)
+polygon = PackedVector2Array(242.303, 56.0823, 242.303, 16.0235, 48.4607, 16.0235, 48.4607, 56.0823)
+
+[node name="Polygon2D16" type="Polygon2D" parent="."]
+position = Vector2(568, 600)
+scale = Vector2(0.38442, 1.04377)
+color = Color(0.981803, 0.447707, 0.793194, 1)
+polygon = PackedVector2Array(166.484, 53.6517, 166.484, 15.3291, 41.621, 15.3291, 41.6211, 53.6517)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 56.0
+offset_top = 416.0
+offset_right = 504.0
+offset_bottom = 640.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_vboge")
+text = "Name: y/n
+Age: 6teen
+Sexuality: lesbian
+Height: 5’7
+School: Chesterview High
+Zodiac: scorpio moon cancer rising
+MBTI type: infp
+Music: patd, pierce the veil, ayesha erotica, avril lavigne 
+more info
+"
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+offset_left = 576.0
+offset_top = 304.0
+offset_right = 1240.0
+offset_bottom = 424.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_vboge")
+text = "About Me: hiii!!! My name is y/n i luv thrifting and literally everything fashion related xd
+
+☆ basic dni 
+☆ fashion inspo:  scene, y2k, emo, jfashion
+"
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="."]
+offset_left = 576.0
+offset_top = 200.0
+offset_right = 1300.0
+offset_bottom = 271.0
+scale = Vector2(1.11639, 1.46932)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_vboge")
+text = "Likes: fashion, emo music, 
+Dislikes:
+
+"
+
+[node name="Polygon2D8" type="Polygon2D" parent="."]
+position = Vector2(-491.238, 94)
+scale = Vector2(8.04793, 1.34918)
+color = Color(0.570385, 0.0169126, 0.427584, 1)
+polygon = PackedVector2Array(216.11, 54.8481, 216.11, -4.44714, 175.354, -4.44714, 175.354, 54.8481)
+uv = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="."]
+offset_left = 592.0
+offset_top = 104.0
+offset_right = 867.0
+offset_bottom = 155.0
+scale = Vector2(1.54418, 2.51953)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_vboge")
+text = "Followers: 152.4k
+
+"
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="."]
+offset_left = 976.0
+offset_top = 104.0
+offset_right = 1261.0
+offset_bottom = 155.0
+scale = Vector2(1.54418, 2.51953)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_vboge")
+text = "Following: 254
+
+"
+
+[node name="Polygon2D20" type="Polygon2D" parent="."]
+position = Vector2(24, -8)
+scale = Vector2(1.66525, 1.20587)
+color = Color(0, 0.0503744, 0.383823, 1)
+polygon = PackedVector2Array(56, 104, 72, 80, 88, 104, 80, 104, 80, 120, 64, 120, 64, 104)

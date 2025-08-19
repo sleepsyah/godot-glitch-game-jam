@@ -1,13 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://cg2op8skqgrbp"]
+[gd_scene load_steps=7 format=3 uid="uid://cg2op8skqgrbp"]
 
 [ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="1_4n16l"]
 [ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="1_m37ps"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_35dhw"]
 [ext_resource type="Script" uid="uid://bgfofnugsfsc4" path="res://scenes/post_2.gd" id="2_m37ps"]
 [ext_resource type="Script" uid="uid://cfp4vhi7340m2" path="res://scenes/post_1.gd" id="3_35dhw"]
-[ext_resource type="AudioStream" uid="uid://d15tdxk2yy4mn" path="res://jumpscare/fuzzy-jumpscare-80560.mp3" id="5_g45wp"]
-[ext_resource type="Texture2D" uid="uid://bahxkcrvdttir" path="res://jumpscare/clownscary.png" id="7_g45wp"]
-[ext_resource type="Script" uid="uid://dkpn4c26haq1s" path="res://scenes/clown.gd" id="7_twdqg"]
+[ext_resource type="Script" path="res://scenes/clown.gd" id="7_twdqg"]
 
 [node name="posting_screen" type="Node2D"]
 
@@ -42,7 +40,6 @@ text = "post 1"
 script = ExtResource("3_35dhw")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Post1"]
-stream = ExtResource("5_g45wp")
 
 [node name="post1" type="Sprite2D" parent="."]
 position = Vector2(960, 300)
@@ -57,7 +54,6 @@ texture = ExtResource("1_4n16l")
 [node name="clown" type="Sprite2D" parent="."]
 position = Vector2(629, 311)
 scale = Vector2(0.001, 0.001)
-texture = ExtResource("7_g45wp")
 script = ExtResource("7_twdqg")
 
 [connection signal="pressed" from="Post1" to="Post1" method="_on_pressed"]
