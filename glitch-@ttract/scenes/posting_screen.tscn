@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://cg2op8skqgrbp"]
+[gd_scene load_steps=8 format=3 uid="uid://cg2op8skqgrbp"]
 
 [ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="1_4n16l"]
 [ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="1_m37ps"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_35dhw"]
 [ext_resource type="Script" uid="uid://bgfofnugsfsc4" path="res://scenes/post_2.gd" id="2_m37ps"]
 [ext_resource type="Script" uid="uid://cfp4vhi7340m2" path="res://scenes/post_1.gd" id="3_35dhw"]
+[ext_resource type="Texture2D" uid="uid://bahxkcrvdttir" path="res://clownscary.png" id="7_g45wp"]
+[ext_resource type="Script" uid="uid://dkpn4c26haq1s" path="res://scenes/clown.gd" id="7_twdqg"]
 
 [node name="posting_screen" type="Node2D"]
 
@@ -47,3 +49,11 @@ texture = ExtResource("1_4n16l")
 position = Vector2(320, 300)
 scale = Vector2(4, 4)
 texture = ExtResource("1_4n16l")
+
+[node name="clown" type="Sprite2D" parent="."]
+position = Vector2(646, 316)
+scale = Vector2(0.476744, 0.497602)
+texture = ExtResource("7_g45wp")
+script = ExtResource("7_twdqg")
+
+[connection signal="pressed" from="Post1" to="Post1" method="_on_pressed"]
