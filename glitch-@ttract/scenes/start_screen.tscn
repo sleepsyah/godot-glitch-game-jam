@@ -5,7 +5,7 @@
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_r2jwc"]
 [ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="4_r2jwc"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(685, 385)
