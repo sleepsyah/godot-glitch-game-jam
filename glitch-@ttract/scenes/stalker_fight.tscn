@@ -1,12 +1,22 @@
-[gd_scene load_steps=11 format=3 uid="uid://1ofs28rmfkn3"]
+[gd_scene load_steps=29 format=3 uid="uid://1ofs28rmfkn3"]
 
+[ext_resource type="Texture2D" uid="uid://4igu560hfltb" path="res://Models/GLB format/Textures/asphalt.png" id="1_1il4o"]
 [ext_resource type="Script" uid="uid://chrcgqufnsc3k" path="res://scenes/mc.gd" id="1_nhwvt"]
+[ext_resource type="Script" uid="uid://b6h8xhnukvnev" path="res://scenes/stalker_fight.gd" id="1_yn7aq"]
+[ext_resource type="PackedScene" uid="uid://c3gpdsxbrrqk4" path="res://Models/GLB format/detail-light-traffic.glb" id="2_t6ia6"]
+[ext_resource type="Texture2D" uid="uid://jobosgu7ngpj" path="res://Models/GLB format/Textures/wall.png" id="3_difmr"]
+[ext_resource type="Texture2D" uid="uid://db6uer8v0sgii" path="res://Models/GLB format/Textures/wall_lines.png" id="4_yn7aq"]
+[ext_resource type="Texture2D" uid="uid://4o0r41smrwtj" path="res://Models/GLB format/Textures/wall_garage.png" id="5_ajwa7"]
+[ext_resource type="Texture2D" uid="uid://bmihyiepy3fee" path="res://Models/GLB format/Textures/concrete.png" id="6_yvd0v"]
+[ext_resource type="PackedScene" uid="uid://cu8i4th84fsfb" path="res://Models/miku.glb" id="8_o0kbp"]
+[ext_resource type="PackedScene" uid="uid://bi737aead7pss" path="res://Models/GLB format/wall-a-garage.glb" id="9_difmr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e1ltg"]
-sky_top_color = Color(0.295792, 0.716183, 0.761871, 1)
-sky_horizon_color = Color(0.783966, 0.807799, 0.919786, 1)
+sky_top_color = Color(0.0341088, 0.160865, 0.174363, 1)
+sky_horizon_color = Color(0.718356, 0.338279, 0.0698416, 1)
+sky_curve = 0.0923358
 ground_bottom_color = Color(0.00475024, 0.0654434, 0.166781, 1)
-ground_horizon_color = Color(0.559167, 0.694704, 0.764735, 1)
+ground_horizon_color = Color(0.96663, 0.535107, 0.401055, 1)
 
 [sub_resource type="Sky" id="Sky_nhwvt"]
 sky_material = SubResource("ProceduralSkyMaterial_e1ltg")
@@ -14,8 +24,80 @@ sky_material = SubResource("ProceduralSkyMaterial_e1ltg")
 [sub_resource type="Environment" id="Environment_t6ia6"]
 background_mode = 2
 sky = SubResource("Sky_nhwvt")
+ambient_light_color = Color(0.374746, 0.150245, 0.130954, 1)
+ambient_light_sky_contribution = 0.7
+ambient_light_energy = 2.51
 tonemap_mode = 2
 glow_enabled = true
+glow_intensity = 0.38
+glow_strength = 0.5
+glow_hdr_scale = 1.58
+glow_hdr_luminance_cap = 1.22
+glow_map_strength = 0.55
+
+[sub_resource type="Animation" id="Animation_ajwa7"]
+resource_name = "cutscene?"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.6, 6.95, 8.7, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(1.845, 3.81, -3.065), Vector3(-0.06, 3.62, 0.17), Vector3(-2.03, 3.175, 0.43), Vector3(-1.96, 3.175, -0.545), Vector3(-0.485, 3.36, -2.37)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4.6, 6.95, 8.7, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-0.00872665, 4.75253, 0), Vector3(0.0261799, 7.85049, 0), Vector3(0.165806, 7.64105, 0), Vector3(0.165806, 8.12102, 0), Vector3(-0.218166, 8.49626, 0.0523599)]
+}
+
+[sub_resource type="Animation" id="Animation_yvd0v"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1.845, 3.81, -3.065)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.00872665, 4.75253, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o0kbp"]
+_data = {
+&"RESET": SubResource("Animation_yvd0v"),
+&"cutscene?": SubResource("Animation_ajwa7")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a3sb0"]
+albedo_texture = ExtResource("1_1il4o")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_oq0ga"]
 size = Vector2(20, 20)
@@ -35,7 +117,23 @@ height = 3.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sd25v"]
 albedo_color = Color(0.321569, 0, 1, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jxdn7"]
+albedo_texture = ExtResource("3_difmr")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ypxip"]
+albedo_texture = ExtResource("4_yn7aq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_leefu"]
+albedo_texture = ExtResource("5_ajwa7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v7yvm"]
+albedo_texture = ExtResource("3_difmr")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h67gh"]
+albedo_texture = ExtResource("6_yvd0v")
+
 [node name="stalker_fight" type="Node3D"]
+script = ExtResource("1_yn7aq")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_t6ia6")
@@ -44,7 +142,16 @@ environment = SubResource("Environment_t6ia6")
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
 
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.0401318, 0.0087195, -0.999156, 0, 0.999962, 0.00872654, 0.999194, -0.000350211, 0.0401302, 1.845, 3.81, -3.065)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_o0kbp")
+}
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_a3sb0")
 mesh = SubResource("PlaneMesh_oq0ga")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
@@ -90,20 +197,43 @@ material = SubResource("StandardMaterial3D_sd25v")
 
 [node name="right wall" type="CSGBox3D" parent="Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -10.5)
+material_override = SubResource("StandardMaterial3D_jxdn7")
 use_collision = true
 size = Vector3(20, 5, 1)
 
 [node name="left wall" type="CSGBox3D" parent="Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 10.5)
+material_override = SubResource("StandardMaterial3D_ypxip")
 use_collision = true
 size = Vector3(20, 5, 1)
 
 [node name="front wall" type="CSGBox3D" parent="Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_leefu")
 use_collision = true
 size = Vector3(1, 5, 20)
 
 [node name="back wall" type="CSGBox3D" parent="Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_v7yvm")
 use_collision = true
 size = Vector3(1, 5, 20)
+
+[node name="extra" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25, 2.5, 0)
+material_override = SubResource("StandardMaterial3D_h67gh")
+size = Vector3(0.5, 5, 16)
+
+[node name="detail-light-traffic2" parent="extra" instance=ExtResource("2_t6ia6")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -7, 0, 7)
+
+[node name="detail-light-traffic3" parent="extra" instance=ExtResource("2_t6ia6")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -2, 0, 7)
+
+[node name="miku" parent="extra" instance=ExtResource("8_o0kbp")]
+transform = Transform3D(-1.31134e-10, 0, -0.003, 0, 0.003, 0, 0.003, 0, -1.31134e-10, -3.5, 0, 0)
+
+[node name="wall-a-garage2" parent="extra" instance=ExtResource("9_difmr")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 3.5, 0, 5.5)
