@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	Global.bad_post_count+=1
+	#Global.bad_post_count+=1
 		#do jumpscare
 	
 	var tween = create_tween()
