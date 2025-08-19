@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cg2op8skqgrbp"]
+[gd_scene load_steps=5 format=3 uid="uid://cg2op8skqgrbp"]
 
 [ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="1_4n16l"]
+[ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_35dhw"]
 [ext_resource type="Script" uid="uid://bgfofnugsfsc4" path="res://scenes/post_2.gd" id="2_m37ps"]
 [ext_resource type="Script" uid="uid://cfp4vhi7340m2" path="res://scenes/post_1.gd" id="3_35dhw"]
 
@@ -16,6 +17,7 @@ offset_left = 743.0
 offset_top = 469.0
 offset_right = 1032.0
 offset_bottom = 565.0
+theme = ExtResource("2_35dhw")
 text = "post 2"
 script = ExtResource("2_m37ps")
 
@@ -24,5 +26,6 @@ offset_left = 126.0
 offset_top = 473.0
 offset_right = 347.0
 offset_bottom = 562.0
+theme = ExtResource("2_35dhw")
 text = "post 1"
 script = ExtResource("3_35dhw")
