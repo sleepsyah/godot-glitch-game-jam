@@ -16,8 +16,8 @@ fill_to = Vector2(0, 0)
 [node name="profile_screen" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(648, 361)
-scale = Vector2(1.52656, 1.39114)
+position = Vector2(650, 350)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_vboge")
 
 [node name="Posts" type="Button" parent="."]
