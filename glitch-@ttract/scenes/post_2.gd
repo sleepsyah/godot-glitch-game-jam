@@ -10,3 +10,4 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if button_pressed:
 		get_tree().change_scene_to_file("res://scenes/comment_screen.tscn")
+		Global.good_post_count +=1
