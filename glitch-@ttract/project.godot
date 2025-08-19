@@ -14,3 +14,7 @@ config/name="glitch @ttract"
 run/main_scene="uid://utt2ffs06a5a"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
