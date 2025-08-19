@@ -1,28 +1,48 @@
-[gd_scene load_steps=4 format=3 uid="uid://cr3c8oa6yw4l6"]
+[gd_scene load_steps=6 format=3 uid="uid://cr3c8oa6yw4l6"]
 
-[ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="1_whr8w"]
+[ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="1_vboge"]
 [ext_resource type="Script" uid="uid://be14vm6daw8sj" path="res://scenes/posts.gd" id="2_7q4r5"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_vboge"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="Gradient" id="Gradient_vboge"]
+offsets = PackedFloat32Array(0, 0.584416, 1)
+colors = PackedColorArray(0.953295, 0.277672, 0.811026, 1, 0.998, 0.449253, 0.801346, 1, 0.483936, 1.14792e-05, 0.351685, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mhd6v"]
+gradient = SubResource("Gradient_vboge")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 0)
+
+[node name="profile_screen" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(583.5, 333)
-scale = Vector2(9.22656, 5.375)
-texture = ExtResource("1_whr8w")
+position = Vector2(648, 361)
+scale = Vector2(1.52656, 1.39114)
+texture = ExtResource("1_vboge")
 
 [node name="Posts" type="Button" parent="."]
-offset_left = 388.0
-offset_top = 285.0
-offset_right = 616.0
-offset_bottom = 430.0
+offset_left = 50.0
+offset_top = 20.0
+offset_right = 200.0
+offset_bottom = 90.0
 theme = ExtResource("2_vboge")
 text = "posts"
 script = ExtResource("2_7q4r5")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 168.0
-offset_top = 97.0
-offset_right = 514.0
-offset_bottom = 388.0
-text = "this is the second scene"
+[node name="profile_boxes" type="Node2D" parent="."]
+
+[node name="TextureRect2" type="TextureRect" parent="profile_boxes"]
+offset_left = 700.0
+offset_top = 100.0
+offset_right = 1240.0
+offset_bottom = 300.0
+texture = SubResource("GradientTexture2D_mhd6v")
+
+[node name="TextureRect" type="TextureRect" parent="profile_boxes"]
+offset_left = 50.0
+offset_top = 100.0
+offset_right = 650.0
+offset_bottom = 650.0
+texture = SubResource("GradientTexture2D_mhd6v")
+
+[node name="Sprite2D2" type="Sprite2D" parent="profile_boxes"]

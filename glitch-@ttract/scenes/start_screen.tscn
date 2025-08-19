@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://utt2ffs06a5a"]
 
-[ext_resource type="Texture2D" uid="uid://ca1kh08qe58tv" path="res://gradient-holographic-texture-background.jpg" id="1_o7i0r"]
+[ext_resource type="Texture2D" uid="uid://ca1kh08qe58tv" path="res://backgrounds/gradient-holographic-texture-background.jpg" id="1_o7i0r"]
 [ext_resource type="Script" uid="uid://bemfns5rp73xe" path="res://scenes/button.gd" id="2_he1sj"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_r2jwc"]
 [ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="4_r2jwc"]
