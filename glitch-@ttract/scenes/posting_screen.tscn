@@ -1,11 +1,17 @@
-[ext_resource type="Script" path="res://scenes/clown.gd" id="7_twdqg"]
+[gd_scene load_steps=6 format=3 uid="uid://cg2op8skqgrbp"]
+
+[ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="1_4n16l"]
+[ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_35dhw"]
+[ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_35dhw"]
+[ext_resource type="Script" uid="uid://bgfofnugsfsc4" path="res://scenes/post_2.gd" id="2_m37ps"]
+[ext_resource type="Script" uid="uid://cfp4vhi7340m2" path="res://scenes/post_1.gd" id="3_35dhw"]
 
 [node name="posting_screen" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(650, 350)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("1_m37ps")
+position = Vector2(642, 328)
+scale = Vector2(1.34609, 1.3925)
+texture = ExtResource("1_35dhw")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 15.0
@@ -13,6 +19,16 @@ offset_top = 20.0
 offset_right = 1265.0
 offset_bottom = 570.0
 color = Color(1, 0.521569, 1, 1)
+
+[node name="post2" type="Sprite2D" parent="."]
+position = Vector2(320, 300)
+scale = Vector2(4, 4)
+texture = ExtResource("1_4n16l")
+
+[node name="post1" type="Sprite2D" parent="."]
+position = Vector2(960, 300)
+scale = Vector2(4, 4)
+texture = ExtResource("1_4n16l")
 
 [node name="Post2" type="Button" parent="."]
 offset_left = 880.0
@@ -31,22 +47,5 @@ offset_bottom = 700.0
 theme = ExtResource("2_35dhw")
 text = "post 1"
 script = ExtResource("3_35dhw")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Post1"]
-
-[node name="post1" type="Sprite2D" parent="."]
-position = Vector2(960, 300)
-scale = Vector2(4, 4)
-texture = ExtResource("1_4n16l")
-
-[node name="post2" type="Sprite2D" parent="."]
-position = Vector2(320, 300)
-scale = Vector2(4, 4)
-texture = ExtResource("1_4n16l")
-
-[node name="clown" type="Sprite2D" parent="."]
-position = Vector2(629, 311)
-scale = Vector2(0.001, 0.001)
-script = ExtResource("7_twdqg")
 
 [connection signal="pressed" from="Post1" to="Post1" method="_on_pressed"]
