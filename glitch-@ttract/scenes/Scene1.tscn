@@ -1,4 +1,7 @@
+[gd_scene load_steps=15 format=3 uid="uid://5wdvifwdiyig"]
 
+[ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_koy8v"]
+[ext_resource type="Script" uid="uid://dakvilus8i5ep" path="res://scenes/to3d.gd" id="2_jb1ob"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_koy8v"]
 [ext_resource type="Texture2D" uid="uid://cxm03dgq3l10a" path="res://images/2025_08_19_0zb_Kleki.png" id="4_agnij"]
 [ext_resource type="Texture2D" uid="uid://vfkf0puwg0xb" path="res://images/2025_08_19_0yt_Kleki.png" id="4_fw15f"]
@@ -7,6 +10,45 @@
 [ext_resource type="Texture2D" uid="uid://c7qx6t5gqglkn" path="res://images/2025_08_19_0yu_Kleki (1).png" id="6_d2pwn"]
 [ext_resource type="AudioStream" uid="uid://dj2hbc8fa1b3u" path="res://images/new-notification-09-352705.mp3" id="6_x0ogb"]
 [ext_resource type="Texture2D" uid="uid://bajmsn6t2ox11" path="res://images/2025_08_19_0yv_Kleki.png" id="7_x0ogb"]
+
+[sub_resource type="Animation" id="Animation_d2pwn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(168, 88)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.624649, 0.655611)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera2D:zoom")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(5.5, 5.5)]
+}
 
 [sub_resource type="Animation" id="Animation_jb1ob"]
 resource_name = "message1"
@@ -74,45 +116,6 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0, 1.83333, 5.26667, 7.66667)
 }
 tracks/3/use_blend = true
-
-[sub_resource type="Animation" id="Animation_d2pwn"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(168, 88)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera2D:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.624649, 0.655611)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Camera2D:zoom")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(5.5, 5.5)]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_koy8v"]
 _data = {
