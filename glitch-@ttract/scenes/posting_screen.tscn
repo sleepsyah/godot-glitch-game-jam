@@ -1,10 +1,3 @@
-[gd_scene load_steps=7 format=3 uid="uid://cg2op8skqgrbp"]
-
-[ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="1_4n16l"]
-[ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="1_m37ps"]
-[ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_35dhw"]
-[ext_resource type="Script" uid="uid://bgfofnugsfsc4" path="res://scenes/post_2.gd" id="2_m37ps"]
-[ext_resource type="Script" uid="uid://cfp4vhi7340m2" path="res://scenes/post_1.gd" id="3_35dhw"]
 [ext_resource type="Script" path="res://scenes/clown.gd" id="7_twdqg"]
 
 [node name="posting_screen" type="Node2D"]
