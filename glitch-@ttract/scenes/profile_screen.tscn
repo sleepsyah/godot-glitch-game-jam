@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cr3c8oa6yw4l6"]
+[gd_scene load_steps=5 format=3 uid="uid://cr3c8oa6yw4l6"]
 
 [ext_resource type="Script" uid="uid://be14vm6daw8sj" path="res://scenes/posts.gd" id="2_7q4r5"]
+[ext_resource type="Texture2D" uid="uid://dfex4aefxjq7n" path="res://images/art.png" id="2_mhd6v"]
 [ext_resource type="FontFile" uid="uid://cvdde6m5n27nh" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf" id="2_vboge"]
 [ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="4_mhd6v"]
 
@@ -54,6 +55,11 @@ position = Vector2(64, 140)
 scale = Vector2(1.76499, 4.9169)
 color = Color(0.981803, 0.447707, 0.793194, 1)
 polygon = PackedVector2Array(217.565, 55.3194, 217.565, 0, 36.2608, 0, 36.2608, 24.4056, 36.2608, 55.3194)
+
+[node name="Art" type="Sprite2D" parent="."]
+position = Vector2(287, 274)
+scale = Vector2(0.152693, 0.127786)
+texture = ExtResource("2_mhd6v")
 
 [node name="Polygon2D10" type="Polygon2D" parent="."]
 position = Vector2(264, 36)
