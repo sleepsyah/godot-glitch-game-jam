@@ -13,11 +13,55 @@ position = Vector2(640, 356)
 scale = Vector2(1.47806, 1.34317)
 texture = ExtResource("4_mhd6v")
 
+[node name="borders" type="Node2D" parent="."]
+
+[node name="ColorRect2" type="ColorRect" parent="borders"]
+offset_left = 564.0
+offset_top = 112.0
+offset_right = 900.0
+offset_bottom = 200.0
+color = Color(1, 0, 1, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="borders"]
+offset_left = 924.0
+offset_top = 112.0
+offset_right = 1260.0
+offset_bottom = 200.0
+color = Color(1, 0, 1, 1)
+
+[node name="ColorRect" type="ColorRect" parent="borders"]
+offset_left = 20.0
+offset_top = 112.0
+offset_right = 556.0
+offset_bottom = 712.0
+color = Color(1, 0, 1, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="borders"]
+offset_left = 564.0
+offset_top = 208.0
+offset_right = 1260.0
+offset_bottom = 304.0
+color = Color(1, 0, 1, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="borders"]
+offset_left = 564.0
+offset_top = 312.0
+offset_right = 1260.0
+offset_bottom = 464.0
+color = Color(1, 0, 1, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="borders"]
+offset_left = 564.0
+offset_top = 472.0
+offset_right = 1260.0
+offset_bottom = 712.0
+color = Color(1, 0, 1, 1)
+
 [node name="Polygon2D" type="Polygon2D" parent="."]
 position = Vector2(-132, 98.1295)
 scale = Vector2(3.37534, 11.3574)
 color = Color(0.570385, 0.0169126, 0.427584, 1)
-polygon = PackedVector2Array(202.646, 52.9936, 202.646, 1.57347, 46.2176, 1.57347, 46.2176, 52.9936, 124.432, 52.9936)
+polygon = PackedVector2Array(202.646, 53.6981, 202.646, 1.57347, 46.2176, 1.57347, 46.2176, 53.6981, 124.432, 53.6981)
 
 [node name="Polygon2D2" type="Polygon2D" parent="."]
 position = Vector2(-352, 36)
@@ -238,8 +282,8 @@ text = "Followers: 152.4k
 [node name="RichTextLabel8" type="RichTextLabel" parent="."]
 offset_left = 984.0
 offset_top = 132.0
-offset_right = 1269.0
-offset_bottom = 183.0
+offset_right = 1163.0
+offset_bottom = 176.0
 scale = Vector2(1.54418, 2.51953)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_vboge")
@@ -248,7 +292,7 @@ text = "Following: 254
 "
 
 [node name="Polygon2D20" type="Polygon2D" parent="."]
-position = Vector2(32, 20)
-scale = Vector2(1.66525, 1.20587)
+position = Vector2(-40, -35.5912)
+scale = Vector2(1.66525, 1.66326)
 color = Color(0, 0.0503744, 0.383823, 1)
 polygon = PackedVector2Array(56, 104, 72, 80, 88, 104, 80, 104, 80, 120, 64, 120, 64, 104)
