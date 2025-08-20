@@ -1,5 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://5wdvifwdiyig"]
+[gd_scene load_steps=16 format=3 uid="uid://5wdvifwdiyig"]
 
+[ext_resource type="Script" uid="uid://bj3etx0uc3b1t" path="res://scenes/scene_1.gd" id="1_6eqy8"]
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_koy8v"]
 [ext_resource type="Script" uid="uid://dakvilus8i5ep" path="res://scenes/to3d.gd" id="2_jb1ob"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_koy8v"]
@@ -144,6 +145,7 @@ animations = [{
 }]
 
 [node name="messages_screen" type="Node2D"]
+script = ExtResource("1_6eqy8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(646, 374)
@@ -163,7 +165,7 @@ offset_right = 344.0
 offset_bottom = 456.0
 theme = ExtResource("2_koy8v")
 theme_override_font_sizes/font_size = 20
-text = "go to bed"
+text = "go posting2"
 script = ExtResource("2_jb1ob")
 
 [node name="blue1" type="Sprite2D" parent="."]
@@ -194,3 +196,15 @@ scale = Vector2(0.624649, 0.655611)
 zoom = Vector2(5.5, 5.5)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+position = Vector2(640, 384)
+
+[node name="skip cutscene" type="Button" parent="."]
+offset_left = 64.0
+offset_top = 120.0
+offset_right = 152.0
+offset_bottom = 152.0
+text = "skip cutscene"
+
+[connection signal="pressed" from="skip cutscene" to="." method="_on_skip_cutscene_pressed"]

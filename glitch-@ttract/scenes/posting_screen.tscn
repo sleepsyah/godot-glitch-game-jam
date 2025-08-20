@@ -48,4 +48,5 @@ theme = ExtResource("2_35dhw")
 text = "post 1"
 script = ExtResource("3_35dhw")
 
+[connection signal="pressed" from="Post2" to="Post2" method="_on_pressed"]
 [connection signal="pressed" from="Post1" to="Post1" method="_on_pressed"]

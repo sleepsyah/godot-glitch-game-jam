@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdinqlofpiboc"]
+
+[ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_5ivla"]
+[ext_resource type="Script" uid="uid://vims4f1ut1p" path="res://scenes/posting_screen_2.gd" id="1_6l80l"]
+[ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="2_odtwq"]
+[ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="3_f3rm3"]
+
+[node name="posting_screen2" type="Node2D"]
+script = ExtResource("1_6l80l")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(642, 328)
+scale = Vector2(1.34609, 1.3925)
+texture = ExtResource("1_5ivla")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 15.0
+offset_top = 20.0
+offset_right = 1265.0
+offset_bottom = 570.0
+color = Color(1, 0.521569, 1, 1)
+
+[node name="post2" type="Sprite2D" parent="."]
+position = Vector2(320, 300)
+scale = Vector2(4, 4)
+texture = ExtResource("2_odtwq")
+
+[node name="post1" type="Sprite2D" parent="."]
+position = Vector2(960, 300)
+scale = Vector2(4, 4)
+texture = ExtResource("2_odtwq")
+
+[node name="Post3" type="Button" parent="."]
+offset_left = 200.0
+offset_top = 600.0
+offset_right = 400.0
+offset_bottom = 700.0
+theme = ExtResource("3_f3rm3")
+text = "post 3"
+
+[node name="Post4" type="Button" parent="."]
+offset_left = 880.0
+offset_top = 600.0
+offset_right = 1080.0
+offset_bottom = 700.0
+theme = ExtResource("3_f3rm3")
+text = "post 4"
+
+[connection signal="pressed" from="Post3" to="." method="_on_post_3_pressed"]
+[connection signal="pressed" from="Post4" to="." method="_on_post_4_pressed"]

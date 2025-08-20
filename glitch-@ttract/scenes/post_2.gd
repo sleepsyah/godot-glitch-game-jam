@@ -8,6 +8,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if button_pressed:
-		get_tree().change_scene_to_file("res://scenes/comment_screen_1_good.tscn")
+	pass
+		
 		#Global.good_post_count +=1
+
+
+func _on_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/comment_screen_1_good.tscn")
