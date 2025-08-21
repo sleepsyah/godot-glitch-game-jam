@@ -5,17 +5,7 @@
 [sub_resource type="FontVariation" id="FontVariation_abcht"]
 base_font = ExtResource("1_2j7ba")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dk6bu"]
-content_margin_left = 4.0
-content_margin_top = 4.0
-content_margin_right = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(0.6, 0.6, 0.6, 0)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-corner_detail = 5
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2j7ba"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uv6ut"]
 content_margin_left = 4.0
@@ -86,7 +76,7 @@ Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
 Button/colors/icon_focus_color = Color(1, 1, 1, 1)
 Button/colors/icon_hover_color = Color(1, 1, 1, 1)
 Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
-Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(0.160558, 2.36803e-05, 0.167375, 1)
 Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
 Button/constants/align_to_largest_stylebox = 0
 Button/constants/h_separation = 4
@@ -94,7 +84,7 @@ Button/constants/icon_max_width = 0
 Button/constants/outline_size = 0
 Button/font_sizes/font_size = 40
 Button/fonts/font = SubResource("FontVariation_abcht")
-Button/styles/disabled = SubResource("StyleBoxFlat_dk6bu")
+Button/styles/disabled = SubResource("StyleBoxTexture_2j7ba")
 Button/styles/focus = SubResource("StyleBoxFlat_uv6ut")
 Button/styles/hover = SubResource("StyleBoxFlat_pgig1")
 Button/styles/normal = SubResource("StyleBoxFlat_s7yga")

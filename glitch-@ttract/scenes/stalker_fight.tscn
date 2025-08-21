@@ -140,9 +140,17 @@ script = ExtResource("1_yn7aq")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_t6ia6")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -0.500003, 0.749999, -0.43301, 0, 0, -6.5)
+[node name="lighting" type="Node3D" parent="."]
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="lighting"]
+transform = Transform3D(1, 0, 0, 0, 7.45058e-08, 1, 0, -1, 7.45058e-08, -7.12906, 3.55607, 5.23983)
 shadow_enabled = true
+sky_mode = 2
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="lighting"]
+transform = Transform3D(1, 0, 0, 0, 0.173648, 0.984808, 0, -0.984808, 0.173648, -1.86453, 3.37049, 5.27743)
+shadow_enabled = true
+sky_mode = 1
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.0401303, 0.00871951, -0.999156, 0, 0.999962, 0.00872654, 0.999194, -0.000350199, 0.0401288, 1.845, 3.81, -3.065)

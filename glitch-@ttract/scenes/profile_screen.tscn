@@ -58,6 +58,13 @@ offset_right = 1260.0
 offset_bottom = 712.0
 color = Color(1, 0, 1, 1)
 
+[node name="ColorRect7" type="ColorRect" parent="borders"]
+offset_left = 16.0
+offset_top = 24.0
+offset_right = 1264.0
+offset_bottom = 104.0
+color = Color(1, 0, 1, 1)
+
 [node name="profile boxes" type="Node2D" parent="."]
 
 [node name="Polygon2D" type="Polygon2D" parent="profile boxes"]
@@ -104,7 +111,7 @@ color = Color(0.981803, 0.447707, 0.793194, 1)
 polygon = PackedVector2Array(217.565, 55.3194, 217.565, 0, 36.2608, 0, 36.2608, 24.4056, 36.2608, 55.3194)
 
 [node name="Polygon2D10" type="Polygon2D" parent="profile boxes"]
-position = Vector2(264, 36)
+position = Vector2(268, 32)
 scale = Vector2(0.38442, 1.04377)
 color = Color(0.981803, 0.447707, 0.793194, 1)
 polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
@@ -114,6 +121,20 @@ position = Vector2(40, 36)
 scale = Vector2(0.38442, 1.04377)
 color = Color(0, 0, 0, 1)
 polygon = PackedVector2Array(561.885, 53.6517, 561.885, 0, 41.6212, 0, 41.6212, 53.6517)
+
+[node name="ColorRect7" type="ColorRect" parent="profile boxes"]
+offset_left = 527.0
+offset_top = 43.0
+offset_right = 1041.0
+offset_bottom = 77.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="profile boxes"]
+offset_left = 1047.0
+offset_top = 43.0
+offset_right = 1225.0
+offset_bottom = 77.0
+color = Color(0, 0, 0, 1)
 
 [node name="Polygon2D11" type="Polygon2D" parent="profile boxes"]
 position = Vector2(416, 36)
@@ -176,6 +197,12 @@ scale = Vector2(8.04793, 1.34918)
 color = Color(0.570385, 0.0169126, 0.427584, 1)
 polygon = PackedVector2Array(216.11, 54.8481, 216.11, -4.44714, 175.354, -4.44714, 175.354, 54.8481)
 uv = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
+
+[node name="Polygon2D20" type="Polygon2D" parent="profile boxes"]
+position = Vector2(9.31323e-10, -2)
+rotation = -0.0103744
+scale = Vector2(1.00535, 0.989507)
+polygon = PackedVector2Array(324.737, 52.9453, 320, 46, 309, 45, 300, 52, 296.784, 62.7572, 299, 73, 301.572, 80.9995, 311.466, 86.1571, 322.428, 84.2514, 326.53, 72.1667, 325.566, 69.1246, 325.515, 74.1773, 326.52, 73.1773, 319.516, 77.1461, 312.564, 76.0621, 309.621, 71.9885, 309.652, 68.9568, 308.709, 63.8936, 309.756, 58.8513, 312.791, 53.83, 314.791, 52.8404, 318.779, 51.8718, 320.748, 53.9139, 324.706, 55.9769)
 
 [node name="profile texts" type="Node2D" parent="."]
 
