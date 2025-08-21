@@ -19,6 +19,7 @@ offset_top = 20.0
 offset_right = 1265.0
 offset_bottom = 570.0
 color = Color(1, 0.521569, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="post2" type="Sprite2D" parent="."]
 position = Vector2(320, 300)
@@ -37,6 +38,7 @@ offset_right = 400.0
 offset_bottom = 700.0
 theme = ExtResource("3_f3rm3")
 text = "post 3"
+metadata/_edit_use_anchors_ = true
 
 [node name="Post4" type="Button" parent="."]
 offset_left = 880.0
@@ -45,6 +47,7 @@ offset_right = 1080.0
 offset_bottom = 700.0
 theme = ExtResource("3_f3rm3")
 text = "post 4"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Post3" to="." method="_on_post_3_pressed"]
 [connection signal="pressed" from="Post4" to="." method="_on_post_4_pressed"]

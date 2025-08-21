@@ -101,7 +101,7 @@ polygon = PackedVector2Array(234.964, 52.6458, 234.964, -5.26457, 51.2649, -5.26
 [node name="Polygon2D6" type="Polygon2D" parent="profile boxes"]
 position = Vector2(-96, 436)
 scale = Vector2(3.06954, 4.78016)
-color = Color(0.981803, 0.447707, 0.793194, 1)
+color = Color(0.986992, 0.615285, 0.841703, 1)
 polygon = PackedVector2Array(203.288, 50.2075, 203.288, 0, 46.9126, 0, 46.9126, 50.2075)
 
 [node name="Polygon2D9" type="Polygon2D" parent="profile boxes"]
