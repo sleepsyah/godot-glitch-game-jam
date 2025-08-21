@@ -73,6 +73,6 @@ offset_right = 355.0
 offset_bottom = 455.0
 theme = ExtResource("9_wlqlr")
 theme_override_font_sizes/font_size = 20
-text = "go ending"
+text = "go hacked"
 
 [connection signal="pressed" from="goending" to="." method="_on_goending_pressed"]
