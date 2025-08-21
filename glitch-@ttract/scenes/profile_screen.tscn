@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cr3c8oa6yw4l6"]
+[gd_scene load_steps=8 format=3 uid="uid://cr3c8oa6yw4l6"]
 
 [ext_resource type="Script" uid="uid://be14vm6daw8sj" path="res://scenes/posts.gd" id="2_7q4r5"]
 [ext_resource type="Texture2D" uid="uid://dfex4aefxjq7n" path="res://images/art.png" id="2_mhd6v"]
 [ext_resource type="FontFile" uid="uid://cvdde6m5n27nh" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf" id="2_vboge"]
+[ext_resource type="FontFile" uid="uid://snlsj1asvqde" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Bold.ttf" id="3_l8fel"]
+[ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="4_c0mk7"]
 [ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="4_mhd6v"]
 [ext_resource type="Script" uid="uid://dy41e5giv4ml" path="res://scenes/arrow.gd" id="5_sx606"]
 
@@ -111,10 +113,10 @@ color = Color(0.981803, 0.447707, 0.793194, 1)
 polygon = PackedVector2Array(217.565, 55.3194, 217.565, 0, 36.2608, 0, 36.2608, 24.4056, 36.2608, 55.3194)
 
 [node name="Polygon2D10" type="Polygon2D" parent="profile boxes"]
-position = Vector2(268, 32)
+position = Vector2(272, 38)
 scale = Vector2(0.38442, 1.04377)
 color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
+polygon = PackedVector2Array(197.7, 49.8194, 197.7, 0, 52.0264, 0, 52.0264, 49.8194)
 
 [node name="Polygon2D13" type="Polygon2D" parent="profile boxes"]
 position = Vector2(40, 36)
@@ -124,26 +126,26 @@ polygon = PackedVector2Array(561.885, 53.6517, 561.885, 0, 41.6212, 0, 41.6212, 
 
 [node name="ColorRect7" type="ColorRect" parent="profile boxes"]
 offset_left = 527.0
-offset_top = 43.0
+offset_top = 47.0
 offset_right = 1041.0
-offset_bottom = 77.0
+offset_bottom = 81.0
 color = Color(0, 0, 0, 1)
 
 [node name="ColorRect8" type="ColorRect" parent="profile boxes"]
 offset_left = 1047.0
-offset_top = 43.0
+offset_top = 47.0
 offset_right = 1225.0
-offset_bottom = 77.0
+offset_bottom = 81.0
 color = Color(0, 0, 0, 1)
 
 [node name="Polygon2D11" type="Polygon2D" parent="profile boxes"]
-position = Vector2(416, 36)
+position = Vector2(416, 40)
 scale = Vector2(3.08044, 1.04377)
 color = Color(0.99501, 0.885993, 0.946676, 1)
 polygon = PackedVector2Array(202.568, 38.3226, 202.568, 7.66452, 36.3584, 7.66452, 36.3584, 38.3226)
 
 [node name="Polygon2D12" type="Polygon2D" parent="profile boxes"]
-position = Vector2(1056, 36)
+position = Vector2(1056, 40)
 scale = Vector2(0.794929, 1.09115)
 color = Color(0.996078, 0.886275, 0.945098, 1)
 polygon = PackedVector2Array(211.34, 36.6586, 211.34, 7.33171, -10.0637, 7.33171, -10.0637, 36.6586)
@@ -199,7 +201,7 @@ polygon = PackedVector2Array(216.11, 54.8481, 216.11, -4.44714, 175.354, -4.4471
 uv = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
 
 [node name="Polygon2D20" type="Polygon2D" parent="profile boxes"]
-position = Vector2(9.31323e-10, -2)
+position = Vector2(4, 2)
 rotation = -0.0103744
 scale = Vector2(1.00535, 0.989507)
 polygon = PackedVector2Array(324.737, 52.9453, 320, 46, 309, 45, 300, 52, 296.784, 62.7572, 299, 73, 301.572, 80.9995, 311.466, 86.1571, 322.428, 84.2514, 326.53, 72.1667, 325.566, 69.1246, 325.515, 74.1773, 326.52, 73.1773, 319.516, 77.1461, 312.564, 76.0621, 309.621, 71.9885, 309.652, 68.9568, 308.709, 63.8936, 309.756, 58.8513, 312.791, 53.83, 314.791, 52.8404, 318.779, 51.8718, 320.748, 53.9139, 324.706, 55.9769)
@@ -207,36 +209,15 @@ polygon = PackedVector2Array(324.737, 52.9453, 320, 46, 309, 45, 300, 52, 296.78
 [node name="profile texts" type="Node2D" parent="."]
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="profile texts"]
-offset_left = 1079.0
-offset_top = 39.0
-offset_right = 1207.0
-offset_bottom = 76.0
-scale = Vector2(1.79173, 1.76276)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("2_vboge")
-text = "Search"
-
-[node name="RichTextLabel3" type="RichTextLabel" parent="profile texts"]
-offset_left = 584.0
-offset_top = 484.0
-offset_right = 704.0
-offset_bottom = 532.0
-scale = Vector2(1.7301, 1.86056)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("2_vboge")
-text = "Connections"
-metadata/_edit_use_anchors_ = true
-
-[node name="RichTextLabel4" type="RichTextLabel" parent="profile texts"]
-offset_left = 360.0
+offset_left = 1092.0
 offset_top = 44.0
-offset_right = 480.0
-offset_bottom = 92.0
-scale = Vector2(1.7301, 1.86056)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+offset_right = 3512.0
+offset_bottom = 864.0
+scale = Vector2(0.05, 0.05)
+theme_override_colors/default_color = Color(0.303233, 0.303233, 0.303233, 1)
 theme_override_fonts/normal_font = ExtResource("2_vboge")
-text = "MoonSpace"
-metadata/_edit_use_anchors_ = true
+theme_override_font_sizes/normal_font_size = 500
+text = "Search"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="profile texts"]
 offset_left = 64.0
@@ -258,11 +239,13 @@ more info
 
 [node name="RichTextLabel5" type="RichTextLabel" parent="profile texts"]
 offset_left = 584.0
-offset_top = 332.0
-offset_right = 1248.0
-offset_bottom = 452.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("2_vboge")
+offset_top = 328.0
+offset_right = 13384.0
+offset_bottom = 2808.0
+scale = Vector2(0.05, 0.05)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("3_l8fel")
+theme_override_font_sizes/normal_font_size = 350
 text = "About Me: hiii!!! My name is y/n i luv thrifting and literally everything fashion related xd
 
 ☆ basic dni 
@@ -271,40 +254,69 @@ text = "About Me: hiii!!! My name is y/n i luv thrifting and literally everythin
 
 [node name="RichTextLabel6" type="RichTextLabel" parent="profile texts"]
 offset_left = 584.0
-offset_top = 228.0
-offset_right = 1308.0
-offset_bottom = 299.0
-scale = Vector2(1.11639, 1.46932)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("2_vboge")
+offset_top = 222.0
+offset_right = 13624.0
+offset_bottom = 1742.0
+scale = Vector2(0.05, 0.05)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("3_l8fel")
+theme_override_font_sizes/normal_font_size = 500
 text = "Likes: fashion, emo music, 
 Dislikes:
 
 "
+vertical_alignment = 1
 
 [node name="RichTextLabel7" type="RichTextLabel" parent="profile texts"]
-offset_left = 600.0
+offset_left = 588.0
 offset_top = 132.0
-offset_right = 875.0
-offset_bottom = 183.0
-scale = Vector2(1.54418, 2.51953)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("2_vboge")
+offset_right = 9068.0
+offset_bottom = 1172.0
+scale = Vector2(0.04, 0.05)
+theme_override_colors/default_color = Color(0.0950463, 7.0692e-08, 0.0426607, 1)
+theme_override_fonts/normal_font = ExtResource("3_l8fel")
+theme_override_font_sizes/normal_font_size = 700
 text = "Followers: 152.4k
 
 "
 
 [node name="RichTextLabel8" type="RichTextLabel" parent="profile texts"]
-offset_left = 984.0
+offset_left = 969.0
 offset_top = 132.0
-offset_right = 1163.0
-offset_bottom = 176.0
-scale = Vector2(1.54418, 2.51953)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("2_vboge")
+offset_right = 7569.0
+offset_bottom = 1172.0
+scale = Vector2(0.04, 0.05)
+theme_override_colors/default_color = Color(0.0950463, 7.0692e-08, 0.0426607, 1)
+theme_override_fonts/normal_font = ExtResource("3_l8fel")
+theme_override_font_sizes/normal_font_size = 700
 text = "Following: 254
 
 "
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="profile texts"]
+offset_left = 333.0
+offset_top = 44.0
+offset_right = 4013.0
+offset_bottom = 844.0
+scale = Vector2(0.05, 0.05)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_c0mk7")
+theme_override_font_sizes/normal_font_size = 500
+text = "MoonSpace"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="profile texts"]
+offset_left = 584.0
+offset_top = 480.0
+offset_right = 3284.0
+offset_bottom = 920.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("3_l8fel")
+theme_override_font_sizes/normal_font_size = 300
+text = "Connections:"
+vertical_alignment = 1
 
 [node name="Art" type="Sprite2D" parent="."]
 position = Vector2(287.321, 275.574)
@@ -312,12 +324,13 @@ scale = Vector2(0.153007, 0.129323)
 texture = ExtResource("2_mhd6v")
 
 [node name="Posts" type="Button" parent="."]
-offset_left = 64.0
-offset_top = 36.0
-offset_right = 178.0
-offset_bottom = 67.0
-scale = Vector2(1.62768, 1.60573)
+offset_left = 60.0
+offset_top = 40.0
+offset_right = 3910.0
+offset_bottom = 990.0
+scale = Vector2(0.05, 0.05)
 theme_override_fonts/font = ExtResource("2_vboge")
+theme_override_font_sizes/font_size = 600
 text = "posts
 "
 script = ExtResource("2_7q4r5")
