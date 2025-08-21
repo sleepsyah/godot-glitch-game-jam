@@ -103,4 +103,149 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_7kbjv")
 text = "POST!"
 metadata/_edit_use_anchors_ = true
 
+[node name="glitches" type="Node2D" parent="."]
+
+[node name="glitch 1" type="Node2D" parent="glitches"]
+position = Vector2(44, -148)
+
+[node name="blue" type="ColorRect" parent="glitches/glitch 1"]
+offset_right = 104.0
+offset_bottom = 52.0
+color = Color(0, 0, 1, 1)
+
+[node name="green" type="ColorRect" parent="glitches/glitch 1"]
+offset_left = 36.0
+offset_top = 40.0
+offset_right = 156.0
+offset_bottom = 72.0
+color = Color(0, 1, 0, 1)
+
+[node name="red" type="ColorRect" parent="glitches/glitch 1"]
+offset_left = 28.0
+offset_top = 32.0
+offset_right = 108.0
+offset_bottom = 60.0
+color = Color(1, 0, 0, 1)
+
+[node name="glitch 2" type="Node2D" parent="glitches"]
+position = Vector2(244, -164)
+
+[node name="blue2" type="ColorRect" parent="glitches/glitch 2"]
+offset_left = 1271.0
+offset_top = 64.0
+offset_right = 1362.0
+offset_bottom = 100.0
+rotation = 3.14159
+color = Color(0, 0, 1, 1)
+
+[node name="green2" type="ColorRect" parent="glitches/glitch 2"]
+offset_left = 1284.0
+offset_top = 44.0
+offset_right = 1371.0
+offset_bottom = 70.0
+rotation = 3.14159
+color = Color(0, 1, 0, 1)
+
+[node name="red2" type="ColorRect" parent="glitches/glitch 2"]
+offset_left = 1295.0
+offset_top = 52.0
+offset_right = 1375.0
+offset_bottom = 72.0
+rotation = 3.14159
+color = Color(1, 0, 0, 1)
+
+[node name="glitch 3" type="Node2D" parent="glitches"]
+position = Vector2(-296, 432)
+
+[node name="green" type="ColorRect" parent="glitches/glitch 3"]
+offset_left = 80.0
+offset_top = 12.0
+offset_right = 204.0
+offset_bottom = 72.0
+color = Color(0, 1, 0, 1)
+
+[node name="red" type="ColorRect" parent="glitches/glitch 3"]
+offset_left = 60.0
+offset_top = 32.0
+offset_right = 160.0
+offset_bottom = 88.0
+color = Color(1, 0, 0, 1)
+
+[node name="blue" type="ColorRect" parent="glitches/glitch 3"]
+offset_left = 44.0
+offset_right = 136.0
+offset_bottom = 52.0
+color = Color(0, 0, 1, 1)
+
+[node name="glitch 4" type="Node2D" parent="glitches"]
+position = Vector2(1320, 456)
+
+[node name="blue" type="ColorRect" parent="glitches/glitch 4"]
+offset_right = 104.0
+offset_bottom = 52.0
+color = Color(0, 0, 1, 1)
+
+[node name="green" type="ColorRect" parent="glitches/glitch 4"]
+offset_left = 36.0
+offset_top = 40.0
+offset_right = 164.0
+offset_bottom = 80.0
+color = Color(0, 1, 0, 1)
+
+[node name="red" type="ColorRect" parent="glitches/glitch 4"]
+offset_left = 28.0
+offset_top = 24.0
+offset_right = 136.0
+offset_bottom = 60.0
+color = Color(1, 0, 0, 1)
+
+[node name="glitch 5" type="Node2D" parent="glitches"]
+position = Vector2(240, 792)
+
+[node name="blue" type="ColorRect" parent="glitches/glitch 5"]
+offset_right = 104.0
+offset_bottom = 52.0
+color = Color(0, 0, 1, 1)
+
+[node name="green" type="ColorRect" parent="glitches/glitch 5"]
+offset_left = 36.0
+offset_top = 40.0
+offset_right = 164.0
+offset_bottom = 80.0
+color = Color(0, 1, 0, 1)
+
+[node name="red" type="ColorRect" parent="glitches/glitch 5"]
+offset_left = 28.0
+offset_top = 24.0
+offset_right = 136.0
+offset_bottom = 60.0
+color = Color(1, 0, 0, 1)
+
+[node name="glitch 6" type="Node2D" parent="glitches"]
+position = Vector2(56, -236)
+
+[node name="blue2" type="ColorRect" parent="glitches/glitch 6"]
+offset_left = 1271.0
+offset_top = 64.0
+offset_right = 1362.0
+offset_bottom = 100.0
+rotation = 3.14159
+color = Color(0, 0, 1, 1)
+
+[node name="green2" type="ColorRect" parent="glitches/glitch 6"]
+offset_left = 1284.0
+offset_top = 44.0
+offset_right = 1371.0
+offset_bottom = 70.0
+rotation = 3.14159
+color = Color(0, 1, 0, 1)
+
+[node name="red2" type="ColorRect" parent="glitches/glitch 6"]
+offset_left = 1295.0
+offset_top = 52.0
+offset_right = 1375.0
+offset_bottom = 72.0
+rotation = 3.14159
+color = Color(1, 0, 0, 1)
+
 [connection signal="pressed" from="Post4" to="." method="_on_post_4_pressed"]
