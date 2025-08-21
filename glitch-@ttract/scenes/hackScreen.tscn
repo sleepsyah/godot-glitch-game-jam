@@ -516,6 +516,7 @@ offset_top = 640.0
 offset_right = 780.0
 offset_bottom = 700.0
 theme = ExtResource("2_6lnsm")
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_yj6jf")
 theme_override_styles/focus = SubResource("StyleBoxFlat_48qdf")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_ms515")
