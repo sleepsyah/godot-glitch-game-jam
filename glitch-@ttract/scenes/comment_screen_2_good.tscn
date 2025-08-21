@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://c3gw44c88emjj"]
+[gd_scene load_steps=6 format=3 uid="uid://c3gw44c88emjj"]
 
 [ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="1_448ce"]
 [ext_resource type="Script" uid="uid://dlr7wv2jqp6vp" path="res://scenes/comment_screen_2_good.gd" id="1_g7nrg"]
 [ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="2_g7nrg"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="3_qgfb8"]
+
+[sub_resource type="Theme" id="Theme_448ce"]
 
 [node name="comment_screen_2_good" type="Node2D"]
 script = ExtResource("1_g7nrg")
@@ -80,6 +82,7 @@ offset_top = 50.0
 offset_right = 122.0
 offset_bottom = 185.0
 scale = Vector2(3, 3)
+theme = SubResource("Theme_448ce")
 text = "Your post
 attracted
 100 new
