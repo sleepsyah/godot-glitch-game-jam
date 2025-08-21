@@ -48,35 +48,35 @@ offset_left = 250.0
 offset_top = 168.0
 offset_right = 923.0
 offset_bottom = 226.0
-color = Color(1, 0.623529, 1, 1)
+color = Color(0.568627, 0.0156863, 0.427451, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="borders"]
 offset_left = 250.0
 offset_top = 268.0
 offset_right = 923.0
 offset_bottom = 326.0
-color = Color(1, 0.623529, 1, 1)
+color = Color(0.568627, 0.0156863, 0.427451, 1)
 
 [node name="ColorRect3" type="ColorRect" parent="borders"]
 offset_left = 250.0
 offset_top = 368.0
 offset_right = 923.0
 offset_bottom = 426.0
-color = Color(1, 0.623529, 1, 1)
+color = Color(0.568627, 0.0156863, 0.427451, 1)
 
 [node name="ColorRect4" type="ColorRect" parent="borders"]
 offset_left = 250.0
 offset_top = 468.0
 offset_right = 923.0
 offset_bottom = 526.0
-color = Color(1, 0.623529, 1, 1)
+color = Color(0.568627, 0.0156863, 0.427451, 1)
 
 [node name="ColorRect5" type="ColorRect" parent="borders"]
 offset_left = 250.0
 offset_top = 568.0
 offset_right = 923.0
 offset_bottom = 626.0
-color = Color(1, 0.623529, 1, 1)
+color = Color(0.568627, 0.0156863, 0.427451, 1)
 
 [node name="comments" type="Node2D" parent="."]
 position = Vector2(10, 8)
