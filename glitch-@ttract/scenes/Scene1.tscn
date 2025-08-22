@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://5wdvifwdiyig"]
+[gd_scene load_steps=14 format=3 uid="uid://5wdvifwdiyig"]
 
 [ext_resource type="Script" uid="uid://bj3etx0uc3b1t" path="res://scenes/scene_1.gd" id="1_6eqy8"]
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_koy8v"]
@@ -9,120 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://bexuqsfsu4nng" path="res://images/2025_08_19_0yu_Kleki.png" id="5_agnij"]
 [ext_resource type="Texture2D" uid="uid://btecui7tiaa8e" path="res://images/2025_08_19_0zm_Kleki.png" id="5_d2pwn"]
 [ext_resource type="Texture2D" uid="uid://c7qx6t5gqglkn" path="res://images/2025_08_19_0yu_Kleki (1).png" id="6_d2pwn"]
-[ext_resource type="AudioStream" uid="uid://dj2hbc8fa1b3u" path="res://images/new-notification-09-352705.mp3" id="6_x0ogb"]
 [ext_resource type="Texture2D" uid="uid://bajmsn6t2ox11" path="res://images/2025_08_19_0yv_Kleki.png" id="7_x0ogb"]
-
-[sub_resource type="Animation" id="Animation_d2pwn"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(168, 88)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera2D:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.624649, 0.655611)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Camera2D:zoom")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(5.5, 5.5)]
-}
-
-[sub_resource type="Animation" id="Animation_jb1ob"]
-resource_name = "message1"
-length = 12.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.87, 2.88, 4.99, 5.5, 7.58, 9.9, 11.1094),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(168, 88), Vector2(168, 88), Vector2(168, 176), Vector2(168, 176), Vector2(440, 240), Vector2(440, 240), Vector2(440, 320), Vector2(280, 432)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera2D:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.87, 2.88, 4.99, 5.5, 7.58, 9.9, 11.1094),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1, 1), Vector2(1, 1), Vector2(1, 1), Vector2(1, 1), Vector2(1, 1), Vector2(1, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Camera2D:zoom")
-tracks/2/interp = 2
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 1.87, 2.88, 4.99, 5.5, 7.58, 9.9, 11.1094),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(5.5, 5.5), Vector2(5.5, 5.5), Vector2(6, 7), Vector2(6, 7), Vector2(6, 7), Vector2(6, 7), Vector2(8, 8), Vector2(8, 8)]
-}
-tracks/3/type = "audio"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("AudioStreamPlayer2D")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"clips": [{
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("6_x0ogb")
-}, {
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("6_x0ogb")
-}, {
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("6_x0ogb")
-}, {
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource("6_x0ogb")
-}],
-"times": PackedFloat32Array(0, 1.83333, 5.26667, 7.66667)
-}
-tracks/3/use_blend = true
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_koy8v"]
-_data = {
-&"RESET": SubResource("Animation_d2pwn"),
-&"message1": SubResource("Animation_jb1ob")
-}
+[ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="12_so5j8"]
+[ext_resource type="FontFile" uid="uid://cu4tiafnexoab" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf" id="13_a0q6h"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6eqy8"]
 animations = [{
@@ -154,57 +43,325 @@ texture = ExtResource("1_koy8v")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 16.0
-offset_top = 16.0
+offset_top = 120.0
 offset_right = 1264.0
 offset_bottom = 704.0
+color = Color(1, 0, 1, 1)
 
 [node name="Button" type="Button" parent="."]
-offset_left = 224.0
-offset_top = 416.0
-offset_right = 344.0
-offset_bottom = 456.0
+offset_left = 1128.0
+offset_top = 48.0
+offset_right = 1258.0
+offset_bottom = 88.0
 theme = ExtResource("2_koy8v")
 theme_override_font_sizes/font_size = 20
-text = "go posting2"
+text = "posts"
 script = ExtResource("2_jb1ob")
 
-[node name="blue1" type="Sprite2D" parent="."]
+[node name="probably wont be used" type="Node2D" parent="."]
+
+[node name="blue1" type="Sprite2D" parent="probably wont be used"]
+visible = false
 position = Vector2(472, 328)
 scale = Vector2(0.624649, 0.655611)
 texture = ExtResource("4_agnij")
 
-[node name="pink1" type="Sprite2D" parent="."]
+[node name="pink1" type="Sprite2D" parent="probably wont be used"]
+visible = false
 position = Vector2(416, 392)
 scale = Vector2(0.624649, 0.655611)
 texture = ExtResource("5_d2pwn")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_koy8v")
-}
-autoplay = "message1"
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="probably wont be used"]
+visible = false
 position = Vector2(816, -128)
 scale = Vector2(0.210945, 0.221401)
 sprite_frames = SubResource("SpriteFrames_6eqy8")
 frame_progress = 0.896012
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(168, 88)
-scale = Vector2(0.624649, 0.655611)
-zoom = Vector2(5.5, 5.5)
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
-[node name="Camera2D2" type="Camera2D" parent="."]
-position = Vector2(640, 384)
+[node name="interface" type="Node2D" parent="."]
+
+[node name="ColorRect2" type="ColorRect" parent="interface"]
+offset_left = 24.0
+offset_top = 128.0
+offset_right = 384.0
+offset_bottom = 696.0
+color = Color(1, 0.578113, 0.984983, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="interface"]
+offset_left = 24.0
+offset_top = 128.0
+offset_right = 384.0
+offset_bottom = 696.0
+color = Color(0.147672, 0.147672, 0.147672, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="interface"]
+offset_left = 32.0
+offset_top = 136.0
+offset_right = 376.0
+offset_bottom = 240.0
+color = Color(0.823529, 0.988235, 0.988235, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="interface"]
+offset_left = 32.0
+offset_top = 248.0
+offset_right = 376.0
+offset_bottom = 352.0
+color = Color(0.986752, 0.986752, 0.986752, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="interface"]
+offset_left = 32.0
+offset_top = 360.0
+offset_right = 376.0
+offset_bottom = 464.0
+color = Color(0.986752, 0.986752, 0.986752, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="interface"]
+offset_left = 32.0
+offset_top = 472.0
+offset_right = 376.0
+offset_bottom = 576.0
+color = Color(0.986752, 0.986752, 0.986752, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="interface"]
+offset_left = 392.0
+offset_top = 128.0
+offset_right = 1256.0
+offset_bottom = 696.0
+
+[node name="ColorRect10" type="ColorRect" parent="interface"]
+offset_left = 392.0
+offset_top = 600.0
+offset_right = 1256.0
+offset_bottom = 696.0
+color = Color(1, 0, 1, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="interface"]
+offset_left = 336.0
+offset_top = 24.0
+offset_right = 944.0
+offset_bottom = 104.0
+color = Color(1, 0.596078, 0.898039, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="interface"]
+offset_left = 392.0
+offset_top = 608.0
+offset_right = 1256.0
+offset_bottom = 696.0
+color = Color(0.929024, 0.885273, 0.95705, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="interface"]
+offset_left = 336.0
+offset_top = 32.0
+offset_right = 6416.0
+offset_bottom = 752.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("12_so5j8")
+theme_override_font_sizes/normal_font_size = 500
+text = "Messages"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect13" type="ColorRect" parent="interface"]
+offset_left = 48.0
+offset_top = 488.0
+offset_right = 120.0
+offset_bottom = 560.0
+color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[node name="ColorRect" type="ColorRect" parent="interface"]
+offset_left = 48.0
+offset_top = 152.0
+offset_right = 120.0
+offset_bottom = 224.0
+color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[node name="ColorRect14" type="ColorRect" parent="interface"]
+offset_left = 48.0
+offset_top = 376.0
+offset_right = 120.0
+offset_bottom = 448.0
+color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[node name="ColorRect15" type="ColorRect" parent="interface"]
+offset_left = 520.0
+offset_top = 216.0
+offset_right = 904.0
+offset_bottom = 408.0
+color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[node name="ColorRect12" type="ColorRect" parent="interface"]
+offset_left = 48.0
+offset_top = 264.0
+offset_right = 120.0
+offset_bottom = 336.0
+color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="interface"]
+offset_left = 160.0
+offset_top = 136.0
+offset_right = 2320.0
+offset_bottom = 1176.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("12_so5j8")
+theme_override_font_sizes/normal_font_size = 400
+text = "Unknown"
+vertical_alignment = 1
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="interface"]
+offset_left = 160.0
+offset_top = 472.0
+offset_right = 2320.0
+offset_bottom = 1512.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("12_so5j8")
+theme_override_font_sizes/normal_font_size = 400
+text = "noah"
+vertical_alignment = 1
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="interface"]
+offset_left = 160.0
+offset_top = 360.0
+offset_right = 2320.0
+offset_bottom = 1400.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("12_so5j8")
+theme_override_font_sizes/normal_font_size = 400
+text = "emma!"
+vertical_alignment = 1
+
+[node name="RichTextLabel14" type="RichTextLabel" parent="interface"]
+offset_left = 472.0
+offset_top = 496.0
+offset_right = 6392.0
+offset_bottom = 1456.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
+theme_override_font_sizes/normal_font_size = 180
+text = "what the hell"
+vertical_alignment = 1
+
+[node name="RichTextLabel10" type="RichTextLabel" parent="interface"]
+offset_left = 472.0
+offset_top = 400.0
+offset_right = 6392.0
+offset_bottom = 1360.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
+theme_override_font_sizes/normal_font_size = 180
+text = "wtf???"
+vertical_alignment = 1
+
+[node name="RichTextLabel12" type="RichTextLabel" parent="interface"]
+offset_left = 536.0
+offset_top = 448.0
+offset_right = 6456.0
+offset_bottom = 1408.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
+theme_override_font_sizes/normal_font_size = 180
+text = "time is running out"
+vertical_alignment = 1
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="interface"]
+offset_left = 520.0
+offset_top = 136.0
+offset_right = 6440.0
+offset_bottom = 1096.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
+theme_override_font_sizes/normal_font_size = 180
+text = "you're really pretty when you're sleeping"
+vertical_alignment = 1
+
+[node name="RichTextLabel13" type="RichTextLabel" parent="interface"]
+offset_left = 424.0
+offset_top = 496.0
+offset_right = 984.0
+offset_bottom = 1456.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
+theme_override_font_sizes/normal_font_size = 200
+text = "Me: "
+vertical_alignment = 1
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="interface"]
+offset_left = 424.0
+offset_top = 400.0
+offset_right = 984.0
+offset_bottom = 1360.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
+theme_override_font_sizes/normal_font_size = 200
+text = "Me: "
+vertical_alignment = 1
+
+[node name="RichTextLabel11" type="RichTextLabel" parent="interface"]
+offset_left = 424.0
+offset_top = 448.0
+offset_right = 2104.0
+offset_bottom = 1408.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 1, 1)
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
+theme_override_font_sizes/normal_font_size = 200
+text = "Unknown: "
+vertical_alignment = 1
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="interface"]
+offset_left = 416.0
+offset_top = 136.0
+offset_right = 2096.0
+offset_bottom = 1096.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 1, 1)
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
+theme_override_font_sizes/normal_font_size = 200
+text = "Unknown: "
+vertical_alignment = 1
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="interface"]
+offset_left = 424.0
+offset_top = 608.0
+offset_right = 8744.0
+offset_bottom = 1488.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0.359069, 0.359069, 0.359069, 1)
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
+theme_override_font_sizes/normal_font_size = 250
+text = "type your message..."
+vertical_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="interface"]
+offset_left = 160.0
+offset_top = 248.0
+offset_right = 2320.0
+offset_bottom = 1288.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("12_so5j8")
+theme_override_font_sizes/normal_font_size = 400
+text = "daisy"
+vertical_alignment = 1
 
 [node name="skip cutscene" type="Button" parent="."]
-offset_left = 64.0
-offset_top = 120.0
-offset_right = 152.0
-offset_bottom = 152.0
+visible = false
+offset_left = 1424.0
+offset_top = 152.0
+offset_right = 1537.0
+offset_bottom = 184.0
 text = "skip cutscene"
 
 [connection signal="pressed" from="skip cutscene" to="." method="_on_skip_cutscene_pressed"]
