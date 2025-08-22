@@ -89,6 +89,7 @@ text = "I contributed artwork and design to the following scenes:
 - xxxxxxxxxxxxxxx"
 
 [node name="ColorRect" type="ColorRect" parent="Hana/ColorRect3"]
+layout_mode = 0
 offset_left = 9.0
 offset_top = 369.0
 offset_right = 271.0
@@ -190,6 +191,7 @@ text = "I contributed coding and design to the following scenes:
 - xxxxxxxxxxxxxxx"
 
 [node name="ColorRect" type="ColorRect" parent="Sarah/ColorRect3"]
+layout_mode = 0
 offset_left = 9.0
 offset_top = 369.0
 offset_right = 271.0
@@ -291,6 +293,7 @@ text = "I contributed assets and design to the following scenes:
 - xxxxxxxxxxxxxxx"
 
 [node name="ColorRect" type="ColorRect" parent="Sushmita/ColorRect3"]
+layout_mode = 0
 offset_left = 9.0
 offset_top = 369.0
 offset_right = 271.0

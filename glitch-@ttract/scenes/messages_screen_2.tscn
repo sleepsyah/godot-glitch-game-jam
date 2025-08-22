@@ -1,78 +1,310 @@
-[gd_scene load_steps=11 format=3 uid="uid://cs1ybn26enmeo"]
+[gd_scene load_steps=6 format=3 uid="uid://cs1ybn26enmeo"]
 
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_2q8eb"]
 [ext_resource type="Script" uid="uid://b02mw8js7hn6x" path="res://scenes/messages_screen_2.gd" id="1_qajdl"]
-[ext_resource type="Texture2D" uid="uid://cxm03dgq3l10a" path="res://images/2025_08_19_0zb_Kleki.png" id="2_qajdl"]
-[ext_resource type="Texture2D" uid="uid://btecui7tiaa8e" path="res://images/2025_08_19_0zm_Kleki.png" id="3_7q0q1"]
-[ext_resource type="Texture2D" uid="uid://vfkf0puwg0xb" path="res://images/2025_08_19_0yt_Kleki.png" id="5_ebfq1"]
-[ext_resource type="Texture2D" uid="uid://bexuqsfsu4nng" path="res://images/2025_08_19_0yu_Kleki.png" id="6_mim86"]
-[ext_resource type="Texture2D" uid="uid://c7qx6t5gqglkn" path="res://images/2025_08_19_0yu_Kleki (1).png" id="7_cylhk"]
-[ext_resource type="Texture2D" uid="uid://bajmsn6t2ox11" path="res://images/2025_08_19_0yv_Kleki.png" id="8_8u4iy"]
+[ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="4_xnmrj"]
+[ext_resource type="FontFile" uid="uid://cu4tiafnexoab" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf" id="5_qpmbe"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="9_wlqlr"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_6eqy8"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_ebfq1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_mim86")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_cylhk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_8u4iy")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [node name="messages_screen2" type="Node2D"]
 script = ExtResource("1_qajdl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(646, 374)
-scale = Vector2(1.0625, 0.973437)
+position = Vector2(640, 360)
+scale = Vector2(1, 0.9)
 texture = ExtResource("1_2q8eb")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 16.0
-offset_top = 16.0
+offset_top = 120.0
 offset_right = 1264.0
 offset_bottom = 704.0
-
-[node name="blue1" type="Sprite2D" parent="."]
-position = Vector2(472, 328)
-scale = Vector2(0.624649, 0.655611)
-texture = ExtResource("2_qajdl")
-
-[node name="pink1" type="Sprite2D" parent="."]
-position = Vector2(416, 392)
-scale = Vector2(0.624649, 0.655611)
-texture = ExtResource("3_7q0q1")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(816, -128)
-scale = Vector2(0.210945, 0.221401)
-sprite_frames = SubResource("SpriteFrames_6eqy8")
-frame_progress = 0.896012
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(628, 364)
-scale = Vector2(0.624649, 0.655611)
+color = Color(1, 0, 1, 1)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 [node name="goending" type="Button" parent="."]
-offset_left = 225.0
-offset_top = 415.0
-offset_right = 355.0
-offset_bottom = 455.0
+offset_left = 1136.0
+offset_top = 48.0
+offset_right = 1266.0
+offset_bottom = 88.0
 theme = ExtResource("9_wlqlr")
 theme_override_font_sizes/font_size = 20
-text = "go hacked"
+text = "logout"
+
+[node name="interface" type="Node2D" parent="."]
+
+[node name="ColorRect2" type="ColorRect" parent="interface"]
+offset_left = 24.0
+offset_top = 128.0
+offset_right = 384.0
+offset_bottom = 696.0
+color = Color(1, 0.578113, 0.984983, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="interface"]
+offset_left = 24.0
+offset_top = 128.0
+offset_right = 384.0
+offset_bottom = 696.0
+color = Color(0.147672, 0.147672, 0.147672, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="interface"]
+offset_left = 32.0
+offset_top = 136.0
+offset_right = 376.0
+offset_bottom = 240.0
+color = Color(0.823529, 0.988235, 0.988235, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="interface"]
+offset_left = 32.0
+offset_top = 248.0
+offset_right = 376.0
+offset_bottom = 352.0
+color = Color(0.986752, 0.986752, 0.986752, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="interface"]
+offset_left = 32.0
+offset_top = 360.0
+offset_right = 376.0
+offset_bottom = 464.0
+color = Color(0.986752, 0.986752, 0.986752, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="interface"]
+offset_left = 32.0
+offset_top = 472.0
+offset_right = 376.0
+offset_bottom = 576.0
+color = Color(0.986752, 0.986752, 0.986752, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="interface"]
+offset_left = 392.0
+offset_top = 128.0
+offset_right = 1256.0
+offset_bottom = 696.0
+
+[node name="ColorRect10" type="ColorRect" parent="interface"]
+offset_left = 392.0
+offset_top = 600.0
+offset_right = 1256.0
+offset_bottom = 696.0
+color = Color(1, 0, 1, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="interface"]
+offset_left = 336.0
+offset_top = 24.0
+offset_right = 944.0
+offset_bottom = 104.0
+color = Color(1, 0.596078, 0.898039, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="interface"]
+offset_left = 392.0
+offset_top = 608.0
+offset_right = 1256.0
+offset_bottom = 696.0
+color = Color(0.929024, 0.885273, 0.95705, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="interface"]
+offset_left = 336.0
+offset_top = 32.0
+offset_right = 6416.0
+offset_bottom = 752.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_xnmrj")
+theme_override_font_sizes/normal_font_size = 500
+text = "Messages"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect13" type="ColorRect" parent="interface"]
+offset_left = 48.0
+offset_top = 488.0
+offset_right = 120.0
+offset_bottom = 560.0
+color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[node name="ColorRect" type="ColorRect" parent="interface"]
+offset_left = 48.0
+offset_top = 152.0
+offset_right = 120.0
+offset_bottom = 224.0
+color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[node name="ColorRect14" type="ColorRect" parent="interface"]
+offset_left = 48.0
+offset_top = 376.0
+offset_right = 120.0
+offset_bottom = 448.0
+color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[node name="ColorRect15" type="ColorRect" parent="interface"]
+offset_left = 520.0
+offset_top = 216.0
+offset_right = 904.0
+offset_bottom = 408.0
+color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[node name="ColorRect12" type="ColorRect" parent="interface"]
+offset_left = 48.0
+offset_top = 264.0
+offset_right = 120.0
+offset_bottom = 336.0
+color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="interface"]
+offset_left = 160.0
+offset_top = 136.0
+offset_right = 2320.0
+offset_bottom = 1176.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_xnmrj")
+theme_override_font_sizes/normal_font_size = 400
+text = "Unknown"
+vertical_alignment = 1
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="interface"]
+offset_left = 160.0
+offset_top = 472.0
+offset_right = 2320.0
+offset_bottom = 1512.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_xnmrj")
+theme_override_font_sizes/normal_font_size = 400
+text = "noah"
+vertical_alignment = 1
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="interface"]
+offset_left = 160.0
+offset_top = 360.0
+offset_right = 2320.0
+offset_bottom = 1400.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_xnmrj")
+theme_override_font_sizes/normal_font_size = 400
+text = "emma!"
+vertical_alignment = 1
+
+[node name="RichTextLabel14" type="RichTextLabel" parent="interface"]
+offset_left = 472.0
+offset_top = 496.0
+offset_right = 6392.0
+offset_bottom = 1456.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_qpmbe")
+theme_override_font_sizes/normal_font_size = 180
+text = "what the hell"
+vertical_alignment = 1
+
+[node name="RichTextLabel10" type="RichTextLabel" parent="interface"]
+offset_left = 472.0
+offset_top = 400.0
+offset_right = 6392.0
+offset_bottom = 1360.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_qpmbe")
+theme_override_font_sizes/normal_font_size = 180
+text = "wtf???"
+vertical_alignment = 1
+
+[node name="RichTextLabel12" type="RichTextLabel" parent="interface"]
+offset_left = 536.0
+offset_top = 448.0
+offset_right = 6456.0
+offset_bottom = 1408.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_qpmbe")
+theme_override_font_sizes/normal_font_size = 180
+text = "time is running out"
+vertical_alignment = 1
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="interface"]
+offset_left = 520.0
+offset_top = 136.0
+offset_right = 6440.0
+offset_bottom = 1096.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_qpmbe")
+theme_override_font_sizes/normal_font_size = 180
+text = "you're really pretty when you're sleeping"
+vertical_alignment = 1
+
+[node name="RichTextLabel13" type="RichTextLabel" parent="interface"]
+offset_left = 424.0
+offset_top = 496.0
+offset_right = 984.0
+offset_bottom = 1456.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_qpmbe")
+theme_override_font_sizes/normal_font_size = 200
+text = "Me: "
+vertical_alignment = 1
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="interface"]
+offset_left = 424.0
+offset_top = 400.0
+offset_right = 984.0
+offset_bottom = 1360.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_qpmbe")
+theme_override_font_sizes/normal_font_size = 200
+text = "Me: "
+vertical_alignment = 1
+
+[node name="RichTextLabel11" type="RichTextLabel" parent="interface"]
+offset_left = 424.0
+offset_top = 448.0
+offset_right = 2104.0
+offset_bottom = 1408.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 1, 1)
+theme_override_fonts/normal_font = ExtResource("5_qpmbe")
+theme_override_font_sizes/normal_font_size = 200
+text = "Unknown: "
+vertical_alignment = 1
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="interface"]
+offset_left = 416.0
+offset_top = 136.0
+offset_right = 2096.0
+offset_bottom = 1096.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 1, 1)
+theme_override_fonts/normal_font = ExtResource("5_qpmbe")
+theme_override_font_sizes/normal_font_size = 200
+text = "Unknown: "
+vertical_alignment = 1
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="interface"]
+offset_left = 424.0
+offset_top = 608.0
+offset_right = 8744.0
+offset_bottom = 1488.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0.359069, 0.359069, 0.359069, 1)
+theme_override_fonts/normal_font = ExtResource("5_qpmbe")
+theme_override_font_sizes/normal_font_size = 250
+text = "type your message..."
+vertical_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="interface"]
+offset_left = 160.0
+offset_top = 248.0
+offset_right = 2320.0
+offset_bottom = 1288.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_xnmrj")
+theme_override_font_sizes/normal_font_size = 400
+text = "daisy"
+vertical_alignment = 1
 
 [connection signal="pressed" from="goending" to="." method="_on_goending_pressed"]
