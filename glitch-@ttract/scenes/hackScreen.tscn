@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://dllxxfb4r7byt"]
+[gd_scene load_steps=13 format=3 uid="uid://dllxxfb4r7byt"]
 
 [ext_resource type="Script" uid="uid://bu5bi4qch76a2" path="res://scenes/hack_screen.gd" id="1_6lnsm"]
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_qxx0d"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_6lnsm"]
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="3_yj6jf"]
 [ext_resource type="Texture2D" uid="uid://bpxfpfc2gxs1x" path="res://images/black-glitch-effect-digital-noise-texture-background.jpg" id="4_yj6jf"]
+[ext_resource type="Texture2D" uid="uid://brq2r7o3jlyaw" path="res://images/glitch-effect-black-background.jpg" id="5_7kbjv"]
 [ext_resource type="Texture2D" uid="uid://dkd8v0q07e40k" path="res://images/8457779.jpg" id="6_7kbjv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_48qdf"]
@@ -84,24 +85,25 @@ text = "What should I post next?"
 metadata/_edit_use_anchors_ = true
 
 [node name="post1" type="Sprite2D" parent="."]
-position = Vector2(924.25, 341)
-scale = Vector2(0.0991, 0.172769)
-texture = ExtResource("4_yj6jf")
+position = Vector2(924, 340)
+scale = Vector2(0.165333, 0.244)
+texture = ExtResource("6_7kbjv")
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
-offset_left = 669.0
-offset_top = 97.0
-offset_right = 932.0
-offset_bottom = 141.0
+offset_left = 664.0
+offset_top = 204.0
+offset_right = 1184.0
+offset_bottom = 248.0
 theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 30
 text = "LOGOUT ERROR: 1 20 20 1 3 20 "
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="post2" type="Sprite2D" parent="."]
-position = Vector2(349, 341)
-scale = Vector2(0.164667, 0.243)
-texture = ExtResource("6_7kbjv")
+position = Vector2(348, 340)
+scale = Vector2(0.0992, 0.146415)
+texture = ExtResource("5_7kbjv")
 
 [node name="glitches" type="Node2D" parent="."]
 

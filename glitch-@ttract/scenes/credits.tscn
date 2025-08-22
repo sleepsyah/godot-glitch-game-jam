@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://3xk0j5j8ycbp"]
+[gd_scene load_steps=6 format=3 uid="uid://3xk0j5j8ycbp"]
 
 [ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="1_2ckv8"]
 [ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="2_0ctdu"]
+[ext_resource type="FontFile" uid="uid://snlsj1asvqde" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Bold.ttf" id="3_2fbfq"]
+[ext_resource type="Texture2D" uid="uid://brv3kepqo3d7a" path="res://images/gggCircle_1.png" id="4_8gwij"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mah5v"]
+bg_color = Color(1, 0.596078, 0.898039, 1)
 
 [node name="Credits" type="Node2D"]
 
@@ -315,3 +320,32 @@ vertical_alignment = 1
 position = Vector2(28, 33)
 scale = Vector2(0.35228, 0.401332)
 texture = ExtResource("2_0ctdu")
+
+[node name="thanks" type="Node2D" parent="."]
+position = Vector2(192, 4)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="thanks"]
+offset_left = 56.0
+offset_top = 536.0
+offset_right = 1272.0
+offset_bottom = 864.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_2fbfq")
+theme_override_font_sizes/normal_font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_mah5v")
+text = "Thank you to Girls Got Game!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="thanks"]
+offset_left = 676.0
+offset_top = 536.0
+offset_right = 820.0
+offset_bottom = 700.0
+color = Color(1, 0.596078, 0.898039, 1)
+
+[node name="Sprite2D2" type="Sprite2D" parent="thanks"]
+position = Vector2(748, 616)
+scale = Vector2(0.308, 0.308)
+texture = ExtResource("4_8gwij")

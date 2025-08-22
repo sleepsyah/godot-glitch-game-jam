@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctrcda06yn3yu"]
+[gd_scene load_steps=5 format=3 uid="uid://ctrcda06yn3yu"]
 
+[ext_resource type="Script" uid="uid://vhvkauv7hj5d" path="res://scenes/ending_screen.gd" id="1_7qmtr"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="1_htwen"]
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="2_7qmtr"]
 [ext_resource type="FontFile" uid="uid://cvdde6m5n27nh" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf" id="3_cas3l"]
 
 [node name="EndingScreen" type="Node2D"]
+script = ExtResource("1_7qmtr")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 position = Vector2(-1, -1)
@@ -45,3 +47,5 @@ offset_bottom = 453.0
 theme_override_colors/default_color = Color(0.882353, 0, 0, 1)
 theme_override_colors/selection_color = Color(0.566092, 1.38376e-06, 3.36915e-07, 1)
 text = "You never know what you’re going to attract."
+
+[connection signal="pressed" from="Post3" to="." method="_on_post_3_pressed"]
