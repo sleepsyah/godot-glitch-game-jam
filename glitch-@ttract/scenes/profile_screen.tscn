@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cr3c8oa6yw4l6"]
+[gd_scene load_steps=11 format=3 uid="uid://cr3c8oa6yw4l6"]
 
 [ext_resource type="Script" uid="uid://be14vm6daw8sj" path="res://scenes/posts.gd" id="2_7q4r5"]
 [ext_resource type="Texture2D" uid="uid://dfex4aefxjq7n" path="res://images/art.png" id="2_mhd6v"]
@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="4_c0mk7"]
 [ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="4_mhd6v"]
 [ext_resource type="Script" uid="uid://dy41e5giv4ml" path="res://scenes/arrow.gd" id="5_sx606"]
+[ext_resource type="Texture2D" uid="uid://fk4cjqix5p1i" path="res://images/download20250806150231.png" id="8_c0mk7"]
 
 [sub_resource type="Gradient" id="Gradient_l8fel"]
 offsets = PackedFloat32Array(0, 0.00389105, 0.0077821, 1)
@@ -172,13 +173,13 @@ polygon = PackedVector2Array(242.303, 56.0823, 242.303, 16.0235, 48.4607, 16.023
 position = Vector2(576, 572)
 scale = Vector2(0.38442, 1.04377)
 color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(166.484, 53.6517, 166.484, 15.3291, 41.621, 15.3291, 41.6211, 53.6517)
+polygon = PackedVector2Array(166.484, 57.4839, 166.484, 11.4968, 41.6211, 11.4968, 41.6211, 57.4839)
 
 [node name="Polygon2D15" type="Polygon2D" parent="profile boxes"]
-position = Vector2(576, 516)
-scale = Vector2(0.38442, 1.04377)
+position = Vector2(576, 514.909)
+scale = Vector2(0.38442, 1.13866)
 color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(166.484, 53.6517, 166.484, 15.3291, 41.621, 15.3291, 41.6211, 53.6517)
+polygon = PackedVector2Array(166.484, 53.6517, 166.484, 11.4968, 41.6211, 11.4968, 41.6211, 53.6517)
 
 [node name="Polygon2D18" type="Polygon2D" parent="profile boxes"]
 position = Vector2(512, 516)
@@ -196,7 +197,7 @@ polygon = PackedVector2Array(242.303, 56.0823, 242.303, 16.0235, 48.4607, 16.023
 position = Vector2(576, 628)
 scale = Vector2(0.38442, 1.04377)
 color = Color(0.981803, 0.447707, 0.793194, 1)
-polygon = PackedVector2Array(166.484, 53.6517, 166.484, 15.3291, 41.621, 15.3291, 41.6211, 53.6517)
+polygon = PackedVector2Array(166.484, 57.4839, 166.484, 11.4968, 41.6211, 11.4968, 41.6211, 57.4839)
 
 [node name="Polygon2D20" type="Polygon2D" parent="profile boxes"]
 position = Vector2(4, 2)
@@ -373,5 +374,25 @@ scale = Vector2(1.66525, 1.66326)
 color = Color(0.0669015, 0.289425, 0.949672, 1)
 polygon = PackedVector2Array(56, 104, 72, 80, 88, 104, 80, 104, 80, 120, 64, 120, 64, 104)
 script = ExtResource("5_sx606")
+
+[node name="connections" type="Node2D" parent="."]
+
+[node name="connection1" type="Sprite2D" parent="connections"]
+position = Vector2(616, 552)
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("8_c0mk7")
+
+[node name="connectiontext1" type="RichTextLabel" parent="connections"]
+offset_left = 664.0
+offset_top = 532.0
+offset_right = 6344.0
+offset_bottom = 932.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("3_l8fel")
+theme_override_font_sizes/normal_font_size = 300
+bbcode_enabled = true
+text = "[font_size=200]Daisy[color=f7d2ed][font_size=150] | best friend | connected 2 years ago"
+vertical_alignment = 1
 
 [connection signal="pressed" from="Posts" to="arrow" method="_on_posts_pressed"]
