@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cs1ybn26enmeo"]
+[gd_scene load_steps=7 format=3 uid="uid://cs1ybn26enmeo"]
 
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_2q8eb"]
 [ext_resource type="Script" uid="uid://b02mw8js7hn6x" path="res://scenes/messages_screen_2.gd" id="1_qajdl"]
 [ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="4_xnmrj"]
 [ext_resource type="FontFile" uid="uid://cu4tiafnexoab" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf" id="5_qpmbe"]
+[ext_resource type="Texture2D" uid="uid://dt2lpeddngefp" path="res://images/andrea-de-santis-3YQM_f5IY5c-unsplash.jpg" id="6_uvmg3"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="9_wlqlr"]
 
 [node name="messages_screen2" type="Node2D"]
@@ -137,13 +138,6 @@ offset_right = 120.0
 offset_bottom = 448.0
 color = Color(0.43134, 0.43134, 0.43134, 1)
 
-[node name="ColorRect15" type="ColorRect" parent="interface"]
-offset_left = 520.0
-offset_top = 216.0
-offset_right = 904.0
-offset_bottom = 408.0
-color = Color(0.43134, 0.43134, 0.43134, 1)
-
 [node name="ColorRect12" type="ColorRect" parent="interface"]
 offset_left = 48.0
 offset_top = 264.0
@@ -151,7 +145,28 @@ offset_right = 120.0
 offset_bottom = 336.0
 color = Color(0.43134, 0.43134, 0.43134, 1)
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="interface"]
+[node name="image" type="ColorRect" parent="interface"]
+offset_left = 2000.0
+offset_top = 216.0
+offset_right = 2384.0
+offset_bottom = 408.0
+color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[node name="contacts" type="Node2D" parent="interface"]
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="interface/contacts"]
+offset_left = 160.0
+offset_top = 248.0
+offset_right = 2320.0
+offset_bottom = 1288.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_xnmrj")
+theme_override_font_sizes/normal_font_size = 400
+text = "daisy"
+vertical_alignment = 1
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="interface/contacts"]
 offset_left = 160.0
 offset_top = 136.0
 offset_right = 2320.0
@@ -163,7 +178,7 @@ theme_override_font_sizes/normal_font_size = 400
 text = "Unknown"
 vertical_alignment = 1
 
-[node name="RichTextLabel5" type="RichTextLabel" parent="interface"]
+[node name="RichTextLabel5" type="RichTextLabel" parent="interface/contacts"]
 offset_left = 160.0
 offset_top = 472.0
 offset_right = 2320.0
@@ -175,7 +190,7 @@ theme_override_font_sizes/normal_font_size = 400
 text = "noah"
 vertical_alignment = 1
 
-[node name="RichTextLabel4" type="RichTextLabel" parent="interface"]
+[node name="RichTextLabel4" type="RichTextLabel" parent="interface/contacts"]
 offset_left = 160.0
 offset_top = 360.0
 offset_right = 2320.0
@@ -187,103 +202,59 @@ theme_override_font_sizes/normal_font_size = 400
 text = "emma!"
 vertical_alignment = 1
 
-[node name="RichTextLabel14" type="RichTextLabel" parent="interface"]
-offset_left = 472.0
+[node name="me2" type="RichTextLabel" parent="interface"]
+offset_left = 2000.0
 offset_top = 496.0
-offset_right = 6392.0
-offset_bottom = 1456.0
-scale = Vector2(0.1, 0.1)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("5_qpmbe")
-theme_override_font_sizes/normal_font_size = 180
-text = "what the hell"
-vertical_alignment = 1
-
-[node name="RichTextLabel10" type="RichTextLabel" parent="interface"]
-offset_left = 472.0
-offset_top = 400.0
-offset_right = 6392.0
-offset_bottom = 1360.0
-scale = Vector2(0.1, 0.1)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("5_qpmbe")
-theme_override_font_sizes/normal_font_size = 180
-text = "wtf???"
-vertical_alignment = 1
-
-[node name="RichTextLabel12" type="RichTextLabel" parent="interface"]
-offset_left = 536.0
-offset_top = 448.0
-offset_right = 6456.0
-offset_bottom = 1408.0
-scale = Vector2(0.1, 0.1)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("5_qpmbe")
-theme_override_font_sizes/normal_font_size = 180
-text = "time is running out"
-vertical_alignment = 1
-
-[node name="RichTextLabel8" type="RichTextLabel" parent="interface"]
-offset_left = 520.0
-offset_top = 136.0
-offset_right = 6440.0
-offset_bottom = 1096.0
-scale = Vector2(0.1, 0.1)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("5_qpmbe")
-theme_override_font_sizes/normal_font_size = 180
-text = "you're really pretty when you're sleeping"
-vertical_alignment = 1
-
-[node name="RichTextLabel13" type="RichTextLabel" parent="interface"]
-offset_left = 424.0
-offset_top = 496.0
-offset_right = 984.0
+offset_right = 5680.0
 offset_bottom = 1456.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(1, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("5_qpmbe")
 theme_override_font_sizes/normal_font_size = 200
-text = "Me: "
+bbcode_enabled = true
+text = "Me: [color=black][font_size=180]what the hell"
 vertical_alignment = 1
 
-[node name="RichTextLabel9" type="RichTextLabel" parent="interface"]
-offset_left = 424.0
+[node name="me1" type="RichTextLabel" parent="interface"]
+offset_left = 2000.0
 offset_top = 400.0
-offset_right = 984.0
+offset_right = 6240.0
 offset_bottom = 1360.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(1, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("5_qpmbe")
 theme_override_font_sizes/normal_font_size = 200
-text = "Me: "
+bbcode_enabled = true
+text = "Me: [color=black]wtf???"
 vertical_alignment = 1
 
-[node name="RichTextLabel11" type="RichTextLabel" parent="interface"]
-offset_left = 424.0
+[node name="unknown2" type="RichTextLabel" parent="interface"]
+offset_left = 2000.0
 offset_top = 448.0
-offset_right = 2104.0
+offset_right = 7120.0
 offset_bottom = 1408.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 1, 1)
 theme_override_fonts/normal_font = ExtResource("5_qpmbe")
 theme_override_font_sizes/normal_font_size = 200
-text = "Unknown: "
+bbcode_enabled = true
+text = "Unknown: [color=black][font_size=180]time is running out"
 vertical_alignment = 1
 
-[node name="RichTextLabel7" type="RichTextLabel" parent="interface"]
+[node name="unknown1" type="RichTextLabel" parent="interface"]
 offset_left = 416.0
 offset_top = 136.0
-offset_right = 2096.0
+offset_right = 6976.0
 offset_bottom = 1096.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 1, 1)
 theme_override_fonts/normal_font = ExtResource("5_qpmbe")
 theme_override_font_sizes/normal_font_size = 200
-text = "Unknown: "
+bbcode_enabled = true
+text = "Unknown: [color=black][font_size=180]you're really pretty when you're sleeping"
 vertical_alignment = 1
 
-[node name="RichTextLabel6" type="RichTextLabel" parent="interface"]
+[node name="typemsg" type="RichTextLabel" parent="interface"]
 offset_left = 424.0
 offset_top = 608.0
 offset_right = 8744.0
@@ -295,16 +266,9 @@ theme_override_font_sizes/normal_font_size = 250
 text = "type your message..."
 vertical_alignment = 1
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="interface"]
-offset_left = 160.0
-offset_top = 248.0
-offset_right = 2320.0
-offset_bottom = 1288.0
-scale = Vector2(0.1, 0.1)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("4_xnmrj")
-theme_override_font_sizes/normal_font_size = 400
-text = "daisy"
-vertical_alignment = 1
+[node name="Andrea-de-santis-3yqmF5iy5c-unsplash" type="Sprite2D" parent="."]
+position = Vector2(2080, 312)
+scale = Vector2(0.042, 0.042)
+texture = ExtResource("6_uvmg3")
 
 [connection signal="pressed" from="goending" to="." method="_on_goending_pressed"]
