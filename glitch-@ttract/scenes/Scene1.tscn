@@ -244,9 +244,9 @@ text = "daisy"
 vertical_alignment = 1
 
 [node name="unknown6" type="RichTextLabel" parent="interface"]
-offset_left = 424.0
+offset_left = 2000.0
 offset_top = 480.0
-offset_right = 6824.0
+offset_right = 8400.0
 offset_bottom = 1440.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -257,9 +257,9 @@ text = "[font_size=200][color=blue]Unknown: [color=black][font_size=180]you have
 vertical_alignment = 1
 
 [node name="unknown4" type="RichTextLabel" parent="interface"]
-offset_left = 528.0
+offset_left = 2000.0
 offset_top = 328.0
-offset_right = 6448.0
+offset_right = 7920.0
 offset_bottom = 1288.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -269,9 +269,9 @@ text = "don't ignore me"
 vertical_alignment = 1
 
 [node name="unknown5" type="RichTextLabel" parent="interface"]
-offset_left = 528.0
+offset_left = 2000.0
 offset_top = 368.0
-offset_right = 6448.0
+offset_right = 7920.0
 offset_bottom = 1328.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -282,9 +282,9 @@ text = "[font_size=180]you won't like what happens"
 vertical_alignment = 1
 
 [node name="unknown3" type="RichTextLabel" parent="interface"]
-offset_left = 528.0
+offset_left = 2000.0
 offset_top = 288.0
-offset_right = 6448.0
+offset_right = 7920.0
 offset_bottom = 1248.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -294,9 +294,9 @@ text = "that's where you live right? "
 vertical_alignment = 1
 
 [node name="me2" type="RichTextLabel" parent="interface"]
-offset_left = 424.0
+offset_left = 2000.0
 offset_top = 424.0
-offset_right = 4824.0
+offset_right = 6400.0
 offset_bottom = 1384.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(1, 0, 0, 1)
@@ -307,22 +307,22 @@ text = "Me: [color=black][font_size=180]why are you doing this [color=black]"
 vertical_alignment = 1
 
 [node name="me1" type="RichTextLabel" parent="interface"]
-offset_left = 416.0
+offset_left = 2000.0
 offset_top = 192.0
-offset_right = 4096.0
+offset_right = 5680.0
 offset_bottom = 1152.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(1, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
-text = "Me: [color=black]thank u!!:3[color=black]"
+text = "Me: [color=black][font_size=180]thank u!!:3[color=black]"
 vertical_alignment = 1
 
 [node name="unknown2" type="RichTextLabel" parent="interface"]
-offset_left = 416.0
+offset_left = 2000.0
 offset_top = 248.0
-offset_right = 5376.0
+offset_right = 6960.0
 offset_bottom = 1208.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 1, 1)
@@ -342,7 +342,7 @@ theme_override_colors/default_color = Color(0, 0, 1, 1)
 theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
-text = "Unknown: [color=black]I liked your outfit[color=black]"
+text = "Unknown: [color=black][font_size=180]I liked your outfit[color=black] "
 vertical_alignment = 1
 
 [node name="typemsg" type="RichTextLabel" parent="interface"]
