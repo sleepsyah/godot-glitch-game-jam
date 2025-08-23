@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://ctrcda06yn3yu"]
 
-[ext_resource type="Script" uid="uid://vhvkauv7hj5d" path="res://scenes/ending_screen.gd" id="1_7qmtr"]
+[ext_resource type="Script" path="res://scenes/ending_screen.gd" id="1_7qmtr"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="1_htwen"]
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="2_7qmtr"]
 [ext_resource type="FontFile" uid="uid://cvdde6m5n27nh" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf" id="3_cas3l"]
