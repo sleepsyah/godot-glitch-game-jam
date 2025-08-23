@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://5wdvifwdiyig"]
+[gd_scene load_steps=15 format=3 uid="uid://5wdvifwdiyig"]
 
 [ext_resource type="Script" uid="uid://bj3etx0uc3b1t" path="res://scenes/scene_1.gd" id="1_6eqy8"]
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_koy8v"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bajmsn6t2ox11" path="res://images/2025_08_19_0yv_Kleki.png" id="7_x0ogb"]
 [ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="12_so5j8"]
 [ext_resource type="FontFile" uid="uid://cu4tiafnexoab" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf" id="13_a0q6h"]
+[ext_resource type="AudioStream" uid="uid://dj2hbc8fa1b3u" path="res://images/new-notification-09-352705.mp3" id="13_so5j8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6eqy8"]
 animations = [{
@@ -356,3 +357,6 @@ theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 250
 text = "type your message..."
 vertical_alignment = 1
+
+[node name="notification" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_so5j8")
