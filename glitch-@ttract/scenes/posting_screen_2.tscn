@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://bdinqlofpiboc"]
+[gd_scene load_steps=7 format=3 uid="uid://bdinqlofpiboc"]
 
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_5ivla"]
 [ext_resource type="Script" uid="uid://vims4f1ut1p" path="res://scenes/posting_screen_2.gd" id="1_6l80l"]
 [ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="2_odtwq"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="3_f3rm3"]
+[ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="5_odtwq"]
+[ext_resource type="FontFile" uid="uid://cvdde6m5n27nh" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf" id="6_f3rm3"]
 
 [node name="posting_screen2" type="Node2D"]
 script = ExtResource("1_6l80l")
@@ -31,13 +33,28 @@ position = Vector2(960, 300)
 scale = Vector2(4, 4)
 texture = ExtResource("2_odtwq")
 
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 197.0
+offset_top = 597.0
+offset_right = 404.0
+offset_bottom = 704.0
+color = Color(1, 0, 1, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 876.0
+offset_top = 597.0
+offset_right = 1083.0
+offset_bottom = 704.0
+color = Color(1, 0, 1, 1)
+
 [node name="Post3" type="Button" parent="."]
 offset_left = 200.0
 offset_top = 600.0
 offset_right = 400.0
 offset_bottom = 700.0
 theme = ExtResource("3_f3rm3")
-text = "post 3"
+theme_override_fonts/font = ExtResource("5_odtwq")
+text = "POST!"
 metadata/_edit_use_anchors_ = true
 
 [node name="Post4" type="Button" parent="."]
@@ -46,7 +63,8 @@ offset_top = 600.0
 offset_right = 1080.0
 offset_bottom = 700.0
 theme = ExtResource("3_f3rm3")
-text = "post 4"
+theme_override_fonts/font = ExtResource("6_f3rm3")
+text = "POST!"
 metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Post3" to="." method="_on_post_3_pressed"]
