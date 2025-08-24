@@ -227,16 +227,16 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(-87, 13)
 
 [node name="comment1" type="RichTextLabel" parent="comments"]
-offset_left = 281.0
+offset_left = 280.0
 offset_top = 79.0
-offset_right = 8071.0
+offset_right = 8070.0
 offset_bottom = 479.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@ems.pxison (emma)[font_size=150] | i'm lactose intolerant :( ur so uninclusive | 2 seconds ago"
+text = "[font_size=200]@em0x0x (lia)[font_size=150] | i'm lactose intolerant :( ur so uninclusive | 4 seconds ago"
 vertical_alignment = 1
 
 [node name="comment2" type="RichTextLabel" parent="comments"]
@@ -249,21 +249,21 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@Xx.sc3ne_qu3en.xX (gia)[font_size=150] | [color=#000000]so sweet and unhealthy... [color=#000000]| 55 seconds ago"
+text = "[font_size=200]@ghoulsrules (frankie)[font_size=150] | [color=#000000]so sweet and unhealthy... [color=#000000]| 36 seconds ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="comment3" type="RichTextLabel" parent="comments"]
 offset_left = 280.0
 offset_top = 151.0
-offset_right = 6630.0
+offset_right = 7180.0
 offset_bottom = 551.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@g0th.b1mb0 (raven)[font_size=150] | yogurt is lowkey nasty! | 15 seconds ago"
+text = "[font_size=200]@theyluvmel! (melisa)[font_size=150] | yogurt is lowkey nasty! | 23 seconds ago"
 vertical_alignment = 1
 
 [node name="comment4" type="RichTextLabel" parent="comments"]
@@ -276,7 +276,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@ellie.williams.gf (ari)[font_size=150] | gurt: yo | 40 seconds ago"
+text = "[font_size=200]@noahh.tlou (noah)[font_size=150] | gurt: yo | 52 seconds ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
@@ -290,7 +290,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@vamp1re_ (vamp)[font_size=150] | ewwwww | 1 minute ago"
+text = "[font_size=200]@//sendtrends\\\\ (alex)[font_size=150] | ewwwww | 2 minutes ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
@@ -304,7 +304,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@maxx.[font_size=150] | ice cream is better |  3 minutes ago"
+text = "[font_size=200]@annabanana (anna)[font_size=150] | ice cream is better |  3 minutes ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
