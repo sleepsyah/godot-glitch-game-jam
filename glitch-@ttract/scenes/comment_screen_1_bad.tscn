@@ -1,10 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://b1ntay3t4c7rj"]
+[gd_scene load_steps=7 format=3 uid="uid://pffvcwylsium"]
 
-[ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="2_qgfb8"]
-[ext_resource type="FontFile" uid="uid://snlsj1asvqde" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Bold.ttf" id="3_3rfx2"]
-[ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="3_qgfb8"]
-[ext_resource type="Texture2D" uid="uid://cgtgu1a6n36hv" path="res://sprites/images/Art5.png" id="5_qgfb8"]
-[ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="6_7w54k"]
+[ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="2_3ofcs"]
+[ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="3_abbnf"]
+[ext_resource type="FontFile" uid="uid://snlsj1asvqde" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Bold.ttf" id="4_k4kpt"]
+[ext_resource type="Texture2D" uid="uid://cgtgu1a6n36hv" path="res://sprites/images/Art5.png" id="5_jun5c"]
+[ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="6_cpki8"]
 
 [sub_resource type="GDScript" id="GDScript_g7nrg"]
 script/source = "extends Node2D
@@ -14,13 +14,13 @@ func _on_messages_2_pressed() -> void:
 	get_tree().change_scene_to_file(\"res://scenes/messages_screen_2.tscn\")
 "
 
-[node name="comment_screen_1_good2" type="Node2D"]
+[node name="comment_screen_bad" type="Node2D"]
 script = SubResource("GDScript_g7nrg")
 
 [node name="background" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(641, 348)
-texture = ExtResource("2_qgfb8")
+texture = ExtResource("2_3ofcs")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 109.0
@@ -69,8 +69,8 @@ offset_right = 778.812
 offset_bottom = 29.153
 scale = Vector2(1.3, 1.3)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("6_7w54k")
-text = "These comments are so nice! oh, I have a new message! Let's open it!"
+theme_override_fonts/normal_font = ExtResource("3_abbnf")
+text = "These comments are so mean! oh, I have a new message! Let's open it!"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
@@ -102,8 +102,8 @@ offset_right = 551.696
 offset_bottom = 18.256
 scale = Vector2(1.3, 1.3)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("6_7w54k")
-text = "you've earned +100 followers"
+theme_override_fonts/normal_font = ExtResource("3_abbnf")
+text = "you've lost -100 followers"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
@@ -232,7 +232,7 @@ offset_right = 7100.97
 offset_bottom = 479.021
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("3_3rfx2")
+theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
 text = "[font_size=200]@ems.pxison (emma)[font_size=150] | i love you queen| 2 seconds ago"
@@ -246,7 +246,7 @@ offset_right = 8580.0
 offset_bottom = 625.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("3_3rfx2")
+theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
 text = "[font_size=200]@Xx.sc3ne_qu3en.xX (gia)[font_size=150] | [color=#000000] flowers bloom when you walk (⌒▽⌒)☆[color=#000000]| 55 seconds ago"
@@ -260,7 +260,7 @@ offset_right = 5959.97
 offset_bottom = 551.021
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("3_3rfx2")
+theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
 text = "[font_size=200]@g0th.b1mb0 (raven)[font_size=150] | ur so gorggg<3 | 15 seconds ago"
@@ -274,7 +274,7 @@ offset_right = 8059.0
 offset_bottom = 699.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("3_3rfx2")
+theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
 text = "[font_size=200]@ellie.williams.gf (ari)[font_size=150] | do you do weddings? | 40 secondsago"
@@ -288,7 +288,7 @@ offset_right = 7981.0
 offset_bottom = 772.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("3_3rfx2")
+theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
 text = "[font_size=200]@vamp1re_ (vamp)[font_size=150] | your belts are soo cute! where'd you get? | 1 minute ago"
@@ -302,7 +302,7 @@ offset_right = 5959.97
 offset_bottom = 850.021
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("3_3rfx2")
+theme_override_fonts/normal_font = ExtResource("4_k4kpt")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
 text = "[font_size=200]@maxx.[font_size=150] | fire |  3 minutes ago"
@@ -373,32 +373,32 @@ position = Vector2(-248, 12)
 [node name="Sprite2D" type="Sprite2D" parent="profile_pics"]
 position = Vector2(389.869, 102.13)
 scale = Vector2(0.027472, 0.0252636)
-texture = ExtResource("5_qgfb8")
+texture = ExtResource("5_jun5c")
 
 [node name="Sprite2D2" type="Sprite2D" parent="profile_pics"]
 position = Vector2(392, 172)
 scale = Vector2(0.027472, 0.0252636)
-texture = ExtResource("5_qgfb8")
+texture = ExtResource("5_jun5c")
 
 [node name="Sprite2D3" type="Sprite2D" parent="profile_pics"]
 position = Vector2(393, 247)
 scale = Vector2(0.027472, 0.0252636)
-texture = ExtResource("5_qgfb8")
+texture = ExtResource("5_jun5c")
 
 [node name="Sprite2D4" type="Sprite2D" parent="profile_pics"]
 position = Vector2(393, 320)
 scale = Vector2(0.027472, 0.0252636)
-texture = ExtResource("5_qgfb8")
+texture = ExtResource("5_jun5c")
 
 [node name="Sprite2D5" type="Sprite2D" parent="profile_pics"]
 position = Vector2(393, 395)
 scale = Vector2(0.027472, 0.0252636)
-texture = ExtResource("5_qgfb8")
+texture = ExtResource("5_jun5c")
 
 [node name="Sprite2D6" type="Sprite2D" parent="profile_pics"]
 position = Vector2(392, 470)
 scale = Vector2(0.027472, 0.0252636)
-texture = ExtResource("5_qgfb8")
+texture = ExtResource("5_jun5c")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 offset_left = 444.0
@@ -413,8 +413,8 @@ offset_left = 447.0
 offset_top = 623.0
 offset_right = 833.0
 offset_bottom = 689.0
-theme = ExtResource("3_qgfb8")
-theme_override_fonts/font = ExtResource("6_7w54k")
+theme = ExtResource("6_cpki8")
+theme_override_fonts/font = ExtResource("3_abbnf")
 text = "One new message"
 metadata/_edit_use_anchors_ = true
 

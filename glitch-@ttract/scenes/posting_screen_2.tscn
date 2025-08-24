@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bdinqlofpiboc"]
+[gd_scene load_steps=6 format=3 uid="uid://bdinqlofpiboc"]
 
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_5ivla"]
 [ext_resource type="Script" uid="uid://vims4f1ut1p" path="res://scenes/posting_screen_2.gd" id="1_6l80l"]
-[ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="2_odtwq"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="3_f3rm3"]
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="5_odtwq"]
 [ext_resource type="FontFile" uid="uid://cvdde6m5n27nh" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf" id="6_f3rm3"]
@@ -14,24 +13,6 @@ script = ExtResource("1_6l80l")
 position = Vector2(624, 352)
 scale = Vector2(1.34609, 1.3925)
 texture = ExtResource("1_5ivla")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = 15.0
-offset_top = 20.0
-offset_right = 1265.0
-offset_bottom = 570.0
-color = Color(1, 0.521569, 1, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="post2" type="Sprite2D" parent="."]
-position = Vector2(320, 300)
-scale = Vector2(4, 4)
-texture = ExtResource("2_odtwq")
-
-[node name="post1" type="Sprite2D" parent="."]
-position = Vector2(960, 300)
-scale = Vector2(4, 4)
-texture = ExtResource("2_odtwq")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 offset_left = 197.0
@@ -66,6 +47,59 @@ theme = ExtResource("3_f3rm3")
 theme_override_fonts/font = ExtResource("6_f3rm3")
 text = "POST!"
 metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+offset_left = 393.0
+offset_top = 29.0
+offset_right = 877.0
+offset_bottom = 73.0
+color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = 395.0
+offset_top = 31.0
+offset_right = 875.0
+offset_bottom = 71.0
+color = Color(1, 0.596078, 0.898039, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 458.0
+offset_top = 30.0
+offset_right = 712.0
+offset_bottom = 62.0
+scale = Vector2(1.5, 1.698)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("5_odtwq")
+theme_override_font_sizes/normal_font_size = 0
+text = "What should I post next?"
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+offset_left = 668.0
+offset_top = 90.0
+offset_right = 1180.0
+offset_bottom = 594.0
+color = Color(1, 0, 1, 1)
+
+[node name="Polygon2D3" type="Polygon2D" parent="."]
+position = Vector2(316, 34)
+color = Color(0.215902, 0.215902, 0.215902, 1)
+polygon = PackedVector2Array(360, 64, 856, 64, 856, 552, 360, 552)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 92.0
+offset_top = 90.0
+offset_right = 604.0
+offset_bottom = 594.0
+color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+position = Vector2(-260, 34)
+color = Color(0.215902, 0.215902, 0.215902, 1)
+polygon = PackedVector2Array(360, 64, 856, 64, 856, 552, 360, 552)
 
 [connection signal="pressed" from="Post3" to="." method="_on_post_3_pressed"]
 [connection signal="pressed" from="Post4" to="." method="_on_post_4_pressed"]

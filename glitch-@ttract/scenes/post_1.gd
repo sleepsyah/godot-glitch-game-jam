@@ -23,4 +23,4 @@ func _on_pressed() -> void:
 	#sound.play()
 	#	clown.show()$"../clown"
 	#await get_tree().create_timer(1.0).timeout
-	get_tree().change_scene_to_file("res://scenes/comment_screen.tscn")
+	get_tree().change_scene_to_file("res://scenes/comment_screen_1_bad.tscn")

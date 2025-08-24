@@ -260,7 +260,8 @@ offset_right = 512.0
 offset_bottom = 668.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_vboge")
-text = "Name: y/n
+text = "Username: @yurilover9000
+Name: ivy
 Age: 6teen
 Sexuality: lesbian
 Height: 5’7
@@ -268,7 +269,6 @@ School: Chesterview High
 Zodiac: scorpio moon cancer rising
 MBTI type: infp
 Music: patd, pierce the veil, ayesha erotica, avril lavigne 
-more info
 "
 
 [node name="RichTextLabel5" type="RichTextLabel" parent="profile texts"]
@@ -389,7 +389,7 @@ theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("3_l8fel")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]Daisy Lastname[color=f7d2ed][font_size=150] | best friend | connected 2 years ago"
+text = "[font_size=200]@ems.poisxn (emma)[color=f7d2ed][font_size=150] | best friend | connected 2 years ago"
 vertical_alignment = 1
 
 [node name="connectiontext2" type="RichTextLabel" parent="connections"]
@@ -402,7 +402,7 @@ theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("3_l8fel")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]Noah Lastname[color=f7d2ed][font_size=150] | friend | connected 1 week ago"
+text = "[font_size=200]@noahh.tlou (noah)[color=f7d2ed][font_size=150] | friend | connected 1 week ago"
 vertical_alignment = 1
 
 [node name="connectiontext3" type="RichTextLabel" parent="connections"]
@@ -415,7 +415,7 @@ theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("3_l8fel")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]Emma Lastname[color=f7d2ed][font_size=150] | friend | connected 9 months ago"
+text = "[font_size=200]@starryglow (daisy)[color=f7d2ed][font_size=150] | friend | connected 9 months ago"
 vertical_alignment = 1
 
 [node name="Beautiful-woman-pouting-while-looking-camera-beach-sunshine(1)" type="Sprite2D" parent="connections"]
