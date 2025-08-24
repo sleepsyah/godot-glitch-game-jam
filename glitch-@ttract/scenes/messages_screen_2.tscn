@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cs1ybn26enmeo"]
+[gd_scene load_steps=9 format=3 uid="uid://cs1ybn26enmeo"]
 
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_2q8eb"]
 [ext_resource type="Script" uid="uid://b02mw8js7hn6x" path="res://scenes/messages_screen_2.gd" id="1_qajdl"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="4_xnmrj"]
 [ext_resource type="FontFile" uid="uid://cu4tiafnexoab" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf" id="5_qpmbe"]
 [ext_resource type="Texture2D" uid="uid://dt2lpeddngefp" path="res://images/andrea-de-santis-3YQM_f5IY5c-unsplash.jpg" id="6_uvmg3"]
+[ext_resource type="Texture2D" uid="uid://cgtgu1a6n36hv" path="res://sprites/images/Art5.png" id="8_pt0xh"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="9_wlqlr"]
 
 [node name="messages_screen2" type="Node2D"]
@@ -272,5 +273,27 @@ vertical_alignment = 1
 position = Vector2(2080, 312)
 scale = Vector2(0.042, 0.042)
 texture = ExtResource("6_uvmg3")
+
+[node name="profiles" type="Node2D" parent="."]
+
+[node name="profile4" type="Sprite2D" parent="profiles"]
+position = Vector2(84, 524)
+scale = Vector2(0.0351563, 0.0351562)
+texture = ExtResource("8_pt0xh")
+
+[node name="profile3" type="Sprite2D" parent="profiles"]
+position = Vector2(84, 412)
+scale = Vector2(0.0351562, 0.0351563)
+texture = ExtResource("8_pt0xh")
+
+[node name="profile2" type="Sprite2D" parent="profiles"]
+position = Vector2(84, 300)
+scale = Vector2(0.0351563, 0.0351562)
+texture = ExtResource("8_pt0xh")
+
+[node name="profile1" type="Sprite2D" parent="profiles"]
+position = Vector2(84, 188)
+scale = Vector2(0.0351563, 0.0351562)
+texture = ExtResource("8_pt0xh")
 
 [connection signal="pressed" from="goending" to="." method="_on_goending_pressed"]

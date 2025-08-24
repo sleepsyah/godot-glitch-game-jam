@@ -10,11 +10,12 @@
 script/source = "extends Node2D
 
 
-func _on_messages_2_pressed() -> void:
-	get_tree().change_scene_to_file(\"res://scenes/messages_screen_2.tscn\")
+
+func _on_messages_1_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://scenes/messages_screen.tscn\")
 "
 
-[node name="comment_screen_bad" type="Node2D"]
+[node name="comment_screen_1_bad" type="Node2D"]
 script = SubResource("GDScript_g7nrg")
 
 [node name="background" type="Sprite2D" parent="."]
@@ -408,7 +409,7 @@ offset_bottom = 692.0
 color = Color(0, 0, 0, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="messages2" type="Button" parent="."]
+[node name="messages1" type="Button" parent="."]
 offset_left = 447.0
 offset_top = 623.0
 offset_right = 833.0
@@ -418,4 +419,4 @@ theme_override_fonts/font = ExtResource("3_abbnf")
 text = "One new message"
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="messages2" to="." method="_on_messages_2_pressed"]
+[connection signal="pressed" from="messages1" to="." method="_on_messages_1_pressed"]
