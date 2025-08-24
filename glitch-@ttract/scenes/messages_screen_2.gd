@@ -16,7 +16,6 @@ func _ready() -> void:
 	$interface/me2.position=Vector2(416,496)
 	$notification.play()
 	await get_tree().create_timer(1.5).timeout
-	$ColorRect2.position = Vector2(1024,32)
 	$goending.show()
 func _on_goending_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/hackScreen.tscn")

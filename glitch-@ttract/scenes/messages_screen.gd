@@ -25,5 +25,4 @@ func _ready() -> void:
 	$interface/unknown6.position = Vector2(416,480)
 	$notification.play()
 	await get_tree().create_timer(1.5).timeout
-	$ColorRect2.position = Vector2(1024,32)
 	$Button.show()
