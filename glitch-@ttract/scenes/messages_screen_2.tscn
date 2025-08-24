@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_2q8eb"]
 [ext_resource type="Script" uid="uid://b02mw8js7hn6x" path="res://scenes/messages_screen_2.gd" id="1_qajdl"]
 [ext_resource type="AudioStream" uid="uid://dj2hbc8fa1b3u" path="res://images/new-notification-09-352705.mp3" id="3_l8at2"]
-[ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="4_xnmrj"]
+[ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="5_pt0xh"]
 [ext_resource type="FontFile" uid="uid://cu4tiafnexoab" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf" id="5_qpmbe"]
 [ext_resource type="Texture2D" uid="uid://dt2lpeddngefp" path="res://images/andrea-de-santis-3YQM_f5IY5c-unsplash.jpg" id="6_uvmg3"]
 [ext_resource type="Texture2D" uid="uid://cgtgu1a6n36hv" path="res://sprites/images/Art5.png" id="8_pt0xh"]
@@ -13,9 +13,16 @@
 script = ExtResource("1_qajdl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(640, 360)
+position = Vector2(637, 340)
 scale = Vector2(1, 0.9)
 texture = ExtResource("1_2q8eb")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 1027.0
+offset_top = 32.0
+offset_right = 1218.0
+offset_bottom = 106.0
+color = Color(0, 0, 0, 1)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 16.0
@@ -28,10 +35,10 @@ color = Color(1, 0, 1, 1)
 stream = ExtResource("3_l8at2")
 
 [node name="goending" type="Button" parent="."]
-offset_left = 1136.0
-offset_top = 48.0
-offset_right = 1266.0
-offset_bottom = 88.0
+offset_left = 1031.0
+offset_top = 36.0
+offset_right = 1214.0
+offset_bottom = 101.0
 theme = ExtResource("9_wlqlr")
 theme_override_font_sizes/font_size = 20
 text = "logout"
@@ -93,12 +100,19 @@ offset_right = 1256.0
 offset_bottom = 696.0
 color = Color(1, 0, 1, 1)
 
+[node name="ColorRect15" type="ColorRect" parent="interface"]
+offset_left = 330.0
+offset_top = 36.0
+offset_right = 950.0
+offset_bottom = 102.0
+color = Color(0, 0, 0, 1)
+
 [node name="ColorRect11" type="ColorRect" parent="interface"]
-offset_left = 336.0
-offset_top = 24.0
-offset_right = 944.0
-offset_bottom = 104.0
-color = Color(1, 0.596078, 0.898039, 1)
+offset_left = 334.0
+offset_top = 40.0
+offset_right = 946.0
+offset_bottom = 98.0
+color = Color(1, 0, 1, 1)
 
 [node name="ColorRect9" type="ColorRect" parent="interface"]
 offset_left = 392.0
@@ -108,15 +122,15 @@ offset_bottom = 696.0
 color = Color(0.929024, 0.885273, 0.95705, 1)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="interface"]
-offset_left = 336.0
-offset_top = 32.0
-offset_right = 6416.0
-offset_bottom = 752.0
+offset_left = 332.0
+offset_top = 27.0
+offset_right = 6412.0
+offset_bottom = 747.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("4_xnmrj")
+theme_override_fonts/normal_font = ExtResource("5_pt0xh")
 theme_override_font_sizes/normal_font_size = 500
-text = "Messages"
+text = "private messages"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -164,7 +178,7 @@ offset_right = 2320.0
 offset_bottom = 1288.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("4_xnmrj")
+theme_override_fonts/normal_font = ExtResource("5_pt0xh")
 theme_override_font_sizes/normal_font_size = 400
 text = "daisy"
 vertical_alignment = 1
@@ -176,7 +190,7 @@ offset_right = 2320.0
 offset_bottom = 1176.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("4_xnmrj")
+theme_override_fonts/normal_font = ExtResource("5_pt0xh")
 theme_override_font_sizes/normal_font_size = 400
 text = "Unknown"
 vertical_alignment = 1
@@ -188,7 +202,7 @@ offset_right = 2320.0
 offset_bottom = 1512.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("4_xnmrj")
+theme_override_fonts/normal_font = ExtResource("5_pt0xh")
 theme_override_font_sizes/normal_font_size = 400
 text = "noah"
 vertical_alignment = 1
@@ -200,7 +214,7 @@ offset_right = 2320.0
 offset_bottom = 1400.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("4_xnmrj")
+theme_override_fonts/normal_font = ExtResource("5_pt0xh")
 theme_override_font_sizes/normal_font_size = 400
 text = "emma!"
 vertical_alignment = 1

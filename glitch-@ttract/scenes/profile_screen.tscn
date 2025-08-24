@@ -72,10 +72,10 @@ offset_bottom = 712.0
 color = Color(1, 0, 1, 1)
 
 [node name="ColorRect7" type="ColorRect" parent="borders"]
-offset_left = 16.0
-offset_top = 24.0
-offset_right = 1264.0
-offset_bottom = 104.0
+offset_left = 19.0
+offset_top = 19.0
+offset_right = 1267.0
+offset_bottom = 101.0
 color = Color(1, 0, 1, 1)
 
 [node name="profile boxes" type="Node2D" parent="."]
@@ -100,7 +100,7 @@ polygon = PackedVector2Array(202.943, 54.59, 202.943, 2.542, 46.8101, 2.5534, 46
 position = Vector2(-349, 32)
 scale = Vector2(7.34811, 1.34918)
 color = Color(0.570385, 0.0169126, 0.427584, 1)
-polygon = PackedVector2Array(219.376, 47.4362, 219.376, -5.92953, 50.6253, -5.92953, 50.6253, 47.4362)
+polygon = PackedVector2Array(219.376, 47.4362, 219.376, -5.92953, 50.6253, -5.92953, 50.6253, 47.4362, 114.838, 47.4362, 116.605, 47.4362)
 uv = PackedVector2Array(200, 50, 200, 2, 50, 2, 50, 50)
 
 [node name="Polygon2D4" type="Polygon2D" parent="profile boxes"]
@@ -358,10 +358,10 @@ scale = Vector2(0.153007, 0.129323)
 texture = ExtResource("2_mhd6v")
 
 [node name="Posts" type="Button" parent="."]
-offset_left = 60.0
-offset_top = 40.0
-offset_right = 3910.0
-offset_bottom = 990.0
+offset_left = 58.0
+offset_top = 37.0
+offset_right = 3908.0
+offset_bottom = 987.0
 scale = Vector2(0.05, 0.05)
 theme_override_fonts/font = ExtResource("2_vboge")
 theme_override_font_sizes/font_size = 600
