@@ -35,10 +35,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="likes_number3" type="RichTextLabel" parent="."]
-offset_left = 117.0
-offset_top = 559.0
-offset_right = 265.0
-offset_bottom = 599.0
+offset_left = 152.0
+offset_top = 552.0
+offset_right = 300.0
+offset_bottom = 592.0
 scale = Vector2(1.5, 1.5)
 text = "20.20k likes"
 horizontal_alignment = 1
@@ -65,11 +65,51 @@ scale = Vector2(2.12667, 2.23667)
 texture = ExtResource("10_qbfqv")
 
 [node name="likes_number4" type="RichTextLabel" parent="."]
-offset_left = 340.0
-offset_top = 52.0
-offset_right = 740.0
-offset_bottom = 92.0
+offset_left = 368.0
+offset_top = 32.0
+offset_right = 768.0
+offset_bottom = 72.0
 scale = Vector2(1.5, 1.5)
 text = "Thanks for playing our game!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="likes_number6" type="RichTextLabel" parent="."]
+offset_left = 311.5
+offset_top = 934.5
+offset_right = 459.5
+offset_bottom = 974.5
+scale = Vector2(1.5, 1.5)
+text = "20.20k likes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="likes_number5" type="RichTextLabel" parent="."]
+offset_left = 152.0
+offset_top = 96.0
+offset_right = 300.0
+offset_bottom = 136.0
+scale = Vector2(1.5, 1.5)
+text = "@hanaomar18"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="likes_number7" type="RichTextLabel" parent="."]
+offset_left = 560.0
+offset_top = 104.0
+offset_right = 708.0
+offset_bottom = 144.0
+scale = Vector2(1.5, 1.5)
+text = "@sleepysah"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="likes_number8" type="RichTextLabel" parent="."]
+offset_left = 960.0
+offset_top = 104.0
+offset_right = 1108.0
+offset_bottom = 144.0
+scale = Vector2(1.5, 1.5)
+text = "@sushmita.j"
 horizontal_alignment = 1
 vertical_alignment = 1
