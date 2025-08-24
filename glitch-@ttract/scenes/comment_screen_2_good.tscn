@@ -237,7 +237,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@ems.pxison (emma)[font_size=150] | i love you queen| 2 seconds ago"
+text = "[font_size=200]@Xx.sc3ne_qu3en.xX (gia)[font_size=150] | slayyyyy | 11 seconds ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
@@ -251,23 +251,22 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@Xx.sc3ne_qu3en.xX (gia)[font_size=150] | [color=#000000] flowers bloom when you walk (⌒▽⌒)☆[color=#000000]| 55 seconds ago"
+text = "[font_size=200]@g0th.b1mb0 (raven)[font_size=150] | [color=#000000]don't gatekeep where's the top from?? [color=#000000]| 42 seconds ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="comment3" type="RichTextLabel" parent="comments"]
-offset_left = 279.974
-offset_top = 151.021
-offset_right = 5959.97
-offset_bottom = 551.021
+offset_left = 280.0
+offset_top = 151.0
+offset_right = 7010.0
+offset_bottom = 551.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@g0th.b1mb0 (raven)[font_size=150] | ur so gorggg<3 | 15 seconds ago"
+text = "[font_size=200]@defnotcharls (charlie)[font_size=150] | gurly knew she ate | 16 seconds ago"
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="comment4" type="RichTextLabel" parent="comments"]
 offset_left = 279.0
@@ -279,7 +278,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@ellie.williams.gf (ari)[font_size=150] | do you do weddings? | 40 secondsago"
+text = "[font_size=200]@starryglow (daisy)[font_size=150] | queen u look gorgeousss | 59 seconds ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
@@ -293,7 +292,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@vamp1re_ (vamp)[font_size=150] | your belts are soo cute! where'd you get? | 1 minute ago"
+text = "[font_size=200]@emowowo (auggie)[font_size=150] | <3<3<3 | 1 minute ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
@@ -307,7 +306,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@maxx.[font_size=150] | fire |  3 minutes ago"
+text = "[font_size=200]@gorg.george (georgie)[font_size=150] | W fit |  4 minutes ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 

@@ -279,7 +279,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_h4vos")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@ellie.williams.gf (ari)[font_size=150] | do you do weddings? | 40 secondsago"
+text = "[font_size=200]@ellie.williams.gf (ari)[font_size=150] | do you do weddings? | 40 seconds ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 

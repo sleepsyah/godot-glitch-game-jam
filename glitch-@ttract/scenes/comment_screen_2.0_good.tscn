@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="1_iynsf"]
 [ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="2_1b06u"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="3_djla4"]
-[ext_resource type="Script" path="res://scenes/messages.gd" id="4_kvwvx"]
+[ext_resource type="Script" uid="uid://bllh3t55axjfm" path="res://scenes/messages.gd" id="4_kvwvx"]
 
 [sub_resource type="Theme" id="Theme_0d0na"]
 
