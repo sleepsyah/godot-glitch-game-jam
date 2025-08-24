@@ -1,13 +1,15 @@
-[gd_scene load_steps=13 format=3 uid="uid://3xk0j5j8ycbp"]
+[gd_scene load_steps=15 format=3 uid="uid://3xk0j5j8ycbp"]
 
 [ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="1_2ckv8"]
-[ext_resource type="Script" path="res://scenes/credits.gd" id="1_8gwij"]
 [ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="2_0ctdu"]
 [ext_resource type="FontFile" uid="uid://snlsj1asvqde" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Bold.ttf" id="3_2fbfq"]
 [ext_resource type="Texture2D" uid="uid://brv3kepqo3d7a" path="res://images/gggCircle_1.png" id="4_8gwij"]
 [ext_resource type="Script" path="res://scenes/name.gd" id="4_kyhnv"]
 [ext_resource type="Script" path="res://scenes/username.gd" id="5_ooihk"]
 [ext_resource type="Script" path="res://scenes/likes_number.gd" id="6_ooihk"]
+[ext_resource type="Texture2D" uid="uid://yi1oq2s23s4e" path="res://sprites/images/pfp3.png" id="8_7lgdl"]
+[ext_resource type="Texture2D" uid="uid://se84xkgmct0p" path="res://sprites/images/pfp2.png" id="9_c6kru"]
+[ext_resource type="Texture2D" uid="uid://buyi5ur0rlpso" path="res://sprites/images/pfp1.jpg" id="10_qbfqv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mah5v"]
 bg_color = Color(1, 0.596078, 0.898039, 0)
@@ -465,8 +467,10 @@ scale = Vector2(1.51501, 1.41144)
 texture = ExtResource("1_2ckv8")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1292.0
-offset_bottom = 732.0
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 1284.0
+offset_bottom = 724.0
 color = Color(0, 0, 0, 1)
 
 [node name="Hana" type="Node2D" parent="."]
@@ -507,7 +511,7 @@ offset_right = 201.0
 offset_bottom = 65.0
 scale = Vector2(1.5, 1.5)
 bbcode_enabled = true
-text = "Hana Surname"
+text = "Hana Omar"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("4_kyhnv")
@@ -523,19 +527,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("5_ooihk")
 
-[node name="credits" type="RichTextLabel" parent="Hana/ColorRect3/text"]
-offset_left = 21.0
-offset_top = 148.0
-offset_right = 252.0
-offset_bottom = 340.0
-text = "I contributed assets and design to the following scenes:
-
-- xxxxxxxxxxxxxxx
-- xxxxxxxxxxxxxxx
-- xxxxxxxxxxxxxxx
-- xxxxxxxxxxxxxxx"
-script = ExtResource("1_8gwij")
-
 [node name="ColorRect" type="ColorRect" parent="Hana/ColorRect3"]
 layout_mode = 0
 offset_left = 9.0
@@ -546,10 +537,10 @@ color = Color(1, 0, 1, 0)
 
 [node name="likes_number" type="RichTextLabel" parent="Hana/ColorRect3/ColorRect"]
 layout_mode = 0
-offset_left = 41.0
-offset_top = 1.0
-offset_right = 189.0
-offset_bottom = 41.0
+offset_left = 33.0
+offset_top = 156.0
+offset_right = 181.0
+offset_bottom = 196.0
 scale = Vector2(1.5, 1.5)
 text = "20.20k likes"
 horizontal_alignment = 1
@@ -614,19 +605,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("5_ooihk")
 
-[node name="credits" type="RichTextLabel" parent="Sarah/ColorRect3/text2"]
-offset_left = 21.0
-offset_top = 148.0
-offset_right = 252.0
-offset_bottom = 340.0
-text = "I contributed assets and design to the following scenes:
-
-- xxxxxxxxxxxxxxx
-- xxxxxxxxxxxxxxx
-- xxxxxxxxxxxxxxx
-- xxxxxxxxxxxxxxx"
-script = ExtResource("1_8gwij")
-
 [node name="ColorRect" type="ColorRect" parent="Sarah/ColorRect3"]
 layout_mode = 0
 offset_left = 9.0
@@ -637,10 +615,10 @@ color = Color(1, 0, 1, 0)
 
 [node name="likes_number" type="RichTextLabel" parent="Sarah/ColorRect3/ColorRect"]
 layout_mode = 0
-offset_left = 37.0
-offset_top = 3.0
-offset_right = 185.0
-offset_bottom = 43.0
+offset_left = 16.0
+offset_top = 164.0
+offset_right = 164.0
+offset_bottom = 204.0
 scale = Vector2(1.5, 1.5)
 text = "18.1k likes"
 horizontal_alignment = 1
@@ -705,19 +683,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("5_ooihk")
 
-[node name="credits" type="RichTextLabel" parent="Sushmita/ColorRect3/text3"]
-offset_left = 25.0
-offset_top = 147.0
-offset_right = 256.0
-offset_bottom = 339.0
-text = "I contributed assets and design to the following scenes:
-
-- xxxxxxxxxxxxxxx
-- xxxxxxxxxxxxxxx
-- xxxxxxxxxxxxxxx
-- xxxxxxxxxxxxxxx"
-script = ExtResource("1_8gwij")
-
 [node name="ColorRect" type="ColorRect" parent="Sushmita/ColorRect3"]
 layout_mode = 0
 offset_left = 9.0
@@ -728,10 +693,10 @@ color = Color(1, 0, 1, 0)
 
 [node name="likes_number" type="RichTextLabel" parent="Sushmita/ColorRect3/ColorRect"]
 layout_mode = 0
-offset_left = 37.0
-offset_top = 3.0
-offset_right = 185.0
-offset_bottom = 43.0
+offset_left = 35.0
+offset_top = 164.0
+offset_right = 183.0
+offset_bottom = 204.0
 scale = Vector2(1.5, 1.5)
 text = "3.20k likes"
 horizontal_alignment = 1
@@ -748,10 +713,10 @@ texture = ExtResource("2_0ctdu")
 position = Vector2(192, 4)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="thanks"]
-offset_left = 56.0
-offset_top = 536.0
-offset_right = 1272.0
-offset_bottom = 864.0
+offset_left = 48.0
+offset_top = 572.0
+offset_right = 1264.0
+offset_bottom = 900.0
 scale = Vector2(0.5, 0.5)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_2fbfq")
@@ -780,3 +745,18 @@ libraries = {
 &"": SubResource("AnimationLibrary_kyhnv")
 }
 autoplay = "fade"
+
+[node name="Pfp3" type="Sprite2D" parent="."]
+position = Vector2(255, 344.75)
+scale = Vector2(1.32031, 1.36914)
+texture = ExtResource("8_7lgdl")
+
+[node name="Pfp2" type="Sprite2D" parent="."]
+position = Vector2(672.75, 343.75)
+scale = Vector2(1.31836, 1.31445)
+texture = ExtResource("9_c6kru")
+
+[node name="Pfp1" type="Sprite2D" parent="."]
+position = Vector2(1079.5, 344.25)
+scale = Vector2(2.12667, 2.23667)
+texture = ExtResource("10_qbfqv")
