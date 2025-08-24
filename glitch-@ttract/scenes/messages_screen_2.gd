@@ -1,6 +1,7 @@
 extends Node2D
 
 func _ready() -> void:
+	GlobalAudio.stop()
 	$goending.hide()
 	await get_tree().create_timer(1.0).timeout
 	$"Andrea-de-santis-3yqmF5iy5c-unsplash".position = Vector2(592,312)

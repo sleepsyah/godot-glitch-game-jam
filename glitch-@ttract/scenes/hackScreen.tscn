@@ -1,8 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://dllxxfb4r7byt"]
+[gd_scene load_steps=16 format=3 uid="uid://dllxxfb4r7byt"]
 
 [ext_resource type="Script" uid="uid://bu5bi4qch76a2" path="res://scenes/hack_screen.gd" id="1_6lnsm"]
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_qxx0d"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_6lnsm"]
+[ext_resource type="AudioStream" uid="uid://wfjp4r8n4qk" path="res://images/lose sound 2 - 1_0.wav" id="2_hnpxc"]
+[ext_resource type="AudioStream" uid="uid://wq0v3dowm3ou" path="res://images/drone53.wav" id="3_fltj5"]
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="3_yj6jf"]
 [ext_resource type="Texture2D" uid="uid://bpxfpfc2gxs1x" path="res://images/black-glitch-effect-digital-noise-texture-background.jpg" id="4_yj6jf"]
 [ext_resource type="Texture2D" uid="uid://brq2r7o3jlyaw" path="res://images/glitch-effect-black-background.jpg" id="5_7kbjv"]
@@ -26,6 +28,16 @@ bg_color = Color(1, 0.596078, 0.898039, 1)
 
 [node name="HackScreen" type="Node2D"]
 script = ExtResource("1_6lnsm")
+
+[node name="error" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(635, 358)
+stream = ExtResource("2_hnpxc")
+
+[node name="drone" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(635, 358)
+stream = ExtResource("3_fltj5")
+volume_db = -8.914
+pitch_scale = 1.08
 
 [node name="background" type="Sprite2D" parent="."]
 position = Vector2(635, 358)
