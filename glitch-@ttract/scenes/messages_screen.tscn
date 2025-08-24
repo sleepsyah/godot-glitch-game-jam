@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://5wdvifwdiyig"]
+[gd_scene load_steps=16 format=3 uid="uid://5wdvifwdiyig"]
 
 [ext_resource type="Script" path="res://scenes/messages_screen.gd" id="1_qu8al"]
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="2_qk12n"]
@@ -342,7 +342,7 @@ theme_override_colors/default_color = Color(0, 0, 1, 1)
 theme_override_fonts/normal_font = ExtResource("12_ryjn4")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
-text = "Unknown: [color=black][font_size=180]I liked your outfit[color=black] "
+text = "Unknown: [color=black][font_size=180]I liked your post today[color=black] "
 vertical_alignment = 1
 
 [node name="typemsg" type="RichTextLabel" parent="interface"]
