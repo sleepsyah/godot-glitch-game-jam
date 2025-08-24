@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dit3wh7y5qb68"]
+
+[ext_resource type="PackedScene" uid="uid://c3gw44c88emjj" path="res://scenes/comment_screen_2_good.tscn" id="1_4eric"]
+
+[node name="comment_screen" type="Node2D"]
+
+[node name="comment_screen_bad" parent="." instance=ExtResource("1_4eric")]
