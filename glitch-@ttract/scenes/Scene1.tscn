@@ -1,33 +1,32 @@
-[gd_scene load_steps=15 format=3 uid="uid://5wdvifwdiyig"]
+[gd_scene load_steps=14 format=3 uid="uid://lm348nkp6vaj"]
 
-[ext_resource type="Script" path="res://scenes/messages_screen.gd" id="1_qu8al"]
-[ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="2_qk12n"]
-[ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="3_0a0xl"]
-[ext_resource type="Script" uid="uid://dakvilus8i5ep" path="res://scenes/to3d.gd" id="4_18c41"]
-[ext_resource type="Texture2D" uid="uid://cxm03dgq3l10a" path="res://images/2025_08_19_0zb_Kleki.png" id="5_jidah"]
-[ext_resource type="Texture2D" uid="uid://btecui7tiaa8e" path="res://images/2025_08_19_0zm_Kleki.png" id="6_wcya2"]
-[ext_resource type="Texture2D" uid="uid://vfkf0puwg0xb" path="res://images/2025_08_19_0yt_Kleki.png" id="7_06ssc"]
-[ext_resource type="Texture2D" uid="uid://bexuqsfsu4nng" path="res://images/2025_08_19_0yu_Kleki.png" id="8_xh41c"]
-[ext_resource type="Texture2D" uid="uid://c7qx6t5gqglkn" path="res://images/2025_08_19_0yu_Kleki (1).png" id="9_rjx67"]
-[ext_resource type="Texture2D" uid="uid://bajmsn6t2ox11" path="res://images/2025_08_19_0yv_Kleki.png" id="10_cg8ec"]
-[ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="11_lbhqg"]
-[ext_resource type="FontFile" uid="uid://cu4tiafnexoab" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf" id="12_ryjn4"]
-[ext_resource type="AudioStream" uid="uid://dj2hbc8fa1b3u" path="res://images/new-notification-09-352705.mp3" id="13_qn6s4"]
+[ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_koy8v"]
+[ext_resource type="Script" uid="uid://dakvilus8i5ep" path="res://scenes/to3d.gd" id="2_jb1ob"]
+[ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_koy8v"]
+[ext_resource type="Texture2D" uid="uid://cxm03dgq3l10a" path="res://images/2025_08_19_0zb_Kleki.png" id="4_agnij"]
+[ext_resource type="Texture2D" uid="uid://vfkf0puwg0xb" path="res://images/2025_08_19_0yt_Kleki.png" id="4_fw15f"]
+[ext_resource type="Texture2D" uid="uid://bexuqsfsu4nng" path="res://images/2025_08_19_0yu_Kleki.png" id="5_agnij"]
+[ext_resource type="Texture2D" uid="uid://btecui7tiaa8e" path="res://images/2025_08_19_0zm_Kleki.png" id="5_d2pwn"]
+[ext_resource type="Texture2D" uid="uid://c7qx6t5gqglkn" path="res://images/2025_08_19_0yu_Kleki (1).png" id="6_d2pwn"]
+[ext_resource type="Texture2D" uid="uid://bajmsn6t2ox11" path="res://images/2025_08_19_0yv_Kleki.png" id="7_x0ogb"]
+[ext_resource type="FontFile" uid="uid://bwvkiks2r2ca5" path="res://themes/JMH Typewriter-Bold.ttf" id="12_so5j8"]
+[ext_resource type="FontFile" uid="uid://cu4tiafnexoab" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf" id="13_a0q6h"]
+[ext_resource type="AudioStream" uid="uid://dj2hbc8fa1b3u" path="res://images/new-notification-09-352705.mp3" id="13_so5j8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6eqy8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_06ssc")
+"texture": ExtResource("4_fw15f")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_xh41c")
+"texture": ExtResource("5_agnij")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_rjx67")
+"texture": ExtResource("6_d2pwn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_cg8ec")
+"texture": ExtResource("7_x0ogb")
 }],
 "loop": true,
 "name": &"default",
@@ -35,12 +34,11 @@ animations = [{
 }]
 
 [node name="messages_screen" type="Node2D"]
-script = ExtResource("1_qu8al")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(646, 374)
 scale = Vector2(1.0625, 0.973437)
-texture = ExtResource("2_qk12n")
+texture = ExtResource("1_koy8v")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 16.0
@@ -54,10 +52,10 @@ offset_left = 1128.0
 offset_top = 48.0
 offset_right = 1258.0
 offset_bottom = 88.0
-theme = ExtResource("3_0a0xl")
+theme = ExtResource("2_koy8v")
 theme_override_font_sizes/font_size = 20
 text = "posts"
-script = ExtResource("4_18c41")
+script = ExtResource("2_jb1ob")
 
 [node name="probably wont be used" type="Node2D" parent="."]
 
@@ -65,13 +63,13 @@ script = ExtResource("4_18c41")
 visible = false
 position = Vector2(472, 328)
 scale = Vector2(0.624649, 0.655611)
-texture = ExtResource("5_jidah")
+texture = ExtResource("4_agnij")
 
 [node name="pink1" type="Sprite2D" parent="probably wont be used"]
 visible = false
 position = Vector2(416, 392)
 scale = Vector2(0.624649, 0.655611)
-texture = ExtResource("6_wcya2")
+texture = ExtResource("5_d2pwn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="probably wont be used"]
 visible = false
@@ -160,7 +158,7 @@ offset_right = 6416.0
 offset_bottom = 752.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("11_lbhqg")
+theme_override_fonts/normal_font = ExtResource("12_so5j8")
 theme_override_font_sizes/normal_font_size = 500
 text = "Messages"
 horizontal_alignment = 1
@@ -203,7 +201,7 @@ offset_right = 2320.0
 offset_bottom = 1176.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("11_lbhqg")
+theme_override_fonts/normal_font = ExtResource("12_so5j8")
 theme_override_font_sizes/normal_font_size = 400
 text = "Unknown"
 vertical_alignment = 1
@@ -215,7 +213,7 @@ offset_right = 2320.0
 offset_bottom = 1512.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("11_lbhqg")
+theme_override_fonts/normal_font = ExtResource("12_so5j8")
 theme_override_font_sizes/normal_font_size = 400
 text = "noah"
 vertical_alignment = 1
@@ -227,7 +225,7 @@ offset_right = 2320.0
 offset_bottom = 1400.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("11_lbhqg")
+theme_override_fonts/normal_font = ExtResource("12_so5j8")
 theme_override_font_sizes/normal_font_size = 400
 text = "emma!"
 vertical_alignment = 1
@@ -239,7 +237,7 @@ offset_right = 2320.0
 offset_bottom = 1288.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("11_lbhqg")
+theme_override_fonts/normal_font = ExtResource("12_so5j8")
 theme_override_font_sizes/normal_font_size = 400
 text = "daisy"
 vertical_alignment = 1
@@ -251,7 +249,7 @@ offset_right = 8400.0
 offset_bottom = 1440.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("12_ryjn4")
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 180
 bbcode_enabled = true
 text = "[font_size=200][color=blue]Unknown: [color=black][font_size=180]you have 24 hours"
@@ -264,7 +262,7 @@ offset_right = 7920.0
 offset_bottom = 1288.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("12_ryjn4")
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 180
 text = "don't ignore me"
 vertical_alignment = 1
@@ -276,7 +274,7 @@ offset_right = 7920.0
 offset_bottom = 1328.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("12_ryjn4")
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 180
 bbcode_enabled = true
 text = "[font_size=180]you won't like what happens"
@@ -289,7 +287,7 @@ offset_right = 7920.0
 offset_bottom = 1248.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("12_ryjn4")
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 180
 text = "that's where you live right? "
 vertical_alignment = 1
@@ -301,7 +299,7 @@ offset_right = 6400.0
 offset_bottom = 1384.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(1, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("12_ryjn4")
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
 text = "Me: [color=black][font_size=180]why are you doing this [color=black]"
@@ -314,7 +312,7 @@ offset_right = 5680.0
 offset_bottom = 1152.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(1, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("12_ryjn4")
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
 text = "Me: [color=black][font_size=180]thank u!!:3[color=black]"
@@ -327,7 +325,7 @@ offset_right = 6960.0
 offset_bottom = 1208.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 1, 1)
-theme_override_fonts/normal_font = ExtResource("12_ryjn4")
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
 text = "Unknown: [color=black][font_size=180]1092 atraer street.[color=black]"
@@ -340,7 +338,7 @@ offset_right = 6576.0
 offset_bottom = 1096.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 1, 1)
-theme_override_fonts/normal_font = ExtResource("12_ryjn4")
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
 text = "Unknown: [color=black][font_size=180]I liked your outfit[color=black] "
@@ -353,10 +351,10 @@ offset_right = 8744.0
 offset_bottom = 1488.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0.359069, 0.359069, 0.359069, 1)
-theme_override_fonts/normal_font = ExtResource("12_ryjn4")
+theme_override_fonts/normal_font = ExtResource("13_a0q6h")
 theme_override_font_sizes/normal_font_size = 250
 text = "type your message..."
 vertical_alignment = 1
 
 [node name="notification" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("13_qn6s4")
+stream = ExtResource("13_so5j8")
