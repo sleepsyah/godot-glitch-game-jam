@@ -1,10 +1,66 @@
-[gd_scene load_steps=3 format=3 uid="uid://1etmqy1dslfe"]
+[gd_scene load_steps=7 format=3 uid="uid://dcatyuekvp8je"]
 
-[ext_resource type="Script" path="res://scenes/system_overload.gd" id="1_b8kdx"]
+[ext_resource type="Script" uid="uid://ch8fv7x4oti4p" path="res://scenes/system_overload.gd" id="1_b8kdx"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="1_utsle"]
+[ext_resource type="AudioStream" uid="uid://c7vsikqj8eks6" path="res://images/music-box-scary-290198.mp3" id="2_6cat2"]
+
+[sub_resource type="Animation" id="Animation_al8io"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:pitch_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.97]
+}
+
+[sub_resource type="Animation" id="Animation_6cat2"]
+resource_name = "sound"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:pitch_scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 8.23333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.97, 1.07]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fd4qc"]
+_data = {
+&"RESET": SubResource("Animation_al8io"),
+&"sound": SubResource("Animation_6cat2")
+}
 
 [node name="SystemOverload" type="Node2D"]
 script = ExtResource("1_b8kdx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../musicbox")
+libraries = {
+&"": SubResource("AnimationLibrary_fd4qc")
+}
+autoplay = "sound"
+
+[node name="musicbox" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_6cat2")
+volume_db = -5.0
+pitch_scale = 0.97
+autoplay = true
+max_distance = 2005.0
+attenuation = 0.125
+max_polyphony = 5
+panning_strength = 0.89
 
 [node name="black" type="ColorRect" parent="."]
 offset_left = -5.0

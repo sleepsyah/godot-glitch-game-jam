@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://ctrcda06yn3yu"]
+[gd_scene load_steps=7 format=3 uid="uid://ctrcda06yn3yu"]
 
 [ext_resource type="Script" path="res://scenes/ending_screen.gd" id="1_7qmtr"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="1_htwen"]
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="2_7qmtr"]
 [ext_resource type="FontFile" uid="uid://cvdde6m5n27nh" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf" id="3_cas3l"]
 [ext_resource type="FontFile" uid="uid://snlsj1asvqde" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Bold.ttf" id="5_cas3l"]
+[ext_resource type="AudioStream" uid="uid://wq0v3dowm3ou" path="res://images/drone53.wav" id="6_nrc21"]
 
 [node name="EndingScreen" type="Node2D"]
 script = ExtResource("1_7qmtr")
@@ -53,5 +54,10 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("5_cas3l")
 theme_override_font_sizes/normal_font_size = 150
 text = "You never know what you’re going to attract."
+
+[node name="sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_nrc21")
+volume_db = -6.0
+autoplay = true
 
 [connection signal="pressed" from="Post3" to="." method="_on_post_3_pressed"]

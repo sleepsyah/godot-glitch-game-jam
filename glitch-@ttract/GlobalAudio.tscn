@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyfhf0gf8xhtb"]
+
+[ext_resource type="AudioStream" uid="uid://b4wsp0i1stnar" path="res://images/Curious Critters (Extended Version) 1.mp3" id="1_thuu5"]
+
+[node name="GlobalAudio" type="AudioStreamPlayer"]
+stream = ExtResource("1_thuu5")
+volume_db = -7.0
+autoplay = true
