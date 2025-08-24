@@ -17,13 +17,6 @@ position = Vector2(637, 340)
 scale = Vector2(1, 0.9)
 texture = ExtResource("1_2q8eb")
 
-[node name="ColorRect2" type="ColorRect" parent="."]
-offset_left = 1027.0
-offset_top = 32.0
-offset_right = 1218.0
-offset_bottom = 106.0
-color = Color(0, 0, 0, 1)
-
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 16.0
 offset_top = 120.0
@@ -229,7 +222,7 @@ theme_override_colors/default_color = Color(1, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("5_qpmbe")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
-text = "Me: [color=black][font_size=180]what the hell"
+text = "Me: [color=black][font_size=180]leave me alone."
 vertical_alignment = 1
 
 [node name="me1" type="RichTextLabel" parent="interface"]

@@ -50,13 +50,6 @@ offset_right = 1264.0
 offset_bottom = 704.0
 color = Color(1, 0, 1, 1)
 
-[node name="ColorRect2" type="ColorRect" parent="."]
-offset_left = 1008.0
-offset_top = 32.0
-offset_right = 1222.0
-offset_bottom = 106.0
-color = Color(0, 0, 0, 1)
-
 [node name="Button" type="Button" parent="."]
 offset_left = 1011.0
 offset_top = 36.0
@@ -318,7 +311,7 @@ theme_override_colors/default_color = Color(1, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("12_ryjn4")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
-text = "Me: [color=black][font_size=180]why are you doing this [color=black]"
+text = "Me: [color=black][font_size=180]ur f***ing crazy [color=black]"
 vertical_alignment = 1
 
 [node name="me1" type="RichTextLabel" parent="interface"]
