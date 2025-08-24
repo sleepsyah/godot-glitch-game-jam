@@ -72,7 +72,7 @@ offset_bottom = 29.153
 scale = Vector2(1.3, 1.3)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("6_7w54k")
-text = "These comments are so nice! oh, I have a new message! Let's open it!"
+text = "These comments are so nice! Another message? I guess I'll open it..."
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
@@ -105,7 +105,7 @@ offset_bottom = 18.256
 scale = Vector2(1.3, 1.3)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("6_7w54k")
-text = "you've attracted +100 followers"
+text = "you've earned +100 followers"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
@@ -228,17 +228,18 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(-87, 13)
 
 [node name="comment1" type="RichTextLabel" parent="comments"]
-offset_left = 281.0
-offset_top = 79.0
-offset_right = 8751.0
-offset_bottom = 479.0
+offset_left = 280.974
+offset_top = 79.0212
+offset_right = 7100.97
+offset_bottom = 479.021
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@Xx.sc3ne_qu3en.xX (gia)[font_size=150] | OMG i love this blog please don't go bald | 11 seconds ago"
+text = "[font_size=200]@Xx.sc3ne_qu3en.xX (gia)[font_size=150] | slayyyyy | 11 seconds ago"
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="comment2" type="RichTextLabel" parent="comments"]
 offset_left = 280.0
@@ -257,14 +258,14 @@ metadata/_edit_use_anchors_ = true
 [node name="comment3" type="RichTextLabel" parent="comments"]
 offset_left = 280.0
 offset_top = 151.0
-offset_right = 7670.0
+offset_right = 7010.0
 offset_bottom = 551.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@defnotcharls (charlie)[font_size=150] | slayyyy gurly knew she ate | 16 seconds ago"
+text = "[font_size=200]@defnotcharls (charlie)[font_size=150] | gurly knew she ate | 16 seconds ago"
 vertical_alignment = 1
 
 [node name="comment4" type="RichTextLabel" parent="comments"]
@@ -291,7 +292,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@emowowo (auggie)[font_size=150] | <3<3<3 taking this outfit as inspo! | 1 minute ago"
+text = "[font_size=200]@emowowo (auggie)[font_size=150] | <3<3<3 | 1 minute ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 

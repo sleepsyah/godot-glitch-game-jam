@@ -1,6 +1,4 @@
-
-[gd_scene load_steps=15 format=3 uid="uid://dllxxfb4r7byt"]
-
+[gd_scene load_steps=17 format=3 uid="uid://dllxxfb4r7byt"]
 
 [ext_resource type="Script" uid="uid://bu5bi4qch76a2" path="res://scenes/hack_screen.gd" id="1_6lnsm"]
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_qxx0d"]

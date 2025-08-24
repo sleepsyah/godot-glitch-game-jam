@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bdinqlofpiboc"]
+[gd_scene load_steps=7 format=3 uid="uid://bdinqlofpiboc"]
 
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_5ivla"]
 [ext_resource type="Script" uid="uid://vims4f1ut1p" path="res://scenes/posting_screen_2.gd" id="1_6l80l"]
@@ -6,21 +6,6 @@
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="5_odtwq"]
 [ext_resource type="FontFile" uid="uid://cvdde6m5n27nh" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf" id="6_f3rm3"]
 [ext_resource type="Texture2D" uid="uid://p260skikv5j2" path="res://sprites/images/Art4.0.png" id="6_odtwq"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f3rm3"]
-bg_color = Color(1, 0.596078, 0.898039, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u5e58"]
-bg_color = Color(1, 0.596078, 0.898039, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dxjrf"]
-bg_color = Color(1, 0.623529, 0.905882, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ra5sj"]
-bg_color = Color(1, 0.596078, 0.898039, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gfqyk"]
-bg_color = Color(1, 0.596078, 0.898039, 1)
 
 [node name="posting_screen2" type="Node2D"]
 script = ExtResource("1_6l80l")
@@ -32,37 +17,35 @@ texture = ExtResource("1_5ivla")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 offset_left = 196.0
-offset_top = 596.0
-offset_right = 404.0
-offset_bottom = 704.0
+offset_top = 608.0
+offset_right = 484.0
+offset_bottom = 676.0
 color = Color(1, 0, 1, 1)
 
 [node name="ColorRect3" type="ColorRect" parent="."]
-offset_left = 876.0
-offset_top = 597.0
-offset_right = 1083.0
-offset_bottom = 704.0
+offset_left = 796.0
+offset_top = 608.0
+offset_right = 1084.0
+offset_bottom = 676.0
 color = Color(1, 0, 1, 1)
 
 [node name="Post3" type="Button" parent="."]
 offset_left = 200.0
-offset_top = 600.0
-offset_right = 400.0
-offset_bottom = 700.0
+offset_top = 612.0
+offset_right = 480.0
+offset_bottom = 673.0
 theme = ExtResource("3_f3rm3")
 theme_override_fonts/font = ExtResource("5_odtwq")
 text = "POST!"
-metadata/_edit_use_anchors_ = true
 
 [node name="Post4" type="Button" parent="."]
-offset_left = 880.0
-offset_top = 600.0
+offset_left = 800.0
+offset_top = 611.0
 offset_right = 1080.0
-offset_bottom = 700.0
+offset_bottom = 672.0
 theme = ExtResource("3_f3rm3")
 theme_override_fonts/font = ExtResource("6_f3rm3")
 text = "POST!"
-metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect5" type="ColorRect" parent="."]
 offset_left = 393.0
@@ -121,29 +104,6 @@ polygon = PackedVector2Array(360, 64, 856, 64, 856, 552, 360, 552)
 position = Vector2(348, 341.5)
 scale = Vector2(0.242188, 0.23877)
 texture = ExtResource("6_odtwq")
-
-[node name="ColorRect7" type="ColorRect" parent="."]
-offset_left = 452.0
-offset_top = 620.0
-offset_right = 740.0
-offset_bottom = 688.0
-color = Color(1, 0, 1, 1)
-
-[node name="Post5" type="Button" parent="."]
-offset_left = 456.0
-offset_top = 624.0
-offset_right = 736.0
-offset_bottom = 684.0
-theme = ExtResource("3_f3rm3")
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_odtwq")
-theme_override_styles/focus = SubResource("StyleBoxFlat_f3rm3")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_u5e58")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_dxjrf")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_ra5sj")
-theme_override_styles/normal = SubResource("StyleBoxFlat_gfqyk")
-text = "POST!"
-metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Post3" to="." method="_on_post_3_pressed"]
 [connection signal="pressed" from="Post4" to="." method="_on_post_4_pressed"]
