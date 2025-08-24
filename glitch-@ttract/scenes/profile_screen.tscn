@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cr3c8oa6yw4l6"]
+[gd_scene load_steps=14 format=3 uid="uid://cr3c8oa6yw4l6"]
 
 [ext_resource type="Script" uid="uid://be14vm6daw8sj" path="res://scenes/posts.gd" id="2_7q4r5"]
 [ext_resource type="Texture2D" uid="uid://dfex4aefxjq7n" path="res://images/art.png" id="2_mhd6v"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://d3cjuaisbo6r6" path="res://images/beautiful-woman-pouting-while-looking-camera-beach-sunshine (1).jpg" id="8_g74tj"]
 [ext_resource type="Texture2D" uid="uid://xf1361rxml3o" path="res://images/woman-hand-holding-camera-standing-top-rock-nature-travel-concept (1).jpg" id="9_4g1je"]
 [ext_resource type="Texture2D" uid="uid://ccputy08fw313" path="res://images/side-view-smiley-man-carrying-books (1).jpg" id="10_2x4dl"]
+[ext_resource type="Texture2D" uid="uid://cgtgu1a6n36hv" path="res://sprites/images/Art5.png" id="11_4g1je"]
 
 [sub_resource type="Gradient" id="Gradient_l8fel"]
 offsets = PackedFloat32Array(0, 0.00389105, 0.0077821, 1)
@@ -432,5 +433,20 @@ texture = ExtResource("9_4g1je")
 position = Vector2(616, 664)
 scale = Vector2(0.013, 0.013)
 texture = ExtResource("10_2x4dl")
+
+[node name="Art5" type="Sprite2D" parent="connections"]
+position = Vector2(615.5, 552)
+scale = Vector2(0.0200195, 0.0205078)
+texture = ExtResource("11_4g1je")
+
+[node name="Art6" type="Sprite2D" parent="connections"]
+position = Vector2(615.75, 664)
+scale = Vector2(0.0207519, 0.0205078)
+texture = ExtResource("11_4g1je")
+
+[node name="Art5" type="Sprite2D" parent="."]
+position = Vector2(616, 608)
+scale = Vector2(0.0200195, 0.0205078)
+texture = ExtResource("11_4g1je")
 
 [connection signal="pressed" from="Posts" to="arrow" method="_on_posts_pressed"]
