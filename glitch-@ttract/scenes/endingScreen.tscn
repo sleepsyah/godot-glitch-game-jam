@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ctrcda06yn3yu"]
 
-[ext_resource type="Script" path="res://scenes/ending_screen.gd" id="1_7qmtr"]
+[ext_resource type="Script" uid="uid://vhvkauv7hj5d" path="res://scenes/ending_screen.gd" id="1_7qmtr"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="1_htwen"]
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="2_7qmtr"]
 [ext_resource type="FontFile" uid="uid://cvdde6m5n27nh" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf" id="3_cas3l"]
@@ -37,9 +37,9 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_cas3l")
 text = "Dear followers, 
 
-On August 19, 2012. My home got broken into by my stalker. After months of harassment, stalked, and even being hacked by her,the police department arrested her. 
+On August 19, 2012, my computer got broken into by my stalker. At the computer repair center, I found out my stalker hacked me and I filed a police report. After months of stalking and harassment, she got arrested. 
 
-I will no longer be posting for my safety and I advise that for all the other people who look up to me to be careful because"
+I will no longer be posting for my safety. I advise that for all the other people who look up to me to be careful because"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
 offset_left = 383.0

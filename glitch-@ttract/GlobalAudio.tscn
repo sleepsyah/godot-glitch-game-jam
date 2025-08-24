@@ -4,5 +4,5 @@
 
 [node name="GlobalAudio" type="AudioStreamPlayer"]
 stream = ExtResource("1_thuu5")
-volume_db = -7.0
+volume_db = -20.0
 autoplay = true

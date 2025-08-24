@@ -2,7 +2,9 @@ extends Node2D
 
 
 var count := 0
-
+func _ready() -> void:
+	GlobalAudio.stop()
+	
 func _on_post_4_pressed() -> void:
 	if count ==0:
 		$Post4.set_position(Vector2(100,200))
