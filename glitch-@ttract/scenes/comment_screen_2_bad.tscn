@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://evvsd6nlgv7j"]
+[gd_scene load_steps=7 format=3 uid="uid://bhobbxv4ap2v7"]
 
 [ext_resource type="Script" uid="uid://cuhkhwteh846e" path="res://scenes/comment_screen_2_bad.gd" id="1_m5f7h"]
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="2_eofh0"]
@@ -96,7 +96,7 @@ offset_bottom = 18.256
 scale = Vector2(1.3, 1.3)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_itly1")
-text = "you've earned +100 followers"
+text = "you've lost -100 followers"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
@@ -198,10 +198,10 @@ color = Color(0.568627, 0.0156863, 0.427451, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect5" type="ColorRect" parent="dark_borders"]
-offset_left = 269.974
-offset_top = 371.021
-offset_right = 1256.97
-offset_bottom = 416.021
+offset_left = 270.0
+offset_top = 371.0
+offset_right = 1257.0
+offset_bottom = 416.0
 scale = Vector2(0.994386, 1.02338)
 color = Color(0.568627, 0.0156863, 0.427451, 1)
 metadata/_edit_use_anchors_ = true
@@ -228,7 +228,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_jmg8c")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@ems.pxison (emma)[font_size=150] | i love you queen| 2 seconds ago"
+text = "[font_size=200]@nycjoe (joseph)[font_size=150] | did ur mom pick out this outfit? | 1 second ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
@@ -242,23 +242,22 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_jmg8c")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@Xx.sc3ne_qu3en.xX (gia)[font_size=150] | [color=#000000] flowers bloom when you walk (⌒▽⌒)☆[color=#000000]| 55 seconds ago"
+text = "[font_size=200]@</3 (taylor)[font_size=150] | [color=#000000]LMAO quit ur blog [color=#000000]| 24 seconds ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="comment3" type="RichTextLabel" parent="comments"]
-offset_left = 279.974
-offset_top = 151.021
-offset_right = 5959.97
-offset_bottom = 551.021
+offset_left = 280.0
+offset_top = 151.0
+offset_right = 6790.0
+offset_bottom = 551.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_jmg8c")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@g0th.b1mb0 (raven)[font_size=150] | ur so gorggg<3 | 15 seconds ago"
+text = "[font_size=200]@goth.sloth (kit)[font_size=150] | oh girly this is not it... | 12 seconds ago"
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="comment4" type="RichTextLabel" parent="comments"]
 offset_left = 279.0
@@ -270,7 +269,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_jmg8c")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@ellie.williams.gf (ari)[font_size=150] | do you do weddings? | 40 secondsago"
+text = "[font_size=200]@ellie.williams.gf (ari)[font_size=150] | do you do funerals? | 39 seconds ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
@@ -284,23 +283,22 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_jmg8c")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@vamp1re_ (vamp)[font_size=150] | your belts are soo cute! where'd you get? | 1 minute ago"
+text = "[font_size=200]@//sendtrends\\\\ (alex)[font_size=150] | put this fit back in the closet bro | 2 minutes ago"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="comment6" type="RichTextLabel" parent="comments"]
-offset_left = 279.974
-offset_top = 450.021
-offset_right = 5959.97
-offset_bottom = 850.021
+offset_left = 280.0
+offset_top = 450.0
+offset_right = 7670.0
+offset_bottom = 850.0
 scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_jmg8c")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@maxx.[font_size=150] | fire |  3 minutes ago"
+text = "[font_size=200]@willyw0nka (william)[font_size=150] | would be great for a clown costume | 4 minutes ago"
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="profile_pic_borders" type="Node2D" parent="."]
 position = Vector2(-46, 69)
