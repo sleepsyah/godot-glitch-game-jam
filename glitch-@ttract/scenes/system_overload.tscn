@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dcatyuekvp8je"]
+[gd_scene load_steps=3 format=3 uid="uid://dcatyuekvp8je"]
 
+[ext_resource type="Script" uid="uid://ch8fv7x4oti4p" path="res://scenes/system_overload.gd" id="1_b8kdx"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="1_utsle"]
 
 [node name="SystemOverload" type="Node2D"]
+script = ExtResource("1_b8kdx")
 
 [node name="black" type="ColorRect" parent="."]
 offset_left = -5.0
@@ -14,36 +16,38 @@ color = Color(0, 0, 0, 1)
 [node name="system_overload" type="Node2D" parent="."]
 
 [node name="blue" type="RichTextLabel" parent="system_overload"]
-offset_left = 296.0
-offset_top = 31.0
-offset_right = 458.0
-offset_bottom = 71.0
-scale = Vector2(4, 4)
+offset_left = 224.0
+offset_top = 21.0
+offset_right = 8224.0
+offset_bottom = 2021.0
+scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0.445877, 0.393254, 0.990313, 1)
+theme_override_font_sizes/normal_font_size = 800
 text = "SYSTEM OVERLOAD"
 horizontal_alignment = 1
 vertical_alignment = 1
 justification_flags = 162
 
 [node name="yellow" type="RichTextLabel" parent="system_overload"]
-offset_left = 305.0
-offset_top = 20.0
-offset_right = 467.0
-offset_bottom = 60.0
-scale = Vector2(4, 4)
+offset_left = 233.0
+offset_top = 10.0
+offset_right = 8233.0
+offset_bottom = 2010.0
+scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0.765814, 0.795608, 0.0308869, 1)
+theme_override_font_sizes/normal_font_size = 800
 text = "SYSTEM OVERLOAD"
 horizontal_alignment = 1
 vertical_alignment = 1
 justification_flags = 162
 
 [node name="red" type="RichTextLabel" parent="system_overload"]
-offset_left = 315.0
-offset_top = 10.0
-offset_right = 477.0
-offset_bottom = 50.0
-scale = Vector2(4, 4)
+offset_left = 243.0
+offset_right = 8243.0
+offset_bottom = 2000.0
+scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0.945098, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 800
 text = "SYSTEM OVERLOAD"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -59,24 +63,25 @@ color = Color(0.74558, 0.74558, 0.74558, 1)
 [node name="system_error" type="RichTextLabel" parent="."]
 offset_left = 273.0
 offset_top = 204.0
-offset_right = 399.0
-offset_bottom = 235.0
-scale = Vector2(3, 3)
+offset_right = 4103.0
+offset_bottom = 1124.0
+scale = Vector2(0.1, 0.1)
 theme = ExtResource("1_utsle")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 500
 text = "System Error!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="error_message" type="RichTextLabel" parent="."]
-offset_left = 287.0
-offset_top = 306.0
-offset_right = 626.0
-offset_bottom = 398.0
-scale = Vector2(2, 2)
+offset_left = 304.0
+offset_top = 304.0
+offset_right = 7034.0
+offset_bottom = 1964.0
+scale = Vector2(0.1, 0.1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 280
 text = "Our systems have detected a critical error. Please send your device to your local computer repair service immediately."
-horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ColorRect2" type="ColorRect" parent="."]
@@ -95,14 +100,15 @@ text = "X"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="."]
-offset_left = 547.0
+[node name="gotoshop" type="Button" parent="."]
+offset_left = 512.0
 offset_top = 576.0
-offset_right = 637.0
-offset_bottom = 607.0
-scale = Vector2(2, 2)
+offset_right = 3072.0
+offset_bottom = 1216.0
+scale = Vector2(0.1, 0.1)
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
-text = "get it fixed"
+theme_override_font_sizes/font_size = 360
+text = "send to shop"
 
 [node name="glitch1" type="Node2D" parent="."]
 
@@ -204,3 +210,5 @@ offset_top = 472.0
 offset_right = 1002.0
 offset_bottom = 574.0
 color = Color(0, 1, 0, 1)
+
+[connection signal="pressed" from="gotoshop" to="." method="_on_gotoshop_pressed"]

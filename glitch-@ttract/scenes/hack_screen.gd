@@ -41,4 +41,4 @@ func _on_post_4_pressed() -> void:
 		$Static.position = Vector2(634,344)
 		count +=1
 	elif count ==6: 
-		get_tree().change_scene_to_file("res://scenes/endingScreen.tscn")
+		get_tree().change_scene_to_file("res://scenes/system_overload.tscn")
