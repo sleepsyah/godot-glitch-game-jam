@@ -1,13 +1,13 @@
 [gd_scene load_steps=7 format=3 uid="uid://c3gw44c88emjj"]
 
 [ext_resource type="Script" uid="uid://dlr7wv2jqp6vp" path="res://scenes/comment_screen_2_good.gd" id="1_g7nrg"]
-[ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="2_g7nrg"]
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="2_qgfb8"]
 [ext_resource type="FontFile" uid="uid://snlsj1asvqde" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Bold.ttf" id="3_3rfx2"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="3_qgfb8"]
+[ext_resource type="Texture2D" uid="uid://cgtgu1a6n36hv" path="res://sprites/images/Art5.png" id="5_qgfb8"]
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="6_7w54k"]
 
-[node name="comment_screen_2_good" type="Node2D"]
+[node name="comment_screen_bad" type="Node2D"]
 script = ExtResource("1_g7nrg")
 
 [node name="background" type="Sprite2D" parent="."]
@@ -22,14 +22,17 @@ offset_right = 1180.0
 offset_bottom = 506.0
 scale = Vector2(0.993684, 1.01936)
 color = Color(0.966339, 0.603738, 0.950997, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect5" type="ColorRect" parent="ColorRect"]
 show_behind_parent = true
+layout_mode = 0
 offset_left = -5.0
 offset_top = -5.0
 offset_right = 1076.0
 offset_bottom = 429.0
 color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect4" type="ColorRect" parent="."]
 offset_left = 105.0
@@ -37,13 +40,16 @@ offset_top = 536.0
 offset_right = 1177.0
 offset_bottom = 598.0
 color = Color(8.84, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect2" type="ColorRect" parent="ColorRect4"]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 4.0
 offset_right = 1068.0
 offset_bottom = 57.0
 color = Color(0.964706, 0.603922, 0.952941, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ColorRect4/ColorRect2"]
 layout_mode = 1
@@ -57,9 +63,10 @@ offset_bottom = 29.153
 scale = Vector2(1.3, 1.3)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("6_7w54k")
-text = "These comments are so nice! oh, I have a new message! Let's open it!"
+text = "These comments are so mean! oh, I have a new message! Let's open it!"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect6" type="ColorRect" parent="."]
 offset_left = 285.0
@@ -67,13 +74,16 @@ offset_top = 13.0
 offset_right = 1043.0
 offset_bottom = 64.0
 color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect3" type="ColorRect" parent="ColorRect6"]
+layout_mode = 0
 offset_left = 3.0
 offset_top = 3.0
 offset_right = 754.0
 offset_bottom = 47.0
 color = Color(8.84, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ColorRect6/ColorRect3"]
 layout_mode = 1
@@ -86,9 +96,10 @@ offset_bottom = 18.256
 scale = Vector2(1.3, 1.3)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("6_7w54k")
-text = "you've attracted 100 new followers!"
+text = "you've lost -100 followers"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="light_borders" type="Node2D" parent="."]
 position = Vector2(-97, 5)
@@ -100,6 +111,7 @@ offset_right = 1270.97
 offset_bottom = 504.021
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="light_borders"]
 offset_left = 275.974
@@ -108,6 +120,7 @@ offset_right = 1270.97
 offset_bottom = 135.021
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect2" type="ColorRect" parent="light_borders"]
 offset_left = 276.974
@@ -116,6 +129,7 @@ offset_right = 1270.97
 offset_bottom = 207.021
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect3" type="ColorRect" parent="light_borders"]
 offset_left = 276.974
@@ -124,6 +138,7 @@ offset_right = 1270.97
 offset_bottom = 280.021
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect4" type="ColorRect" parent="light_borders"]
 offset_left = 276.974
@@ -132,6 +147,7 @@ offset_right = 1270.97
 offset_bottom = 355.021
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect5" type="ColorRect" parent="light_borders"]
 offset_left = 276.974
@@ -140,6 +156,7 @@ offset_right = 1270.97
 offset_bottom = 429.021
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="dark_borders" type="Node2D" parent="."]
 position = Vector2(-87, 13)
@@ -151,6 +168,7 @@ offset_right = 1255.97
 offset_bottom = 123.021
 scale = Vector2(0.994386, 1.02338)
 color = Color(0.568627, 0.0156863, 0.427451, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect2" type="ColorRect" parent="dark_borders"]
 offset_left = 269.974
@@ -159,6 +177,7 @@ offset_right = 1256.97
 offset_bottom = 194.021
 scale = Vector2(0.994386, 1.02338)
 color = Color(0.568627, 0.0156863, 0.427451, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect3" type="ColorRect" parent="dark_borders"]
 offset_left = 270.974
@@ -167,6 +186,7 @@ offset_right = 1256.97
 offset_bottom = 269.021
 scale = Vector2(0.994386, 1.02338)
 color = Color(0.568627, 0.0156863, 0.427451, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect4" type="ColorRect" parent="dark_borders"]
 offset_left = 269.974
@@ -175,6 +195,7 @@ offset_right = 1256.97
 offset_bottom = 343.021
 scale = Vector2(0.994386, 1.02338)
 color = Color(0.568627, 0.0156863, 0.427451, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect5" type="ColorRect" parent="dark_borders"]
 offset_left = 269.974
@@ -183,6 +204,7 @@ offset_right = 1256.97
 offset_bottom = 416.021
 scale = Vector2(0.994386, 1.02338)
 color = Color(0.568627, 0.0156863, 0.427451, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect6" type="ColorRect" parent="dark_borders"]
 offset_left = 269.974
@@ -191,6 +213,7 @@ offset_right = 1256.97
 offset_bottom = 492.021
 scale = Vector2(0.994386, 1.02338)
 color = Color(0.568627, 0.0156863, 0.427451, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="comments" type="Node2D" parent="."]
 position = Vector2(-87, 13)
@@ -201,25 +224,27 @@ offset_top = 79.0212
 offset_right = 7100.97
 offset_bottom = 479.021
 scale = Vector2(0.1, 0.1)
-theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@ems.pxison (emma)[color=f7d2ed][font_size=150] | i love you queen| 2 seconds ago"
+text = "[font_size=200]@ems.pxison (emma)[font_size=150] | i love you queen| 2 seconds ago"
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="comment2" type="RichTextLabel" parent="comments"]
-offset_left = 283.0
-offset_top = 224.0
-offset_right = 8583.0
-offset_bottom = 624.0
+offset_left = 280.0
+offset_top = 225.0
+offset_right = 8580.0
+offset_bottom = 625.0
 scale = Vector2(0.1, 0.1)
-theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@Xx.sc3ne_qu3en.xX (gia)[color=f7d2ed][font_size=150] | flowers bloom when you walk (⌒▽⌒)☆| 55 seconds ago"
+text = "[font_size=200]@Xx.sc3ne_qu3en.xX (gia)[font_size=150] | [color=#000000] flowers bloom when you walk (⌒▽⌒)☆[color=#000000]| 55 seconds ago"
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="comment3" type="RichTextLabel" parent="comments"]
 offset_left = 279.974
@@ -227,12 +252,13 @@ offset_top = 151.021
 offset_right = 5959.97
 offset_bottom = 551.021
 scale = Vector2(0.1, 0.1)
-theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@g0th.b1mb0 (raven)[color=f7d2ed][font_size=150] | ur so gorggg<3 | 15 seconds ago"
+text = "[font_size=200]@g0th.b1mb0 (raven)[font_size=150] | ur so gorggg<3 | 15 seconds ago"
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="comment4" type="RichTextLabel" parent="comments"]
 offset_left = 279.0
@@ -240,12 +266,13 @@ offset_top = 299.0
 offset_right = 8059.0
 offset_bottom = 699.0
 scale = Vector2(0.1, 0.1)
-theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@ellie.williams.gf (ari)[color=f7d2ed][font_size=150] | do you do weddings? | 40 secondsago"
+text = "[font_size=200]@ellie.williams.gf (ari)[font_size=150] | do you do weddings? | 40 secondsago"
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="comment5" type="RichTextLabel" parent="comments"]
 offset_left = 281.0
@@ -253,12 +280,13 @@ offset_top = 372.0
 offset_right = 7981.0
 offset_bottom = 772.0
 scale = Vector2(0.1, 0.1)
-theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@vamp1re_ (vamp)[color=f7d2ed][font_size=150] | your belts are soo cute! where'd you get? | 1 minute ago"
+text = "[font_size=200]@vamp1re_ (vamp)[font_size=150] | your belts are soo cute! where'd you get? | 1 minute ago"
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="comment6" type="RichTextLabel" parent="comments"]
 offset_left = 279.974
@@ -266,12 +294,13 @@ offset_top = 450.021
 offset_right = 5959.97
 offset_bottom = 850.021
 scale = Vector2(0.1, 0.1)
-theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_3rfx2")
 theme_override_font_sizes/normal_font_size = 300
 bbcode_enabled = true
-text = "[font_size=200]@maxx.[color=f7d2ed][font_size=150] | fire |  3 minutes ago"
+text = "[font_size=200]@maxx.[font_size=150] | fire |  3 minutes ago"
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="profile_pic_borders" type="Node2D" parent="."]
 position = Vector2(-46, 69)
@@ -284,6 +313,7 @@ offset_right = 261.358
 offset_bottom = 96.5619
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect2" type="ColorRect" parent="profile_pic_borders"]
 offset_left = 189.52
@@ -292,6 +322,7 @@ offset_right = 262.52
 offset_bottom = 192.271
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect3" type="ColorRect" parent="profile_pic_borders"]
 offset_left = 190.712
@@ -300,6 +331,7 @@ offset_right = 263.712
 offset_bottom = 291.995
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect4" type="ColorRect" parent="profile_pic_borders"]
 offset_left = 190.712
@@ -308,6 +340,7 @@ offset_right = 263.712
 offset_bottom = 391.719
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect5" type="ColorRect" parent="profile_pic_borders"]
 offset_left = 190.712
@@ -316,6 +349,7 @@ offset_right = 263.712
 offset_bottom = 492.79
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect6" type="ColorRect" parent="profile_pic_borders"]
 offset_left = 189.52
@@ -324,39 +358,40 @@ offset_right = 262.52
 offset_bottom = 592.514
 scale = Vector2(0.994457, 1.02073)
 color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="profile_pics" type="Node2D" parent="."]
 position = Vector2(-248, 12)
 
 [node name="Sprite2D" type="Sprite2D" parent="profile_pics"]
-position = Vector2(390.474, 101.521)
-scale = Vector2(0.429687, 0.398438)
-texture = ExtResource("2_g7nrg")
+position = Vector2(389.869, 102.13)
+scale = Vector2(0.027472, 0.0252636)
+texture = ExtResource("5_qgfb8")
 
 [node name="Sprite2D2" type="Sprite2D" parent="profile_pics"]
-position = Vector2(390.974, 173.021)
-scale = Vector2(0.429687, 0.398438)
-texture = ExtResource("2_g7nrg")
+position = Vector2(392, 172)
+scale = Vector2(0.027472, 0.0252636)
+texture = ExtResource("5_qgfb8")
 
 [node name="Sprite2D3" type="Sprite2D" parent="profile_pics"]
-position = Vector2(391.974, 246.021)
-scale = Vector2(0.429687, 0.398438)
-texture = ExtResource("2_g7nrg")
+position = Vector2(393, 247)
+scale = Vector2(0.027472, 0.0252636)
+texture = ExtResource("5_qgfb8")
 
 [node name="Sprite2D4" type="Sprite2D" parent="profile_pics"]
-position = Vector2(391.974, 321.021)
-scale = Vector2(0.429687, 0.398438)
-texture = ExtResource("2_g7nrg")
+position = Vector2(393, 320)
+scale = Vector2(0.027472, 0.0252636)
+texture = ExtResource("5_qgfb8")
 
 [node name="Sprite2D5" type="Sprite2D" parent="profile_pics"]
-position = Vector2(391.974, 396.021)
-scale = Vector2(0.429687, 0.398438)
-texture = ExtResource("2_g7nrg")
+position = Vector2(393, 395)
+scale = Vector2(0.027472, 0.0252636)
+texture = ExtResource("5_qgfb8")
 
 [node name="Sprite2D6" type="Sprite2D" parent="profile_pics"]
-position = Vector2(390.974, 470.021)
-scale = Vector2(0.429687, 0.398438)
-texture = ExtResource("2_g7nrg")
+position = Vector2(392, 470)
+scale = Vector2(0.027472, 0.0252636)
+texture = ExtResource("5_qgfb8")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 offset_left = 444.0
@@ -364,6 +399,7 @@ offset_top = 620.0
 offset_right = 836.0
 offset_bottom = 692.0
 color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="messages2" type="Button" parent="."]
 offset_left = 447.0
@@ -373,5 +409,6 @@ offset_bottom = 689.0
 theme = ExtResource("3_qgfb8")
 theme_override_fonts/font = ExtResource("6_7w54k")
 text = "One new message"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="messages2" to="." method="_on_messages_2_pressed"]
