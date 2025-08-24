@@ -18,9 +18,9 @@ scale = Vector2(1, 0.9)
 texture = ExtResource("1_2q8eb")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
-offset_left = 1027.0
+offset_left = 1024.0
 offset_top = 32.0
-offset_right = 1218.0
+offset_right = 1216.0
 offset_bottom = 106.0
 color = Color(0, 0, 0, 1)
 
@@ -35,10 +35,10 @@ color = Color(1, 0, 1, 1)
 stream = ExtResource("3_l8at2")
 
 [node name="goending" type="Button" parent="."]
-offset_left = 1031.0
+offset_left = 1028.0
 offset_top = 36.0
-offset_right = 1214.0
-offset_bottom = 101.0
+offset_right = 1212.0
+offset_bottom = 100.0
 theme = ExtResource("9_wlqlr")
 theme_override_font_sizes/font_size = 20
 text = "logout"
