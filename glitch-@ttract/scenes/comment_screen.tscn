@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bhobbxv4ap2v7"]
+[gd_scene load_steps=2 format=3 uid="uid://djjple6j2b5j4"]
 
-[ext_resource type="PackedScene" uid="uid://b1ntay3t4c7rj" path="res://scenes/comment_screen_2_good.tscn" id="1_4eric"]
+[ext_resource type="PackedScene" uid="uid://c3gw44c88emjj" path="res://scenes/comment_screen_2_good.tscn" id="1_4eric"]
 
 [node name="comment_screen" type="Node2D"]
 
