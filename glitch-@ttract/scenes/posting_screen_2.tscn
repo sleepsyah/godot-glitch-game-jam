@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bdinqlofpiboc"]
+[gd_scene load_steps=8 format=3 uid="uid://bdinqlofpiboc"]
 
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_5ivla"]
 [ext_resource type="Script" uid="uid://vims4f1ut1p" path="res://scenes/posting_screen_2.gd" id="1_6l80l"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="5_odtwq"]
 [ext_resource type="FontFile" uid="uid://cvdde6m5n27nh" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf" id="6_f3rm3"]
 [ext_resource type="Texture2D" uid="uid://p260skikv5j2" path="res://sprites/images/Art4.0.png" id="6_odtwq"]
+[ext_resource type="Texture2D" uid="uid://cogr5yar363bt" path="res://sprites/images/outfit.png" id="7_f3rm3"]
 
 [node name="posting_screen2" type="Node2D"]
 script = ExtResource("1_6l80l")
@@ -104,6 +105,11 @@ polygon = PackedVector2Array(360, 64, 856, 64, 856, 552, 360, 552)
 position = Vector2(348, 341.5)
 scale = Vector2(0.242188, 0.23877)
 texture = ExtResource("6_odtwq")
+
+[node name="Outfit" type="Sprite2D" parent="."]
+position = Vector2(924, 342)
+scale = Vector2(0.242188, 0.238281)
+texture = ExtResource("7_f3rm3")
 
 [connection signal="pressed" from="Post3" to="." method="_on_post_3_pressed"]
 [connection signal="pressed" from="Post4" to="." method="_on_post_4_pressed"]

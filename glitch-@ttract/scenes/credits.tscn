@@ -1,13 +1,13 @@
 [gd_scene load_steps=13 format=3 uid="uid://3xk0j5j8ycbp"]
 
 [ext_resource type="Texture2D" uid="uid://c1p6bqtpojvxh" path="res://backgrounds/cheetahprint.png" id="1_2ckv8"]
-[ext_resource type="Script" uid="uid://b3nm50tx3x0ns" path="res://scenes/credits.gd" id="1_8gwij"]
+[ext_resource type="Script" path="res://scenes/credits.gd" id="1_8gwij"]
 [ext_resource type="Texture2D" uid="uid://du2exsev23j4m" path="res://icon.svg" id="2_0ctdu"]
 [ext_resource type="FontFile" uid="uid://snlsj1asvqde" path="res://sprites/fonts/Roboto_Mono/static/RobotoMono-Bold.ttf" id="3_2fbfq"]
 [ext_resource type="Texture2D" uid="uid://brv3kepqo3d7a" path="res://images/gggCircle_1.png" id="4_8gwij"]
-[ext_resource type="Script" uid="uid://bjajgq2l52tvx" path="res://scenes/name.gd" id="4_kyhnv"]
-[ext_resource type="Script" uid="uid://7h8ciplfsv2e" path="res://scenes/username.gd" id="5_ooihk"]
-[ext_resource type="Script" uid="uid://dk3o1adsprby3" path="res://scenes/likes_number.gd" id="6_ooihk"]
+[ext_resource type="Script" path="res://scenes/name.gd" id="4_kyhnv"]
+[ext_resource type="Script" path="res://scenes/username.gd" id="5_ooihk"]
+[ext_resource type="Script" path="res://scenes/likes_number.gd" id="6_ooihk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mah5v"]
 bg_color = Color(1, 0.596078, 0.898039, 0)

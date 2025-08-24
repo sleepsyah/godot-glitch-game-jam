@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://cfp4vhi7340m2" path="res://scenes/post_1.gd" id="3_35dhw"]
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="4_kvtvd"]
 [ext_resource type="Texture2D" uid="uid://dssxesmlqiicj" path="res://sprites/images/yogurt_bowl.png" id="6_twdqg"]
-[ext_resource type="Texture2D" uid="uid://p260skikv5j2" path="res://sprites/images/Art4.0.png" id="7_g45wp"]
+[ext_resource type="Texture2D" uid="uid://cl2gx24et5iri" path="res://sprites/images/Outfit (1).png" id="7_twdqg"]
 
 [node name="posting_screen" type="Node2D"]
 
@@ -107,10 +107,10 @@ position = Vector2(348, 340.25)
 scale = Vector2(0.242188, 0.23999)
 texture = ExtResource("6_twdqg")
 
-[node name="Art4_0" type="Sprite2D" parent="."]
-position = Vector2(924.125, 342.5)
-scale = Vector2(0.243042, 0.23877)
-texture = ExtResource("7_g45wp")
+[node name="Outfit(1)" type="Sprite2D" parent="."]
+position = Vector2(924, 341.25)
+scale = Vector2(0.244141, 0.23999)
+texture = ExtResource("7_twdqg")
 
 [connection signal="pressed" from="Post2" to="Post2" method="_on_pressed"]
 [connection signal="pressed" from="Post1" to="Post1" method="_on_pressed"]
