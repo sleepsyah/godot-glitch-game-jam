@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://dpa7clnjcfisk"]
+[gd_scene load_steps=8 format=3 uid="uid://dpa7clnjcfisk"]
 
 [ext_resource type="Texture2D" uid="uid://bh0ii57sl4erb" path="res://scenes/8852667.jpg" id="1_35dhw"]
 [ext_resource type="Theme" uid="uid://ceib3ahvc5st5" path="res://themes/theme1.tres" id="2_35dhw"]
 [ext_resource type="Script" uid="uid://bgfofnugsfsc4" path="res://scenes/post_2.gd" id="2_m37ps"]
 [ext_resource type="Script" uid="uid://cfp4vhi7340m2" path="res://scenes/post_1.gd" id="3_35dhw"]
 [ext_resource type="FontFile" uid="uid://d3pf6sdbn32rp" path="res://sprites/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf" id="4_kvtvd"]
+[ext_resource type="Texture2D" uid="uid://dssxesmlqiicj" path="res://sprites/images/yogurt_bowl.png" id="6_twdqg"]
+[ext_resource type="Texture2D" uid="uid://p260skikv5j2" path="res://sprites/images/Art4.0.png" id="7_g45wp"]
 
 [node name="posting_screen" type="Node2D"]
 
@@ -100,6 +102,16 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(-260, 34)
 color = Color(0.215902, 0.215902, 0.215902, 1)
 polygon = PackedVector2Array(360, 64, 856, 64, 856, 552, 360, 552)
+
+[node name="YogurtBowl" type="Sprite2D" parent="."]
+position = Vector2(348, 340.25)
+scale = Vector2(0.242188, 0.23999)
+texture = ExtResource("6_twdqg")
+
+[node name="Art4_0" type="Sprite2D" parent="."]
+position = Vector2(924.125, 342.5)
+scale = Vector2(0.243042, 0.23877)
+texture = ExtResource("7_g45wp")
 
 [connection signal="pressed" from="Post2" to="Post2" method="_on_pressed"]
 [connection signal="pressed" from="Post1" to="Post1" method="_on_pressed"]
